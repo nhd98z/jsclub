@@ -1,0 +1,26 @@
+@import '~antd/dist/antd.css';
+
+/* first setup */
+
+body {
+  padding: 0 none;
+  margin: 0 none;
+  border: 0 none;
+  color: #000000;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #636e72;
+}
+
+h1 {
+  font-size: 100px;
+}
