@@ -1,4 +1,6 @@
-### LOGS
+# LOGS
+
+- Cách viết README.md: [Markdown syntax guide](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
 
 - 12:01 AM Monday, August 20, 2018 (GMT+7): Hoàn thành header và background (của homepage).
 
