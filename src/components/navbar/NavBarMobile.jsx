@@ -26,7 +26,7 @@ class NavBarMobile extends Component {
               <a href="/">About us</a>
             </li>
             <li className="navbar-li">
-              <a href="/">Programs</a>
+              <a href="/">Events</a>
             </li>
             <li className="navbar-li">
               <a href="/">Partners</a>
@@ -40,8 +40,8 @@ class NavBarMobile extends Component {
         <div />
       );
     const menuIcon = () => (this.state.openBar ? 'menu-unfold' : 'menu-fold');
-    const getLogoDot = () => (this.props.isScroll ? <img src={logo} alt="logo" style={{ height: '64px' }} /> : <div />);
-    return <div>
+    return (
+      <div>
         <div style={{ height: '48px', background: '#000000' }} />
         <div className="navbar-wrap">
           <div className="navbar navbar-mb">
@@ -49,7 +49,9 @@ class NavBarMobile extends Component {
               <Icon type={menuIcon()} style={{ fontSize: '24px' }} onClick={() => this.handleClick()} />
             </span>
             <span className="navbar-e">
-              <a href="/">{getLogoDot()}</a>
+              <a href="/">
+                <img src={logo} alt="logo" style={{ height: '64px' }} />
+              </a>
             </span>
             <span className="navbar-e">
               <Icon type="global" style={{ fontSize: '24px' }} />
@@ -57,7 +59,8 @@ class NavBarMobile extends Component {
           </div>
           {bar()}
         </div>
-      </div>;
+      </div>
+    );
   }
 }
 

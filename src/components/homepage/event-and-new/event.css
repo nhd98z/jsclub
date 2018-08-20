@@ -1,3 +1,14 @@
+.ean {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+}
+
+/*  */
+
 .imgEvent {
   position: absolute;
   z-index: -1;
@@ -56,6 +67,7 @@
 /* Dũng */
 
 .card-title {
+  color: #333333;
   margin-top: 3px;
   font-size: 16px;
   font-weight: bolder;
@@ -63,8 +75,112 @@
 }
 
 .card-detail {
+  color: #333333;
   margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 14px;
   font-weight: lighter;
   text-align: center;
+}
+
+.item:link {
+  color: #333333;
+}
+
+.item:visited {
+  color: #333333;
+}
+
+.item:hover {
+  /* color: #bdc3c7; */
+}
+
+.card {
+  animation-name: cardOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.card:hover {
+  animation-name: cardIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cardIn {
+  from {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  to {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+@keyframes cardOut {
+  from {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+  to {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+/* Mobile */
+
+.container-mb {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 25%;
+}
+
+.item-mb {
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 220px;
+  margin-top: 20px;
+  margin: auto;
+  position: relative;
+  animation-duration: 2s;
+  animation-name: fadeIn;
+}
+
+.imgEvent-mb {
+  width: 280px;
+  height: 200px;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-mb {
+  width: 220px;
+  position: absolute;
+  bottom: -36px;
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-mb {
+  animation-name: cardOut;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.card-mb:hover {
+  animation-name: cardIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

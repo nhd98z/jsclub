@@ -51,6 +51,24 @@
   - Hiểu cách viết truy cập trực tiếp vào file như [này](./src/components/App.jsx).
 
 - 6:49 PM Monday, August 20, 2018 (GMT+7):
+
   - Chuyển `window.scrollY > 0` thành `window.scrollY > 100` trong [App.jsx](./src/components/App.jsx).
   - Thay ảnh vào [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx).
   - Thêm title và detail vào [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx)., thêm CSS.
+
+- 9:47 PM Monday, August 20, 2018 (GMT+7):
+
+  - Sửa logo load của [NavBarDesktop.jsx](./src/components/navbar/NavBarDesktop.jsx).
+  - Sửa logo load của [NavBarMobile.jsx](./src/components/navbar/NavBarMobile.jsx).
+  - Bây giờ logo ở navbar xuất hiện luôn.
+
+- 10:12 PM Monday, August 20, 2018 (GMT+7):
+
+  - Comment lại tất cả code liên quan đến background CLB ở bản xôi, ở cả [NavBarDesktop.jsx](./src/components/navbar/NavBarDesktop.jsx) và [NavBarMobile.jsx](./src/components/navbar/NavBarMobile.jsx).
+
+- 10:55 PM Monday, August 20, 2018 (GMT+7):
+
+  - Animation cho hover card ở [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx).
+
+- 1:24 AM Tuesday, August 21, 2018 (GMT+7):
+  - Làm xong [EventMobile.jsx](./src/components/homepage/event-and-new/EventMobile.jsx).

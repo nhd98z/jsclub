@@ -22,7 +22,7 @@ class FooterDesktop extends Component {
               <a href="/">About Us</a>
             </div>
             <div className="ft-explore-content">
-              <a href="/">Programs</a>
+              <a href="/">Events</a>
             </div>
             <div className="ft-explore-content">
               <a href="/">Partners</a>
@@ -50,17 +50,7 @@ class FooterDesktop extends Component {
             <div className="ft-explore-content">
               <Icon type="facebook" style={{ marginTop: '-5px', width: '14px' }} /> /fu.jsclub
             </div>
-          </div>
-
-          <div className="ft-explore">
-            <div>Legal</div>
-            <div className="ft-explore-content">
-              <a href="/">Terms</a>
-            </div>
-            <div className="ft-explore-content">
-              <a href="/">Privacy</a>
-            </div>
-          </div>
+          </div>          
         </div>
 
         <div className="ft-mb-copyright">Copyright © 2018 JS Club. All rights reserved.</div>

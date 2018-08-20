@@ -6,20 +6,19 @@ import logo from '../../img/logo.png';
 
 class NavBarDesktop extends Component {
   render() {
-    const getLogoDot = () => (this.props.isScroll ? <img src={logo} alt="logo" style={{ height: '64px' }} /> : <div />);
     return (
       <div>
         <div style={{ height: '64px', background: '#000000' }} />
         <div className="navbar-wrap">
           <div className="navbar">
             <a className="navbar-e navbar-e-t" href="/">
-              {getLogoDot()}
+              <img src={logo} alt="logo" style={{ height: '64px' }} />
             </a>
             <a href="/" className="navbar-e navbar-e-t">
               About Us
             </a>
             <a href="/" className="navbar-e navbar-e-t">
-              Programs
+              Events
             </a>
             <a href="/" className="navbar-e navbar-e-t">
               Partners

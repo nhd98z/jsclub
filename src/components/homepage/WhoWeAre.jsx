@@ -11,7 +11,7 @@ class WhoWeAre extends Component {
     const getDetail = () => (this.props.isMobile ? mobileDetail : desktopDetail);
     return (
       <div>
-        <div className="whoweare">WHO WE ARE ?</div>
+        <div className="whoweare">WHO WE ARE</div>
         <div className="whoweare-detail">{getDetail()}</div>
       </div>
     );

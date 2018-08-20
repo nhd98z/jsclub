@@ -6,7 +6,14 @@ import EventDesktop from './EventDesktop';
 
 class Event extends Component {
   render() {
-    return this.props.isMobile ? <EventMobile /> : <EventDesktop />;
+    const getEv = () => (this.props.isMobile ? <EventMobile /> : <EventDesktop />);
+
+    return (
+      <div>
+        <div className="ean">EVENTS</div>
+        {getEv()}
+      </div>
+    );
   }
 }
 
