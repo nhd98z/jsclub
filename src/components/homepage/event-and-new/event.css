@@ -1,55 +1,70 @@
-  .imgEvent {
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width:280px;
-    height: 200px;
+.imgEvent {
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 280px;
+  height: 200px;
+}
+
+.item {
+  height: 120px;
+  width: 300px;
+  margin: auto;
+  animation-duration: 2s;
+  animation-name: slideInRight;
+}
+
+.card {
+  height: 65%;
+  width: 220px;
+  background-color: white;
+  position: relative;
+  bottom: -135%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  display: flex;
+  margin-bottom: 220px;
+}
+
+.event {
+  height: 100%;
+  width: 100%;
+}
+
+/* animation */
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
   }
 
-  .item {
-    height: 120px;
-    width: 300px;
-    margin: auto;
-    animation-duration: 2s;
-    animation-name: slideInRight;
+  to {
+    transform: translate3d(0, 0, 0);
   }
+}
 
-  .card {
-      height: 65%;
-      width: 220px;
-      background-color: white;
-      position: relative;
-      bottom: -150%;
-      margin-left: 10%;
-      margin-right: 10%;
-      overflow: hidden;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+.slideInRight {
+  animation-name: slideInRight;
+}
 
-  .container{
-      display: flex;
-      margin-bottom: 220px
-  }
+/* Dũng */
 
-  .event {
-    height: 100%;
-    width: 100%;
-  }
+.card-title {
+  margin-top: 3px;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+}
 
-
-  /* animation */
-
-  @keyframes slideInRight {
-    from {
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .slideInRight {
-    animation-name: slideInRight;
-  }
+.card-detail {
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
+}

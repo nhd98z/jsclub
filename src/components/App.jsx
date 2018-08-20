@@ -38,7 +38,7 @@ class App extends Component {
     if (window.scrollY === 0 && this.props.isScroll) {
       // this.props.setScroll(false);
       // console.log('App scroll', false);
-    } else if (window.scrollY > 0 && !this.props.isScroll) {
+    } else if (window.scrollY > 100 && !this.props.isScroll) {
       this.props.setScroll(true);
       console.log('App scroll', true);
     }

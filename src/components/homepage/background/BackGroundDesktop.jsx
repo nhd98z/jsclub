@@ -8,9 +8,9 @@ class BackGroundDesktop extends Component {
   render() {
     const getBg = () =>
       !this.props.isScroll ? (
-        <img src={backgroundDesktop_01} alt="backgroundDesktop_01" style={{ width: '100%', marginTop: '64px' }} />
+        <img src={backgroundDesktop_01} alt="backgroundDesktop_01" style={{ width: '100%', marginTop: '0px' }} />
       ) : (
-        <img src={backgroundDesktop_02} alt="backgroundDesktop_02" style={{ width: '100%', marginTop: '64px' }} />
+        <img src={backgroundDesktop_02} alt="backgroundDesktop_02" style={{ width: '100%', marginTop: '0px' }} />
       );
     return <div>{getBg()}</div>;
   }

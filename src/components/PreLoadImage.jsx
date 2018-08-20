@@ -6,26 +6,33 @@ import bg01 from '../img/background-01.png';
 import bg02m from '../img/background-02-mobile.png';
 import bg02 from '../img/background-02.png';
 import logo from '../img/logo.png';
+import logoCut from '../img/logo-cut.png';
+import ean01 from '../img/ean-01.png';
+import ean02 from '../img/ean-02.png';
+import ean03 from '../img/ean-03.png';
+import ean04 from '../img/ean-04.png';
+import ean05 from '../img/ean-05.png';
+import ean06 from '../img/ean-06.png';
 
-const orange = 'color: orange';
-const green = 'color: green';
-const css = 'color: blue';
+const successOne = 'color: #74b9ff';
+const successAll = 'color: green';
+const bigFont = 'font-weight: bolder; color: #fdcb6e';
 
 const mobileImages = [bg01m, bg02m];
 const desktopImages = [bg01, bg02];
-const bothImages = [logo];
+const bothImages = [logo, logoCut, ean01, ean02, ean03, ean04, ean05, ean06];
 
 class PreLoadImage extends Component {
   componentDidMount() {
     console.log('PreLoad is mounted');
     window.addEventListener('load', function(event) {
-      console.log('%cAll images finished loading!', css);
+      console.log('%cAll images loaded!', bigFont);
     });
   }
 
   handleImageLoaded(counter, length, type) {
-    console.log(`%cLoaded ${type} image ${counter.value}/${length}`, orange);
-    if (counter.value++ === length) console.log(`%cPreload ${type} images successful!`, green);
+    console.log(`%cLoaded ${type} image ${counter.value}/${length}`, successOne);
+    if (counter.value++ === length) console.log(`%cPreload ${type} images successful!`, successAll);
   }
 
   render() {
