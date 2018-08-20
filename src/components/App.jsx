@@ -35,8 +35,8 @@ class App extends Component {
 
   handleScroll() {
     if (window.scrollY === 0 && this.props.isScroll) {
-      this.props.setScroll(false);
-      console.log('App scroll', false);
+      // this.props.setScroll(false);
+      // console.log('App scroll', false);
     } else if (window.scrollY > 0 && !this.props.isScroll) {
       this.props.setScroll(true);
       console.log('App scroll', true);
