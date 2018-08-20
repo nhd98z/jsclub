@@ -11,56 +11,58 @@ const orange = 'color: orange';
 const green = 'color: green';
 const css = 'color: blue';
 
+const mobileImages = [bg01m, bg02m];
+const desktopImages = [bg01, bg02];
+const bothImages = [logo];
+
 class PreLoadImage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      mobileImages: [bg01m, bg02m],
-      desktopImages: [bg01, bg02],
-      bothImages: [logo]
-    };
-  }
-  
   componentDidMount() {
+    console.log('PreLoad is mounted');
     window.addEventListener('load', function(event) {
       console.log('%cAll images finished loading!', css);
     });
   }
 
-  handleImageLoaded(index, array, type) {
-    console.log(`%cLoaded image ${index + 1}/${array.length}`, orange);
-    if (index + 1 === array.length) console.log(`%cPreload ${type} images successful!`, green);
+  handleImageLoaded(counter, length, type) {
+    console.log(`%cLoaded ${type} image ${counter.value}/${length}`, orange);
+    if (counter.value++ === length) console.log(`%cPreload ${type} images successful!`, green);
   }
 
   render() {
     const mobile = () => {
-      const array = [...this.state.mobileImages];
+      const array = [...mobileImages];
+      const counter = { value: 1 };
+      const length = array.length;
       return (
         <div>
           {array.map((value, index) => (
-            <img src={value} onLoad={(index, array) => this.handleImageLoaded(index, array, 'mobile')} alt="alt" key={index} />
+            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'mobile')} alt="alt" key={index} />
           ))}
         </div>
       );
     };
 
     const desktop = () => {
-      const array = [...this.state.desktopImages];
+      const array = [...desktopImages];
+      const counter = { value: 1 };
+      const length = array.length;
       return (
         <div>
           {array.map((value, index) => (
-            <img src={value} onLoad={(index, array) => this.handleImageLoaded(index, array, 'desktop')} alt="alt" key={index} />
+            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'desktop')} alt="alt" key={index} />
           ))}
         </div>
       );
     };
 
     const both = () => {
-      const array = [...this.state.bothImages];
+      const array = [...bothImages];
+      const counter = { value: 1 };
+      const length = array.length;
       return (
         <div>
           {array.map((value, index) => (
-            <img src={value} onLoad={(index, array) => this.handleImageLoaded(index, array, 'both')} alt="alt" key={index} />
+            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'other')} alt="alt" key={index} />
           ))}
         </div>
       );

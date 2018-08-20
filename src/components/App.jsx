@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      init: false
+      init: true
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
@@ -23,11 +23,10 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    this.setState({ init: true });
   }
 
-  componentDidUpdate() {
-    if (this.state.init) this.setState({ init: false });
+  componentWillUpdate() {
+    if (this.state.init === true) this.setState({ init: false });
   }
 
   componentWillUnmount() {
