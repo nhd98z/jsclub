@@ -21,7 +21,7 @@ class App extends Component {
     // REDUX : set width of device every 200ms
     this.interval = setInterval(() => {
       this.props.setMobile(window.innerWidth);
-    }, 50);
+    }, 200);
     window.addEventListener('scroll', this.handleScroll);
   }
 

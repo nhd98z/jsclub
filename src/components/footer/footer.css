@@ -39,7 +39,7 @@
 
 .ft {
   background: #f2f2f2;
-  height: 230px;
+  height: 290px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -47,7 +47,7 @@
 }
 
 .ft-logo-slogan {
-  padding-top: 2%;
+  padding-top: 64px;
   height: 164px;
   width: 164px;
 }
@@ -69,8 +69,8 @@
 }
 
 .ft-explore {
-  padding-top: 2%;
-  font-size: 18px;
+  padding-top: 64px;
+  font-size: 22px;
   font-weight: bolder;
 }
 
@@ -90,8 +90,4 @@
 
 .ft-explore-content > a:hover {
   color: #dfe6e9;
-}
-
-.ft-follow {
-  margin-top: 28px;
 }

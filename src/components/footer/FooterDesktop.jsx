@@ -21,9 +21,15 @@ class FooterDesktop extends Component {
             <div className="ft-explore-content">
               <a href="/">About Us</a>
             </div>
-            <div className="ft-explore-content"><a href="/">Programs</a></div>
-              <div className="ft-explore-content"><a href="/">Partners</a></div>
-                <div className="ft-explore-content"><a href="/">News</a></div>
+            <div className="ft-explore-content">
+              <a href="/">Programs</a>
+            </div>
+            <div className="ft-explore-content">
+              <a href="/">Partners</a>
+            </div>
+            <div className="ft-explore-content">
+              <a href="/">News</a>
+            </div>
           </div>
 
           <div className="ft-explore">
@@ -31,10 +37,6 @@ class FooterDesktop extends Component {
             <div className="ft-explore-content">FPT University</div>
             <div className="ft-explore-content">Km. 29 Thang Long Avenue</div>
             <div className="ft-explore-content">Hoa Lac High Tech Park, Hanoi</div>
-            <div className="ft-follow">
-              <div>Follow</div>
-              <div className="ft-explore-content"><a href="/">Facebook</a></div>
-            </div>
           </div>
 
           <div className="ft-explore">
@@ -45,12 +47,19 @@ class FooterDesktop extends Component {
             <div className="ft-explore-content">
               <Icon type="mail" /> omega1100100@gmail.com
             </div>
+            <div className="ft-explore-content">
+              <Icon type="facebook" style={{ marginTop: '-5px', width: '14px' }} /> /fu.jsclub
+            </div>
           </div>
 
           <div className="ft-explore">
             <div>Legal</div>
-            <div className="ft-explore-content"><a href="/">Terms</a></div>
-            <div className="ft-explore-content"><a href="/">Privacy</a></div>
+            <div className="ft-explore-content">
+              <a href="/">Terms</a>
+            </div>
+            <div className="ft-explore-content">
+              <a href="/">Privacy</a>
+            </div>
           </div>
         </div>
 
