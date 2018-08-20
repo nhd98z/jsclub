@@ -73,7 +73,7 @@ class EventDesktop extends Component {
             <a className="item" href="https://www.facebook.com/fu.jsclub/posts/1549364328511411?__tn__=-R">
               <img className="imgEvent" src={ean06} alt="ean06" />
               <div className="card">
-                <div className="card-title">TUYỂN THÀNH VIÊN GEN 6</div>
+                <div className="card-title">TUYỂN GEN 6</div>
                 <div className="card-detail">Quãng thời gian thử thách đã đến những chặng cuối cùng...</div>
               </div>
             </a>

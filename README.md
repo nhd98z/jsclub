@@ -72,3 +72,6 @@
 
 - 1:24 AM Tuesday, August 21, 2018 (GMT+7):
   - Làm xong [EventMobile.jsx](./src/components/homepage/event-and-new/EventMobile.jsx).
+
+- 2:53 AM Tuesday, August 21, 2018 (GMT+7):
+  - Thay background cho mobile và desktop

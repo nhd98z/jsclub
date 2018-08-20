@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 // import backgroundDesktop_01 from '../../../img/background-01.png';
-import backgroundDesktop_02 from '../../../img/background-02.png';
+import backgroundDesktop_02 from '../../../img/background-03.png';
 
 class BackGroundDesktop extends Component {
   render() {

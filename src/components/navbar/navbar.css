@@ -21,7 +21,7 @@
 .navbar-e {
   text-align: center;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 400;
   color: #ffffff;
   cursor: pointer;
   height: 100%;
@@ -72,7 +72,7 @@
 .navbar-li > a {
   color: #ffffff !important;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 400;
   margin-left: 2%;
 }
 

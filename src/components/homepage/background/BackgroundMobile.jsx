@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 // import backgroundMobile_01 from '../../../img/background-01-mobile.png';
-import backgroundMobile_02 from '../../../img/background-02-mobile.png';
+import backgroundMobile_02 from '../../../img/background-03-mobile.png';
 // import logo from '../../../img/logo.png';
 // import ScrollHint from './ScrollHint';
 

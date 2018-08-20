@@ -42,15 +42,18 @@ class FooterDesktop extends Component {
           <div className="ft-explore">
             <div>Contact</div>
             <div className="ft-explore-content">
-              <Icon type="mobile" /> +841659263711
+              <Icon type="mobile" />
+              &nbsp;&nbsp;&nbsp;+841659263711
             </div>
             <div className="ft-explore-content">
-              <Icon type="mail" /> omega1100100@gmail.com
+              <Icon type="mail" />
+              &nbsp;&nbsp;&nbsp;omega1100100@gmail.com
             </div>
             <div className="ft-explore-content">
-              <Icon type="facebook" style={{ marginTop: '-5px', width: '14px' }} /> /fu.jsclub
+              <Icon type="facebook" style={{ marginTop: '-5px', width: '14px' }} />
+              &nbsp;&nbsp;&nbsp;/fu.jsclub
             </div>
-          </div>          
+          </div>
         </div>
 
         <div className="ft-mb-copyright">Copyright © 2018 JS Club. All rights reserved.</div>
