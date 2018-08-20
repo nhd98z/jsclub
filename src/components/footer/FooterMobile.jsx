@@ -5,9 +5,18 @@ import logo from '../../img/logo.png';
 
 class FooterMobile extends Component {
   render() {
-    return <footer>
+    return (
+      <footer>
         <div className="ft-mb-contact">
-          <img className="ft-mb-logo" src={logo} alt="logo" />
+          <div>
+            <img className="ft-mb-logo" src={logo} alt="logo" />
+          </div>
+          <div className="ft-mb-text">
+            <div>一</div>
+            <div>期</div>
+            <div>一</div>
+            <div>会</div>
+          </div>
           <span className="ft-mb-text">
             <div>
               <Icon type="home" /> JS Club - FPT University
@@ -24,7 +33,8 @@ class FooterMobile extends Component {
           </span>
         </div>
         <div className="ft-mb-copyright">Copyright © 2018 JS Club. All rights reserved.</div>
-      </footer>;
+      </footer>
+    );
   }
 }
 

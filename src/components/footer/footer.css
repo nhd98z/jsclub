@@ -32,22 +32,66 @@
 
 /* desktop */
 
-.ft {
-  /* margin: 0 10%; */
-  /* width: 80%; */
+.ft-wrap {
+  /* height: 260px;
+  background: yellow; */
 }
 
-.ft-contact {
+.ft {
   background: #f2f2f2;
-  /* background: rgba(50, 50, 50, 1); */
-  height: 96px;
+  height: 230px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.ft-logo-slogan {
+  padding-top: 2%;
+  height: 164px;
+  width: 164px;
+}
+
+.ft-logo {
+  width: 164px;
+}
+
+.ft-slogan {
+  text-align: start;
+  font-size: 14px;
+  font-weight: bolder;
 }
 
 .ft {
   font-size: 14px;
   font-weight: 100;
   color: #333333;
+}
+
+.ft-explore {
+  padding-top: 2%;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.ft-explore-content {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.ft-explore-content > a:link {
+  color: #333333;
+}
+
+.ft-explore-content > a:visited {
+  color: #333333;
+}
+
+.ft-explore-content > a:hover {
+  color: #dfe6e9;
+}
+
+.ft-follow {
+  margin-top: 28px;
 }

@@ -26,7 +26,7 @@ class NavBarDesktop extends Component {
             News
           </a>
           <a href="/" className="navbar-e navbar-e-t">
-            <Icon type="search" style={{ fontSize: '14px' }} />
+            <Icon type="global" style={{ fontSize: '14px' }} />
           </a>
         </div>
       </div>

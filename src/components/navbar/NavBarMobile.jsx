@@ -51,7 +51,7 @@ class NavBarMobile extends Component {
             <a href="/">{getLogoDot()}</a>
           </span>
           <span className="navbar-e">
-            <Icon type="search" style={{ fontSize: '24px' }} />
+            <Icon type="global" style={{ fontSize: '24px' }} />
           </span>
         </div>
         {bar()}

@@ -12,4 +12,8 @@
 
 - 12:40 PM Monday, August 20, 2018 (GMT+7): Trong App.jsx bỏ `this.props.setScroll(false);` đi, tức là từ bây giờ chỉ scroll xuống chứ không nhận state scroll lên.
 
-- 1:04 PM Monday, August 20, 2018 (GMT+7): Sửa `this.props.setMobile(window.innerWidth);` thành `this.interval = setInterval(() => { this.props.setMobile(window.innerWidth); }, 50);`: Cứ 50ms check window.innerWidth một lần để consider mobile hay desktop
+- 1:04 PM Monday, August 20, 2018 (GMT+7): Sửa `this.props.setMobile(window.innerWidth);` thành `this.interval = setInterval(() => { this.props.setMobile(window.innerWidth); }, 50);`: Cứ 50ms check window.innerWidth một lần để consider mobile hay desktop.
+
+- 1:39 PM Monday, August 20, 2018 (GMT+7): Chỉnh Icon search => global.
+
+- 3:26 PM Monday, August 20, 2018 (GMT+7): Update FooterDesktop: Thiết kế mới đẹp hơn, có slogan của clb.
