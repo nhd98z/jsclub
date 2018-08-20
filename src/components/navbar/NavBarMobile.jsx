@@ -40,10 +40,10 @@ class NavBarMobile extends Component {
         <div />
       );
     const menuIcon = () => (this.state.openBar ? 'menu-unfold' : 'menu-fold');
-    const getLogoDot = () => (this.props.isScroll ? <img src={logo} alt="logo" style={{ height: '48px' }} /> : <div />);
+    const getLogoDot = () => (this.props.isScroll ? <img src={logo} alt="logo" style={{ height: '64px' }} /> : <div />);
     return (
       <div className="navbar-wrap">
-        <div className="navbar">
+        <div className="navbar navbar-mb">
           <span className="navbar-e">
             <Icon type={menuIcon()} style={{ fontSize: '24px' }} onClick={() => this.handleClick()} />
           </span>

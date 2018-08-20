@@ -17,3 +17,5 @@
 - 1:39 PM Monday, August 20, 2018 (GMT+7): Chỉnh Icon search => global.
 
 - 3:26 PM Monday, August 20, 2018 (GMT+7): Update FooterDesktop: Thiết kế mới đẹp hơn, có slogan của clb.
+
+- 5:04 PM Monday, August 20, 2018 (GMT+7) : Navbar Desktop height : 48px -> 64px, Logo Mobile : 48px -> 64px
