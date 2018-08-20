@@ -11,9 +11,9 @@ class Kiki extends Component {
 }
 
 function mapStateToProps(state) {
-  const { mobile } = state;
+  const { mobile, scroll } = state;
   return {
-    isMobile: mobile
+    isMobile: mobile, isScroll: scroll
   };
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import BackGround from './background/BackGround';
-import Kiki from './Kiki';
+import Kiki from './eventAndNews/Kiki';
 
 class Content extends Component {
   render() {
