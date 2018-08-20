@@ -1,31 +1,24 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
+import FooterMobile from './FooterMobile';
+import FooterDesktop from './FooterDesktop';
+import './footer.css';
 
 class Footer extends Component {
   render() {
-    return <footer>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-        <h1>footer</h1>
-      </footer>;
+    return this.props.isMobile ? <FooterMobile /> : <FooterDesktop />;
   }
 }
 
-export default Footer;
+function mapStateToProps(state) {
+  const { mobile } = state;
+  return {
+    isMobile: mobile
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(Footer);

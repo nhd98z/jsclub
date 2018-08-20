@@ -1,0 +1,53 @@
+/* mobile */
+
+.ft-mb-contact {
+  background: #f2f2f2;
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ft-mb-logo {
+  height: 96px;
+}
+
+.ft-mb-text {
+  font-size: 11px;
+  font-weight: 100;
+  color: #333333;
+}
+
+.ft-mb-copyright {
+  background: rgba(50, 50, 50, 1);
+  height: 48px;
+  font-size: 11px;
+  font-weight: 100;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* desktop */
+
+.ft {
+  /* margin: 0 10%; */
+  /* width: 80%; */
+}
+
+.ft-contact {
+  background: #f2f2f2;
+  /* background: rgba(50, 50, 50, 1); */
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ft {
+  font-size: 14px;
+  font-weight: 100;
+  color: #333333;
+}

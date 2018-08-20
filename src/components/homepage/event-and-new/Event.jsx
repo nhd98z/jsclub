@@ -1,23 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import KikiMobile from './KikiMobile';
-import KikiDesktop from './KikiDesktop';
+import EventMobile from './EventMobile';
+import EventDesktop from './EventDesktop';
 
-class Kiki extends Component {
+class Event extends Component {
   render() {
-    return this.props.isMobile ? <KikiMobile /> : <KikiDesktop />;
+    return this.props.isMobile ? <EventMobile /> : <EventDesktop />;
   }
 }
 
 function mapStateToProps(state) {
   const { mobile, scroll } = state;
   return {
-    isMobile: mobile, isScroll: scroll
+    isMobile: mobile,
+    isScroll: scroll
   };
 }
 
 export default connect(
   mapStateToProps,
   null
-)(Kiki);
+)(Event);
