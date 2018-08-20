@@ -47,6 +47,6 @@
   - `background` NavBar để opacity 0.8, rất đẹp.
 
 - 6:49 PM Monday, August 20, 2018 (GMT+7):
-  - Chuyển `window.scrollY > 0` thành `window.scrollY > 100` trong `App.jsx`.
-  - Thay ảnh vào event-and-new.
-  - Thêm title và detail vào event-and-new, thêm CSS.
+  - Chuyển `window.scrollY > 0` thành `window.scrollY > 100` trong [App.jsx](./src/components/App.jsx).
+  - Thay ảnh vào [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx).
+  - Thêm title và detail vào [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx)., thêm CSS.
