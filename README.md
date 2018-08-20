@@ -11,3 +11,5 @@
 - 11:09 AM Monday, August 20, 2018 (GMT+7): Done event-and-new của Desktop (Tùng code), done footer for desktop and mobile (Dũng code).
 
 - 12:40 PM Monday, August 20, 2018 (GMT+7): Trong App.jsx bỏ `this.props.setScroll(false);` đi, tức là từ bây giờ chỉ scroll xuống chứ không nhận state scroll lên.
+
+- 1:04 PM Monday, August 20, 2018 (GMT+7): Sửa `this.props.setMobile(window.innerWidth);` thành `this.interval = setInterval(() => { this.props.setMobile(window.innerWidth); }, 50);`: Cứ 50ms check window.innerWidth một lần để consider mobile hay desktop

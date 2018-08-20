@@ -15,13 +15,13 @@ class App extends Component {
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-  componentWillMount() {
-    // set mobile REDUX for first time
-    this.props.setMobile(window.innerWidth);
-    console.log('App', 'window.innerWidth', window.innerWidth);
-  }
+  componentWillMount() {}
 
   componentDidMount() {
+    // REDUX : set width of device every 200ms
+    this.interval = setInterval(() => {
+      this.props.setMobile(window.innerWidth);
+    }, 50);
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -30,6 +30,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
+    clearInterval(this.interval);
     window.removeEventListener('scroll', this.handleScroll);
   }
 
