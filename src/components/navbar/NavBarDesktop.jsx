@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
 import { connect } from 'react-redux';
+import { bake_cookie } from 'sfcookies';
 
 import logo from '../../img/logo.png';
 import vn from '../../img/vn.png';
@@ -27,15 +28,21 @@ class NavBarDesktop extends Component {
     switch (language) {
       case 'en':
         this.props.setEnglish();
+        bake_cookie('language_cookie', 'en');
+        console.log('bake_cookie successful');
         break;
       case 'vn':
         this.props.setVietnamese();
+        bake_cookie('language_cookie', 'vn');
+        console.log('bake_cookie successful');
         break;
       case 'jp':
         this.props.setJapanese();
+        bake_cookie('language_cookie', 'jp');
+        console.log('bake_cookie successful');
         break;
       default:
-        this.props.setEnglish();
+        console.error('bug bug bug');
     }
   }
 
@@ -62,7 +69,7 @@ class NavBarDesktop extends Component {
         <div className="navbar-wrap">
           <div className="navbar">
             <a className="navbar-e navbar-e-t" href="/">
-              <img src={logo} alt="logo" style={{ height: '64px' }} />
+              <img src={logo} alt="logo" style={{ height: '80px' }} />
             </a>
             <a href="/" className="navbar-e navbar-e-t">
               {i18n.aboutUs}

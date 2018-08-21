@@ -10,12 +10,11 @@ class Event extends Component {
 
     const getEv = () => (this.props.isMobile ? <EventMobile /> : <EventDesktop />);
 
-    return (
-      <div>
-        <div className="ean">{i18n.eventsUpperCase}</div>
+    return <div>
+      <div className="whoweare ean">{i18n.eventsUpperCase}</div>
         {getEv()}
-      </div>
-    );
+      <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
+      </div>;
   }
 }
 

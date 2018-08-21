@@ -1,7 +1,6 @@
 import { SET_MOBILE, SET_SCROLL, VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
 
 export const setMobile = width => {
-  console.log('action setMobile, width', width);
   const isMobile = width <= 768 ? true : false;
   const action = {
     type: SET_MOBILE,

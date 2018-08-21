@@ -85,20 +85,30 @@
 
 - 2:59 PM Tuesday, August 21, 2018 (GMT+7):
 
-  - ````if (window.scrollY === 0 && this.props.isScroll) {
+  - ```
+    if (window.scrollY === 0 && this.props.isScroll) {
       this.props.setScroll(false);
       console.log('App scroll', false);
     } else if (window.scrollY > 0 && !this.props.isScroll) {
       this.props.setScroll(true);
       console.log('App scroll', true);
-    }```
-    ````
+    }
+    ```
   - Thêm global content : Tiếng Việt, English, 日本語
 
 - 5:43 PM Tuesday, August 21, 2018 (GMT+7):
+
   - Thêm i18n cho footer, navbar, whoweare, event.
   - Thêm i18n cho cả desktop và mobile.
 
 - 7:09 PM Tuesday, August 21, 2018 (GMT+7):
+
   - Thêm tiếng Nhật.
   - Thêm title và logo cho website.
+
+- 8:32 PM Tuesday, August 21, 2018 (GMT+7):
+  - Đã fix bug ngôn ngữ tự đổi: lưu language_cookie
+  - Bỏ `if (window.scrollY === 0 && this.props.isScroll) this.props.setScroll(false);`
+
+- 11:28 PM Tuesday, August 21, 2018 (GMT+7):
+  - Thêm [history](./src/components/homepage/history)

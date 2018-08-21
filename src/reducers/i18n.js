@@ -1,7 +1,7 @@
 import { VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
 
 const vn = {
-  // 
+  //
   webTitle: 'CLB Kĩ Sư Phần Mềm Nhật Bản - JS Club',
 
   // navbar
@@ -39,13 +39,14 @@ const vn = {
   card5Title: 'TEAM BUILDING 2017',
   card5Detail: 'Cùng nhìn lại những hình ảnh ấn tượng về chuyến ...',
   card6Title: 'TUYỂN GEN 6',
-  card6Detail: 'Quãng thời gian thử thách đã đến những chặng cuối cùng...'
+  card6Detail: 'Quãng thời gian thử thách đã đến những chặng cuối cùng...',
 
-  //
+  // through history
+  throughHistory: 'QUÁ TRÌNH HÌNH THÀNH'
 };
 
 const en = {
-  // 
+  //
   webTitle: 'Japanese Software Engineers - JS Club',
 
   // navbar
@@ -83,13 +84,14 @@ const en = {
   card5Title: 'TEAM BUILDING 2017',
   card5Detail: 'Looking back on the impressive image of the trip ...',
   card6Title: 'GEN 6 RECRUITMENT',
-  card6Detail: 'The time has come for the final stages ...'
+  card6Detail: 'The time has come for the final stages ...',
 
-  //
+  // through history
+  throughHistory: 'THROUGHOUT HISTORY'
 };
 
 const jp = {
-  // 
+  //
   webTitle: '日本のエンジニア - JS Club',
 
   // navbar
@@ -126,9 +128,10 @@ const jp = {
   card5Title: 'チームビルディング 2017',
   card5Detail: '旅の印象的なイメージを振り返ります...',
   card6Title: '第6世代募集',
-  card6Detail: '最後のステージには時が来た...'
+  card6Detail: '最後のステージには時が来た...',
 
-  //
+  // through history
+  throughHistory: '歴史を通して'
 };
 
 export default (state = 'en', action) => {

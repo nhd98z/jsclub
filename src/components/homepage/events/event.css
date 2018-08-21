@@ -1,10 +1,5 @@
 .ean {
-  margin-top: 5%;
   margin-bottom: 3%;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  color: #000000;
 }
 
 /*  */
@@ -67,7 +62,6 @@
 /* Dũng */
 
 .card-title {
-  color: #333333;
   margin-top: 3px;
   font-size: 16px;
   font-weight: bolder;

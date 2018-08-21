@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
 import { connect } from 'react-redux';
+import { bake_cookie } from 'sfcookies';
 
 import logo from '../../img/logo.png';
 import { setEnglish, setVietnamese, setJapanese } from '../../actions';
@@ -33,15 +34,21 @@ class NavBarMobile extends Component {
     switch (language) {
       case 'en':
         this.props.setEnglish();
+        bake_cookie('language_cookie', 'en');
+        console.log('bake_cookie successful');
         break;
       case 'vn':
         this.props.setVietnamese();
+        bake_cookie('language_cookie', 'vn');
+        console.log('bake_cookie successful');
         break;
       case 'jp':
         this.props.setJapanese();
+        bake_cookie('language_cookie', 'jp');
+        console.log('bake_cookie successful');
         break;
       default:
-        this.props.setEnglish();
+        console.error('bug bug bug');
     }
   }
 
