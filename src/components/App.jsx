@@ -19,9 +19,8 @@ class App extends Component {
 
   componentDidMount() {
     // REDUX : set width of device every 200ms
-    this.interval = setInterval(() => {
-      this.props.setMobile(window.innerWidth);
-    }, 50);
+    // Math.max(document.documentElement.clientWidth, window.innerWidth || 0) == width
+    this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 50);
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -38,7 +37,7 @@ class App extends Component {
     if (window.scrollY === 0 && this.props.isScroll) {
       // this.props.setScroll(false);
       // console.log('App scroll', false);
-    } else if (window.scrollY > 100 && !this.props.isScroll) {
+    } else if (window.scrollY > 0 && !this.props.isScroll) {
       this.props.setScroll(true);
       console.log('App scroll', true);
     }

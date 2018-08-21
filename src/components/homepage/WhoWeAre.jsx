@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Button } from 'antd';
 
 import './whoweare.css';
 
@@ -13,6 +14,11 @@ class WhoWeAre extends Component {
       <div>
         <div className="whoweare">WHO WE ARE</div>
         <div className="whoweare-detail">{getDetail()}</div>
+        <div className="whoweare" style={{ marginTop: '-4%' }}>
+          <Button type="primary" href="/" size="large" style={{ background: '#3A5290', borderRadius: '20px' }}>
+            View more
+          </Button>
+        </div>
       </div>
     );
   }

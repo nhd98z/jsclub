@@ -1,7 +1,8 @@
 import { SET_MOBILE, SET_SCROLL } from '../constants';
 
 export const setMobile = width => {
-  const isMobile = width < 1024 ? true : false;
+  console.log('action parameter', width);
+  const isMobile = width <= 768 ? true : false;
   const action = {
     type: SET_MOBILE,
     isMobile

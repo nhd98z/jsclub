@@ -71,7 +71,13 @@
   - Animation cho hover card ở [EventDesktop.jsx](./src/components/homepage/event-and-new/EventDesktop.jsx).
 
 - 1:24 AM Tuesday, August 21, 2018 (GMT+7):
+
   - Làm xong [EventMobile.jsx](./src/components/homepage/event-and-new/EventMobile.jsx).
 
 - 2:53 AM Tuesday, August 21, 2018 (GMT+7):
+
   - Thay background cho mobile và desktop
+
+- 12:09 PM Tuesday, August 21, 2018 (GMT+7):
+  - Thêm mới ảnh vào PreLoad
+  - `window.scrollY > 100` -> `window.scrollY > 0`
