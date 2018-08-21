@@ -6,11 +6,13 @@ import EventDesktop from './EventDesktop';
 
 class Event extends Component {
   render() {
+    const { i18n } = this.props; 
+
     const getEv = () => (this.props.isMobile ? <EventMobile /> : <EventDesktop />);
 
     return (
       <div>
-        <div className="ean">EVENTS</div>
+        <div className="ean">{i18n.eventsUpperCase}</div>
         {getEv()}
       </div>
     );
@@ -18,10 +20,11 @@ class Event extends Component {
 }
 
 function mapStateToProps(state) {
-  const { mobile, scroll } = state;
+  const { mobile, scroll, i18n } = state;
   return {
     isMobile: mobile,
-    isScroll: scroll
+    isScroll: scroll,
+    i18n
   };
 }
 

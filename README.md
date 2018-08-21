@@ -79,5 +79,22 @@
   - Thay background cho mobile và desktop
 
 - 12:09 PM Tuesday, August 21, 2018 (GMT+7):
+
   - Thêm mới ảnh vào PreLoad
   - `window.scrollY > 100` -> `window.scrollY > 0`
+
+- 2:59 PM Tuesday, August 21, 2018 (GMT+7):
+
+  - ````if (window.scrollY === 0 && this.props.isScroll) {
+      this.props.setScroll(false);
+      console.log('App scroll', false);
+    } else if (window.scrollY > 0 && !this.props.isScroll) {
+      this.props.setScroll(true);
+      console.log('App scroll', true);
+    }```
+    ````
+  - Thêm global content : Tiếng Việt, English, 日本語
+
+- 5:43 PM Tuesday, August 21, 2018 (GMT+7):
+  - Thêm i18n cho footer, navbar, whoweare, event.
+  - Thêm i18n cho cả desktop và mobile.

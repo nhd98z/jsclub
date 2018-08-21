@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './App.css';
 import HomePage from './homepage/HomePage';
 import PreLoadImage from './PreLoadImage';
-import { setMobile, setScroll } from '../actions';
+import { setMobile, setScroll, setEnglish } from '../actions';
 
 class App extends Component {
   constructor(props) {
@@ -15,12 +15,12 @@ class App extends Component {
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-  componentWillMount() {}
-
   componentDidMount() {
+    // set language to english (default)
+    this.props.setEnglish();
     // REDUX : set width of device every 200ms
     // Math.max(document.documentElement.clientWidth, window.innerWidth || 0) == width
-    this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 50);
+    this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 200);
     window.addEventListener('scroll', this.handleScroll);
   }
 
@@ -35,8 +35,8 @@ class App extends Component {
 
   handleScroll() {
     if (window.scrollY === 0 && this.props.isScroll) {
-      // this.props.setScroll(false);
-      // console.log('App scroll', false);
+      this.props.setScroll(false);
+      console.log('App scroll', false);
     } else if (window.scrollY > 0 && !this.props.isScroll) {
       this.props.setScroll(true);
       console.log('App scroll', true);
@@ -63,5 +63,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  { setMobile, setScroll }
+  { setMobile, setScroll, setEnglish }
 )(App);

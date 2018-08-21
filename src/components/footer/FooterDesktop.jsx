@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
+import { connect } from 'react-redux';
 
 import logo from '../../img/logo-cut.png';
 
 class FooterDesktop extends Component {
   render() {
+    const { i18n } = this.props;
+
     return (
       <footer className="ft-wrap">
         <div className="ft">
@@ -17,30 +20,30 @@ class FooterDesktop extends Component {
           </div>
 
           <div className="ft-explore">
-            <div>Explore</div>
+            <div>{i18n.explore}</div>
             <div className="ft-explore-content">
-              <a href="/">About Us</a>
+              <a href="/">{i18n.aboutUs}</a>
             </div>
             <div className="ft-explore-content">
-              <a href="/">Events</a>
+              <a href="/">{i18n.events}</a>
             </div>
             <div className="ft-explore-content">
-              <a href="/">Partners</a>
+              <a href="/">{i18n.partners}</a>
             </div>
             <div className="ft-explore-content">
-              <a href="/">News</a>
+              <a href="/">{i18n.news}</a>
             </div>
           </div>
 
           <div className="ft-explore">
-            <div>Visit</div>
-            <div className="ft-explore-content">FPT University</div>
-            <div className="ft-explore-content">Km. 29 Thang Long Avenue</div>
-            <div className="ft-explore-content">Hoa Lac High Tech Park, Hanoi</div>
+            <div>{i18n.visit}</div>
+            <div className="ft-explore-content">{i18n.fptUniversity}</div>
+            <div className="ft-explore-content">{i18n.km29ThangLong}</div>
+            <div className="ft-explore-content">{i18n.hoaLacHighTechHanoi}</div>
           </div>
 
           <div className="ft-explore">
-            <div>Contact</div>
+            <div>{i18n.contact}</div>
             <div className="ft-explore-content">
               <Icon type="mobile" />
               &nbsp;&nbsp;&nbsp;+841659263711
@@ -62,4 +65,14 @@ class FooterDesktop extends Component {
   }
 }
 
-export default FooterDesktop;
+function mapStateToProps(state) {
+  const { i18n } = state;
+  return {
+    i18n
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(FooterDesktop);

@@ -30,7 +30,7 @@
 }
 
 .navbar-e-t:hover {
-  border-top: 1px solid #ffffff;  
+  border-top: 1px solid #ffffff;
 }
 
 /* navbar mobile */
@@ -40,7 +40,7 @@
 }
 
 .navbar-ul {
-  position: absolute;
+  /* position: absolute; */
   z-index: 999;
   margin-top: 48px;
   background: rgba(50, 50, 50, 0.8);
@@ -54,6 +54,10 @@
   padding: 2% 0;
   animation: fadeIn 0.5s linear;
   animation-fill-mode: both;
+}
+
+.lang {
+  text-align: right;
 }
 
 @keyframes fadeIn {
@@ -78,4 +82,27 @@
 
 .navbar-li-last {
   border: 0 none;
+}
+
+.navbar-e-global {
+  cursor: default;
+}
+
+.global-wrap {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  offset: 4px;
+}
+
+.global-icon-desk {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.flat {
+  margin: 0 10%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 }

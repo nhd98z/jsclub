@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
+import { connect } from 'react-redux';
 
 import logo from '../../img/logo.png';
 
 class FooterMobile extends Component {
   render() {
-    return (
-      <footer>
+    const { i18n } = this.props;
+
+    return <footer>
         <div className="ft-mb-contact">
           <div>
             <img className="ft-mb-logo" src={logo} alt="logo" />
@@ -19,10 +21,10 @@ class FooterMobile extends Component {
           </div>
           <span className="ft-mb-text">
             <div>
-              <Icon type="home" /> JS Club - FPT University
+              <Icon type="home" /> {i18n.fptUniversity}
             </div>
             <div>
-              <Icon type="environment-o" /> Hoa Lac High Tech Park, Hanoi
+              <Icon type="environment-o" /> {i18n.hoaLacHighTechHanoi}
             </div>
             <div>
               <Icon type="mobile" /> +841659263711
@@ -33,9 +35,18 @@ class FooterMobile extends Component {
           </span>
         </div>
         <div className="ft-mb-copyright">Copyright © 2018 JS Club. All rights reserved.</div>
-      </footer>
-    );
+      </footer>;
   }
 }
 
-export default FooterMobile;
+function mapStateToProps(state) {
+  const { i18n } = state;
+  return {
+    i18n
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(FooterMobile);

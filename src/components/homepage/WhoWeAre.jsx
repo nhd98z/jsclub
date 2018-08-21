@@ -6,17 +6,15 @@ import './whoweare.css';
 
 class WhoWeAre extends Component {
   render() {
-    const desktopDetail =
-      'JS is a club founded with the idea of becoming a community for FU students who love Japanese and passionate about programming.';
-    const mobileDetail = 'JS is a club founded with the idea of becoming a community for FU students.';
-    const getDetail = () => (this.props.isMobile ? mobileDetail : desktopDetail);
+    const { i18n } = this.props;
+    const getDetail = () => (this.props.isMobile ? i18n.whoweareShortDetail : i18n.whoweareLongDetail);
     return (
       <div>
-        <div className="whoweare">WHO WE ARE</div>
+        <div className="whoweare">{i18n.whoweare}</div>
         <div className="whoweare-detail">{getDetail()}</div>
         <div className="whoweare" style={{ marginTop: '-4%' }}>
-          <Button type="primary" href="/" size="large" style={{ background: '#3A5290', borderRadius: '20px' }}>
-            View more
+          <Button className="btn-vmore" type="primary" href="/" size="large">
+            {i18n.viewmore}
           </Button>
         </div>
       </div>
@@ -25,9 +23,10 @@ class WhoWeAre extends Component {
 }
 
 function mapStateToProps(state) {
-  const { mobile } = state;
+  const { mobile, i18n } = state;
   return {
-    isMobile: mobile
+    isMobile: mobile,
+    i18n
   };
 }
 

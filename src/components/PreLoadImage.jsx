@@ -15,13 +15,16 @@ import ean03 from '../img/ean-03.png';
 import ean04 from '../img/ean-04.png';
 import ean05 from '../img/ean-05.png';
 import ean06 from '../img/ean-06.png';
+import vn from '../img/vn.png';
+import uk from '../img/uk.png';
+import jp from '../img/jp.png';
 
 const successOne = 'color: #74b9ff';
 const successAll = 'color: green';
 const bigFont = 'font-weight: bolder; color: #fdcb6e';
 
 const mobileImages = [bg01m, bg02m, bg03m];
-const desktopImages = [bg01, bg02, bg03];
+const desktopImages = [bg01, bg02, bg03, vn, uk, jp];
 const bothImages = [logo, logoCut, ean01, ean02, ean03, ean04, ean05, ean06];
 
 class PreLoadImage extends Component {
