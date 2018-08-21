@@ -47,6 +47,7 @@ class NavBarMobile extends Component {
 
   render() {
     const { i18n } = this.props;
+    document.title = i18n.webTitle;
 
     const bar = () =>
       this.state.openBar ? (

@@ -1,6 +1,9 @@
 import { VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
 
 const vn = {
+  // 
+  webTitle: 'CLB Kĩ Sư Phần Mềm Nhật Bản - JS Club',
+
   // navbar
   hello: 'Xin chào',
   aboutUs: 'Về chúng tôi',
@@ -42,6 +45,9 @@ const vn = {
 };
 
 const en = {
+  // 
+  webTitle: 'Japanese Software Engineers - JS Club',
+
   // navbar
   hello: 'Hello',
   aboutUs: 'About us',
@@ -82,7 +88,48 @@ const en = {
   //
 };
 
-const jp = en;
+const jp = {
+  // 
+  webTitle: '日本のエンジニア - JS Club',
+
+  // navbar
+  hello: 'Hello',
+  aboutUs: '私たちに関しては',
+  events: 'イベント',
+  partners: 'パートナー',
+  news: 'ニュース',
+  // footer
+  explore: '探検する',
+  visit: '訪問',
+  fptUniversity: 'FPT 大学。',
+  km29ThangLong: 'Km. 29 Thang Long アベニュー。',
+  hoaLacHighTechHanoi: 'ホアラックハイテクパーク、ハノイ。',
+  contact: '接触',
+  // home page
+
+  // who we are
+  whoweare: '私たちは誰です',
+  whoweareLongDetail: 'JSは、日本語を愛し、プログラミングに熱心なFU学生のためのコミュニティになるという考えで設立されたクラブです。',
+  whoweareShortDetail: 'JSはFU学生のためのコミュニティになるという考えで設立されたクラブです。',
+  viewmore: 'もっと見る',
+
+  // events
+  eventsUpperCase: 'イベント',
+  card1Title: 'HACKATHON 2018',
+  card1Detail: 'FPT Hackathon 2018はVTeamと呼ばれる...',
+  card2Title: 'ĐÊM ĐỪNG ĐỠ',
+  card2Detail: 'JSファミリーはとても特別な日です...',
+  card3Title: 'CODE BATTLE 2018',
+  card3Detail: 'JSクラブはそのチームを非常に誇りに思います...',
+  card4Title: 'アメジスト 2018',
+  card4Detail: '2008年3月9日の夜、JSクラブが開催されました...',
+  card5Title: 'チームビルディング 2017',
+  card5Detail: '旅の印象的なイメージを振り返ります...',
+  card6Title: '第6世代募集',
+  card6Detail: '最後のステージには時が来た...'
+
+  //
+};
 
 export default (state = 'en', action) => {
   switch (action.type) {

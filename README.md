@@ -98,3 +98,7 @@
 - 5:43 PM Tuesday, August 21, 2018 (GMT+7):
   - Thêm i18n cho footer, navbar, whoweare, event.
   - Thêm i18n cho cả desktop và mobile.
+
+- 7:09 PM Tuesday, August 21, 2018 (GMT+7):
+  - Thêm tiếng Nhật.
+  - Thêm title và logo cho website.

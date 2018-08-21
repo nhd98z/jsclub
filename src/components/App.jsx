@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import './App.css';
 import HomePage from './homepage/HomePage';
 import PreLoadImage from './PreLoadImage';
-import { setMobile, setScroll, setEnglish } from '../actions';
+import { setMobile, setScroll, setJapanese } from '../actions';
 
 class App extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class App extends Component {
 
   componentDidMount() {
     // set language to english (default)
-    this.props.setEnglish();
+    this.props.setJapanese();
     // REDUX : set width of device every 200ms
     // Math.max(document.documentElement.clientWidth, window.innerWidth || 0) == width
     this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 200);
@@ -63,5 +63,5 @@ function mapStateToProps(state) {
 
 export default connect(
   mapStateToProps,
-  { setMobile, setScroll, setEnglish }
+  { setMobile, setScroll, setJapanese }
 )(App);

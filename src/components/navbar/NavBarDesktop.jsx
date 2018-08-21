@@ -54,8 +54,10 @@ class NavBarDesktop extends Component {
       );
 
     const { i18n } = this.props;
+    document.title = i18n.webTitle;
 
-    return <div>
+    return (
+      <div>
         <div style={{ height: '64px', background: '#000000' }} />
         <div className="navbar-wrap">
           <div className="navbar">
@@ -77,7 +79,8 @@ class NavBarDesktop extends Component {
             <div className="navbar-e navbar-e-t navbar-e-global">{global()}</div>
           </div>
         </div>
-      </div>;
+      </div>
+    );
   }
 }
 
