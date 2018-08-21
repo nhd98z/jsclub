@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import bg01m from '../img/background-01-mobile.png';
-import bg01 from '../img/background-01.png';
-import bg02m from '../img/background-02-mobile.png';
-import bg02 from '../img/background-02.png';
+// import bg01m from '../img/background-01-mobile.png';
+// import bg01 from '../img/background-01.png';
+// import bg02m from '../img/background-02-mobile.png';
+// import bg02 from '../img/background-02.png';
 import bg03m from '../img/background-03-mobile.png';
 import bg03 from '../img/background-03.png';
 import logo from '../img/logo.png';
@@ -23,8 +23,8 @@ const successOne = 'color: #74b9ff';
 const successAll = 'color: green';
 const bigFont = 'font-weight: bolder; color: #fdcb6e';
 
-const mobileImages = [bg01m, bg02m, bg03m];
-const desktopImages = [bg01, bg02, bg03, vn, uk, jp];
+const mobileImages = [bg03m];
+const desktopImages = [bg03, vn, uk, jp];
 const bothImages = [logo, logoCut, ean01, ean02, ean03, ean04, ean05, ean06];
 
 class PreLoadImage extends Component {

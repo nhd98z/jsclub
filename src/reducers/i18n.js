@@ -42,7 +42,8 @@ const vn = {
   card6Detail: 'Quãng thời gian thử thách đã đến những chặng cuối cùng...',
 
   // through history
-  throughHistory: 'QUÁ TRÌNH HÌNH THÀNH'
+  throughHistory: 'QUÁ TRÌNH HÌNH THÀNH',
+  throughHistoryMobile: 'QUÁ TRÌNH'
 };
 
 const en = {
@@ -87,7 +88,8 @@ const en = {
   card6Detail: 'The time has come for the final stages ...',
 
   // through history
-  throughHistory: 'THROUGHOUT HISTORY'
+  throughHistory: 'THROUGHOUT HISTORY',
+  throughHistoryMobile: 'HISTORY'
 };
 
 const jp = {
@@ -131,7 +133,8 @@ const jp = {
   card6Detail: '最後のステージには時が来た...',
 
   // through history
-  throughHistory: '歴史を通して'
+  throughHistory: '歴史を通して',
+  throughHistoryMobile: '歴史を通して'
 };
 
 export default (state = 'en', action) => {
