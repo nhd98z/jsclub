@@ -112,3 +112,4 @@
 
 - 11:28 PM Tuesday, August 21, 2018 (GMT+7):
   - Thêm [history](./src/components/homepage/history)
+  - Xong history của desktopÏ
