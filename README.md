@@ -107,15 +107,22 @@
   - Thêm title và logo cho website.
 
 - 8:32 PM Tuesday, August 21, 2018 (GMT+7):
+
   - Đã fix bug ngôn ngữ tự đổi: lưu language_cookie.
   - Bỏ `if (window.scrollY === 0 && this.props.isScroll) this.props.setScroll(false);`.
 
 - 11:28 PM Tuesday, August 21, 2018 (GMT+7):
+
   - Thêm [history](./src/components/homepage/history).
   - Xong history của desktop.
 
 - 10:07 AM Wednesday, August 22, 2018 (GMT+7):
+
   - Thêm history cho mobile
 
 - 11:10 AM Wednesday, August 22, 2018 (GMT+7):
+
   - Xong phân trang: router: about, events, partners, news
+
+- 12:07 PM Wednesday, August 22, 2018 (GMT+7):
+  - Thêm ảnh chủ nhiệm cho about (chưa hoàn thiện).

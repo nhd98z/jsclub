@@ -12,7 +12,7 @@ class WhoWeAre extends Component {
         <div className="whoweare">{i18n.whoweare}</div>
         <div className="whoweare-detail">{getDetail()}</div>
         <div className="whoweare" style={{ marginTop: '-4%' }}>
-          <Button className="btn-vmore" type="primary" href="/" size="large">
+          <Button className="btn-vmore" type="primary" href="/about" size="large">
             {i18n.viewmore}
           </Button>
         </div>

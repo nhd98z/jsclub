@@ -1,0 +1,23 @@
+.abt-mb-wrap {
+  margin: 0 10%;
+  width: 80%;
+}
+
+.abt-mb-title {
+  margin: 20% 0;
+}
+
+.abt-mb-avatar-wrap {
+  width: 100%;
+  background: #e5e4e1;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-mb-avatar {
+  height: 300px;
+  width: 100%;
+}
