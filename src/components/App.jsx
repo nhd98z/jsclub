@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 // import PreLoadImage from './PreLoadImage';
-import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish } from '../actions';
+import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish, setScrollFlexible } from '../actions';
 import HomePage from './homepage/HomePage';
 import AboutPage from './about-page/About';
 import EventPage from './events-page/Events';
@@ -62,18 +62,25 @@ class App extends Component {
   }
 
   handleScroll() {
-    if (window.scrollY === 0 && this.props.isScroll) {
-      this.props.setScroll(false);
-      // console.log('App scroll', false);
-    } else if (window.scrollY > 0 && !this.props.isScroll) {
-      this.props.setScroll(true);
-      // console.log('App scroll', true);
+    // if (window.scrollY === 0 && this.props.isScroll) {
+    //   // this.props.setScroll(false);
+    //   // console.log('App scroll', false);
+    // } else if (window.scrollY > 0 && !this.props.isScroll) {
+    //   this.props.setScroll(true);
+    //   // console.log('App scroll', true);
+    // }
+
+    if (window.scrollY === 0) {
+      if (this.props.isScrollFlexible) this.props.setScrollFlexible(false);
+    } else if (window.scrollY > 0) {
+      if (!this.props.isScrollFlexible) this.props.setScrollFlexible(true);
+      if (!this.props.isScroll) this.props.setScroll(true);
     }
   }
 
   render() {
     // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
-    const renderScrollTop = () => (this.props.isMobile && this.props.isScroll ? <ScrollTop /> : <div />);
+    const renderScrollTop = () => (this.props.isMobile && this.props.isScrollFlexible ? <ScrollTop /> : <div />);
     return (
       <div>
         {renderScrollTop()}
@@ -92,14 +99,15 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  const { scroll, mobile } = state;
+  const { scroll, mobile, scrollFlexible } = state;
   return {
     isScroll: scroll,
-    isMobile: mobile
+    isMobile: mobile,
+    isScrollFlexible: scrollFlexible
   };
 }
 
 export default connect(
   mapStateToProps,
-  { setMobile, setScroll, setJapanese, setVietnamese, setEnglish }
+  { setMobile, setScroll, setJapanese, setVietnamese, setEnglish, setScrollFlexible }
 )(App);

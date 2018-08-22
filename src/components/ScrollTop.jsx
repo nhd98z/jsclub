@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import upArrow from '../img/up-arrow.png';
-import { setScroll } from '../actions';
+import { setScrollFlexible } from '../actions';
 
 class ScrollTop extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class ScrollTop extends Component {
         // console.log(i);
       }, 0.1 * (curScroll - i));
     }
-    this.props.setScroll(false);
+    this.props.setScrollFlexible(false);
   }
 
   render() {
@@ -57,5 +57,5 @@ class ScrollTop extends Component {
 
 export default connect(
   null,
-  { setScroll }
+  { setScrollFlexible }
 )(ScrollTop);

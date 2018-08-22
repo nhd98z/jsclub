@@ -157,3 +157,7 @@
 - 1:05 AM Thursday, August 23, 2018 (GMT+7):
   - Sửa lại About us Organization: Thêm anh Mạnh.
   - Thêm nút scroll up xinh xinh.
+
+- 2:30 AM Thursday, August 23, 2018 (GMT+7):
+  - Thêm scrollFlexible reducer mang ý nghĩa phục vụ cho nút scroll up
+  - scroll cũ để > 0 : true, === 0 thì ko set lại false nữaÏ

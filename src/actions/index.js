@@ -1,4 +1,4 @@
-import { SET_MOBILE, SET_SCROLL, VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
+import { SET_MOBILE, SET_SCROLL, VIETNAMESE, ENGLISH, JAPANESE, SET_SCROLL_FLEXIBLE } from '../constants';
 
 export const setMobile = width => {
   let isMobile;
@@ -42,6 +42,14 @@ export const setJapanese = () => {
   console.log(`action call, language = %cJapanese`, 'font-size: 16px; color: orange');
   const action = {
     type: JAPANESE
+  };
+  return action;
+};
+
+export const setScrollFlexible = isScrollFlexible => {
+  const action = {
+    type: SET_SCROLL_FLEXIBLE,
+    isScrollFlexible
   };
   return action;
 };

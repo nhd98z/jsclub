@@ -7,3 +7,5 @@ export const VIETNAMESE = 'VIETNAMESE';
 export const ENGLISH = 'ENGLISH';
 
 export const JAPANESE = 'JAPANESE';
+
+export const SET_SCROLL_FLEXIBLE = 'SET_SCROLL_FLEXIBLE';
