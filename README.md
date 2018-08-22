@@ -125,10 +125,20 @@
   - Xong phân trang: router: about, events, partners, news
 
 - 12:07 PM Wednesday, August 22, 2018 (GMT+7):
+
   - Thêm ảnh chủ nhiệm cho about (chưa hoàn thiện).
 
 - 3:45 PM Wednesday, August 22, 2018 (GMT+7):
+
   - 80% about us, bản tiếng việt
 
 - 3:50 PM Wednesday, August 22, 2018 (GMT+7):
+
   - Done quốc tế hoá about us
+
+- 5:40 PM Wednesday, August 22, 2018 (GMT+7):
+
+  - Hoàn thành 100% About Us của Mobile.
+
+- 6:03 PM Wednesday, August 22, 2018 (GMT+7):
+  - Gặp bug react-router: deploy lên server lập tức bị lỗi ko load đc /about.
