@@ -24,6 +24,7 @@
 }
 
 .year-title {
+  margin-top: -2%;
   margin-left: 10%;
   height: 43px;
   font-size: 22px;
@@ -35,5 +36,29 @@
   height: 400px;
   margin-left: 10%;
   font-size: 16px;
+  font-weight: 300;
+}
+
+/* mobile */
+
+.year-mb-wrap {
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 5%;
+}
+
+.year-mb-img {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.year-mb-title {
+  /* text-align: center; */
+  margin-top: 5%;
+  font-size: 22px;
+}
+
+.year-mb-detail {
+  font-size: 14px;
   font-weight: 300;
 }
