@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import chairman from '../../img/chairman.jpg';
+import AboutMobileIntroduction from './AboutMobileIntroduction';
+import AboutMobileOrganization from './AboutMobileOrganization';
 
 class AboutMobile extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isIntroduction: true
+    };
+    this.switchPage = this.switchPage.bind(this);
+  }
+
+  switchPage() {
+    const isIntroduction = !this.state.isIntroduction;
+    console.log('switched');
+    this.setState({ isIntroduction });
+  }
+
   render() {
-    const { i18n } = this.props;
-    return (
-      <div className="abt-mb-wrap">
-        <div className="whoweare abt-mb-title">{i18n.whoweare}</div>
-        <div className="abt-mb-avatar-wrap">
-          <img className="abt-mb-avatar" src={chairman} alt="chairman" />
-        </div>
-      </div>
+    return this.state.isIntroduction ? (
+      <AboutMobileIntroduction switchPage={this.switchPage} />
+    ) : (
+      <AboutMobileOrganization switchPage={this.switchPage} />
     );
   }
 }

@@ -2,6 +2,14 @@
 
 /* first setup */
 
+html {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  height: 100%;
+}
+
 body {
   padding: 0 none;
   margin: 0 none;

@@ -126,3 +126,9 @@
 
 - 12:07 PM Wednesday, August 22, 2018 (GMT+7):
   - Thêm ảnh chủ nhiệm cho about (chưa hoàn thiện).
+
+- 3:45 PM Wednesday, August 22, 2018 (GMT+7):
+  - 80% about us, bản tiếng việt
+
+- 3:50 PM Wednesday, August 22, 2018 (GMT+7):
+  - Done quốc tế hoá about us

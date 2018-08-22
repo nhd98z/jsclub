@@ -4,20 +4,36 @@
 }
 
 .abt-mb-title {
-  margin: 20% 0;
+  color: rgba(50, 50, 50, 0.8);
 }
 
 .abt-mb-avatar-wrap {
   width: 100%;
-  background: #e5e4e1;
+  background: silver;
   height: 400px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: start;
 }
 
 .abt-mb-avatar {
-  height: 300px;
   width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+.abt-mb-detail {
+  margin-top: 10%;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.abt-mb-img {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.abt-mb-detail-last {
+  font-weight: 500;
 }

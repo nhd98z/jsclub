@@ -15,15 +15,13 @@ import img201502 from '../../../img/clubday2015.jpg';
 class HistoryMobile extends Component {
   render() {
     const { i18n } = this.props;
-    return (
-      <div>
-        <div className="whoweare">{i18n.throughHistory}</div>
+    return <div>
+        <div className="whoweare">{i18n.throughHistoryMobile}</div>
         <Year year="2018" detail1={i18n.detail201801Mobile} detail2={i18n.detail201802Mobile} img1={img201801} img2={img201802} />
         <Year year="2017" detail1={i18n.detail201701Mobile} detail2={i18n.detail201702Mobile} img1={img201701} img2={img201702} />
         <Year year="2016" detail1={i18n.detail201601Mobile} detail2={i18n.detail201602Mobile} img1={img201601} img2={img201602} />
         <Year year="2015" last detail1={i18n.detail201501Mobile} detail2={i18n.detail201502Mobile} img1={img201501} img2={img201502} />
-      </div>
-    );
+      </div>;
   }
 }
 

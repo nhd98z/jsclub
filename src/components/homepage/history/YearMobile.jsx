@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class YearMobile extends Component {
   render() {
-    const getHr = () => (!this.props.last ? <hr style={{ margin: '10% 10% 0% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} /> : <div />);
+    const getHr = () => (this.props.last ? <hr style={{ margin: '0% 10% 10% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} /> : <div />);
     return (
       <div className="year-mb-wrap">
         <img className="year-mb-img" src={this.props.img1} alt="img1" />
