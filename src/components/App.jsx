@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { read_cookie } from 'sfcookies';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './App.css';
-import HomePage from './homepage/HomePage';
-import PreLoadImage from './PreLoadImage';
+// import PreLoadImage from './PreLoadImage';
 import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish } from '../actions';
+import HomePage from './homepage/HomePage';
+import AboutPage from './about-page/About';
+import EventPage from './events-page/Events';
+import PartnersPage from './partners-page/Partners';
+import NewsPage from './news-page/News';
 
 class App extends Component {
   constructor(props) {
@@ -66,12 +71,17 @@ class App extends Component {
   }
 
   render() {
-    const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
+    // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
     return (
-      <div>
-        {preload()}
-        <HomePage />
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/about" component={AboutPage} />
+          <Route path="/events" component={EventPage} />
+          <Route path="/partners" component={PartnersPage} />
+          <Route path="/news" component={NewsPage} />
+        </div>
+      </Router>
     );
   }
 }

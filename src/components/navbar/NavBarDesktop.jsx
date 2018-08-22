@@ -55,8 +55,8 @@ class NavBarDesktop extends Component {
       ) : (
         <div className="global-wrap">
           <img src={uk} className="flat" alt="uk" onClick={() => this.chooseLanguageClick('en')} />
-          <img src={jp} className="flat" alt="jp" onClick={() => this.chooseLanguageClick('jp')} />
           <img src={vn} className="flat" alt="vn" onClick={() => this.chooseLanguageClick('vn')} />
+          <img src={jp} className="flat" alt="jp" onClick={() => this.chooseLanguageClick('jp')} />
         </div>
       );
 
@@ -71,16 +71,16 @@ class NavBarDesktop extends Component {
             <a className="navbar-e navbar-e-t" href="/">
               <img src={logo} alt="logo" style={{ height: '80px' }} />
             </a>
-            <a href="/" className="navbar-e navbar-e-t">
+            <a href="/about" className="navbar-e navbar-e-t">
               {i18n.aboutUs}
             </a>
-            <a href="/" className="navbar-e navbar-e-t">
+            <a href="/events" className="navbar-e navbar-e-t">
               {i18n.events}
             </a>
-            <a href="/" className="navbar-e navbar-e-t">
+            <a href="/partners" className="navbar-e navbar-e-t">
               {i18n.partners}
             </a>
-            <a href="/" className="navbar-e navbar-e-t">
+            <a href="/news" className="navbar-e navbar-e-t">
               {i18n.news}
             </a>
             <div className="navbar-e navbar-e-t navbar-e-global">{global()}</div>

@@ -116,3 +116,6 @@
 
 - 10:07 AM Wednesday, August 22, 2018 (GMT+7):
   - Thêm history cho mobile
+
+- 11:10 AM Wednesday, August 22, 2018 (GMT+7):
+  - Xong phân trang: router: about, events, partners, news

@@ -61,16 +61,16 @@ class NavBarMobile extends Component {
         <div>
           <ul className="navbar-ul">
             <li className="navbar-li">
-              <a href="/">{i18n.aboutUs}</a>
+              <a href="/about">{i18n.aboutUs}</a>
             </li>
             <li className="navbar-li">
-              <a href="/">{i18n.events}</a>
+              <a href="/events">{i18n.events}</a>
             </li>
             <li className="navbar-li">
-              <a href="/">{i18n.partners}</a>
+              <a href="/partners">{i18n.partners}</a>
             </li>
             <li className="navbar-li navbar-li-last">
-              <a href="/">{i18n.news}</a>
+              <a href="/news">{i18n.news}</a>
             </li>
           </ul>
         </div>
