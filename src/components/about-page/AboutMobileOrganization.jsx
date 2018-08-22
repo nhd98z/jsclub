@@ -10,6 +10,7 @@ import img2 from '../../img/organ2.jpg';
 import img3 from '../../img/organ3.jpg';
 import img4 from '../../img/organ4.jpg';
 import img5 from '../../img/organ5.jpg';
+import img6 from '../../img/organ6.jpg';
 
 class AboutMobileOrganization extends Component {
   constructor(props) {
@@ -60,8 +61,7 @@ class AboutMobileOrganization extends Component {
 
     const { i18n } = this.props;
 
-    return (
-      <div>
+    return <div>
         {getBg()}
         <div className="abt-mb-wrap">
           <div id="whoweare" className="whoweare abt-mb-title">
@@ -71,7 +71,9 @@ class AboutMobileOrganization extends Component {
           <img className="abt-mb-avatar" src={chairman} alt="chairman" />
         </div> */}
           <img className="abt-mb-img" src={img1} alt="img1" />
-          <div className="abt-mb-detail" style={{fontWeight: '500'}}>{i18n.aboutDetail01MobileOrganization}</div>
+          <div className="abt-mb-detail" style={{ fontWeight: '500' }}>
+            {i18n.aboutDetail01MobileOrganization}
+          </div>
 
           <img className="abt-mb-img" src={img2} alt="img2" />
           <div className="abt-mb-detail">{i18n.aboutDetail02MobileOrganization}</div>
@@ -83,22 +85,20 @@ class AboutMobileOrganization extends Component {
           <div className="abt-mb-detail">{i18n.aboutDetail04MobileOrganization}</div>
 
           <img className="abt-mb-img" src={img5} alt="img5" />
-          <div className="abt-mb-detail" style={{marginBottom: '10%'}}>{i18n.aboutDetail05MobileOrganization}</div>
+          <div className="abt-mb-detail">{i18n.aboutDetail05MobileOrganization}</div>
+
+          <img className="abt-mb-img" src={img6} alt="img6" />
+          <div className="abt-mb-detail" style={{ marginBottom: '10%' }}>
+            {i18n.aboutDetail06MobileOrganization}
+          </div>
 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
-              className="btn-vmore"
-              style={{ marginBottom: '10%', background: 'rgba(50, 50, 50, 0.8)' }}
-              type="primary"
-              onClick={this.handleClick}
-              size="large"
-            >
+            <Button className="btn-vmore" style={{ marginBottom: '10%', background: 'rgba(50, 50, 50, 0.8)' }} type="primary" onClick={this.handleClick} size="large">
               {i18n.story}
             </Button>
           </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

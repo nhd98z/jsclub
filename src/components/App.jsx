@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { read_cookie } from 'sfcookies';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 // import PreLoadImage from './PreLoadImage';
@@ -11,6 +11,7 @@ import AboutPage from './about-page/About';
 import EventPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
+import ScrollTop from './ScrollTop';
 
 class App extends Component {
   constructor(props) {
@@ -62,34 +63,39 @@ class App extends Component {
 
   handleScroll() {
     if (window.scrollY === 0 && this.props.isScroll) {
-      // this.props.setScroll(false);
+      this.props.setScroll(false);
       // console.log('App scroll', false);
     } else if (window.scrollY > 0 && !this.props.isScroll) {
       this.props.setScroll(true);
-      console.log('App scroll', true);
+      // console.log('App scroll', true);
     }
   }
 
   render() {
     // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
+    const renderScrollTop = () => (this.props.isMobile && this.props.isScroll ? <ScrollTop /> : <div />);
     return (
-      <Router>
-        <div>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/events" component={EventPage} />
-          <Route path="/partners" component={PartnersPage} />
-          <Route path="/news" component={NewsPage} />
-        </div>
-      </Router>
+      <div>
+        {renderScrollTop()}
+        <Router>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/events" component={EventPage} />
+            <Route path="/partners" component={PartnersPage} />
+            <Route path="/news" component={NewsPage} />
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  const { scroll } = state;
+  const { scroll, mobile } = state;
   return {
-    isScroll: scroll
+    isScroll: scroll,
+    isMobile: mobile
   };
 }
 

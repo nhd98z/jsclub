@@ -76,7 +76,7 @@ const vn = {
   aboutDetail02MobileIntroduction: `Trở thành JSer chính là tấm vé để tham gia các lớp học lập trình và ngôn ngữ Nhật trải dài các cấp độ.`,
   aboutDetail03MobileIntroduction: `Ngoài việc học, các cuộc thi với tính ganh đua cao như Coding Project cũng được tổ chức.`,
   aboutDetail04MobileIntroduction: `JS Club là một trong những câu lạc bộ học thuật hàng đầu tại Hòa Lạc với màu sắc văn hóa không đâu "đụng hàng" được.`,
-  aboutDetail05MobileIntroduction: `Hòa Lạc xa xôi ấy chưa bao giờ khiến các cô gái cô đơn, buồn tủi, bởi tôi hiểu bên tôi còn có cả một đội quân áo đỏ, sẵn sàng bên tôi trong lúc tôi yếu lòng nhất.`,
+  aboutDetail05MobileIntroduction: `Hòa Lạc xôi ấy chưa bao giờ khiến các cô gái cô đơn, buồn tủi, bởi họ hiểu bên mình còn có cả một đội quân áo đỏ, sẵn sàng bên họ trong lúc họ yếu lòng nhất.`,
   aboutDetail06MobileIntroduction: `Người ta thường nói: “Đi đâu không quan trọng, quan trọng nơi đó có màu áo JS hay không”. Teambuilding như một món ăn tinh thần đặc biệt không thể thiếu với mỗi JSer.`,
   aboutDetail07MobileIntroduction: `Cũng như teambuilding, JS không thể thiếu những buổi overnight chơi boardgame và tâm sự, san sẻ nỗi lòng. Mỗi câu nói, mỗi lời tâm sự rở nên thật chất chứa.`,
   aboutDetail08MobileIntroduction: `Với mỗi JSer, đây sẽ là ngôi nhà thân thương, một nơi ươm mầm cho đam mê và nhiệt huyết tuổi trẻ của mình.`,
@@ -84,11 +84,12 @@ const vn = {
   organizationUpper: 'TỔ CHỨC',
   story: 'Về chúng tôi',
   organization: 'Tổ chức',
-  aboutDetail01MobileOrganization: `Từ Khắc Hiếu, sinh viên khoá 12 ngành SE hiện đang là CHỦ NHIỆM CLB. Anh là người ôn hòa, biết lắng nghe mọi người, có tinh thần trách nhiệm cao. Đặc biệt Chủ nhiệm là người có khả năng xử lí các tình huống chỉ trong “một nốt nhạc”.`,
-  aboutDetail02MobileOrganization: `Ban Chuyên môn mang vai trò giảng dạy hay trợ giảng cho các Chương trình Hỗ trợ học tập của Phòng Công tác sinh viên và lên nội dung cho những Workshop, Seminar và Training nội bộ tại JS.`,
-  aboutDetail03MobileOrganization: `Ban Truyền thông - một nơi có thể gọi là dành cho dân "ngoại đạo" của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu thêm về kiến thức thiết kế và cả những kỹ năng PR có thể xoay gió, lật bão`,
-  aboutDetail04MobileOrganization: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Văn hóa riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
-  aboutDetail05MobileOrganization: ``
+  aboutDetail01MobileOrganization: `Từ Khắc Hiếu, sinh viên khoá 12 ngành SE hiện đang là Chủ nhiệm CLB. Anh là người ôn hòa, biết lắng nghe mọi người, có tinh thần trách nhiệm cao. Đặc biệt Chủ nhiệm là người có khả năng xử lí các tình huống chỉ trong “một nốt nhạc”.`,
+  aboutDetail02MobileOrganization: `Phó Chủ nhiệm: Nguyễn Tiến Mạnh. Tuy bề ngoài nhìn có vẻ lạnh lùng, nhưng anh lại là người anh trai ấm áp, luôn quan tâm, lo lắng động viên thành viên của .`,
+  aboutDetail03MobileOrganization: `Ban Chuyên môn mang vai trò giảng dạy hay trợ giảng cho các Chương trình Hỗ trợ học tập của Phòng Công tác sinh viên và lên nội dung cho những Workshop, Seminar và Training nội bộ tại JS.`,
+  aboutDetail04MobileOrganization: `Ban Truyền thông - những người hùng đứng sau những bài viết, ấn phẩm và media của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu và áp dụng thêm về kiến thức thiết kế, PR và marketing.`,
+  aboutDetail05MobileOrganization: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Chất riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
+  aboutDetail06MobileOrganization: ``
 };
 
 const en = {
@@ -157,16 +158,6 @@ const en = {
   detail201602Mobile: `Amethyst 2016 - JS Club's first prom night was a great success.`,
   detail201501Mobile: 'At the end of the last semester of 2015, members of JS Club had a team-trip - picnic in Mai Chau valley, Hoa Binh.',
   detail201502Mobile: 'K11 moments left footprints at JS booth at the Club Days.',
-
-  // about
-  aboutDetail01MobileIntroduction: `JS Club or Japanese Software Engineers Club was established in February 2014, bringing the mission of sharing the knowledge of Japanese passionate students and programmers.`,
-  aboutDetail02MobileIntroduction: `Become JSer is the ticket to join the programming classes and the Japanese language stretches to the level.`,
-  aboutDetail03MobileIntroduction: `In addition to studying, contests with high rivalry like Coding Project are also held.`,
-  aboutDetail04MobileIntroduction: `JS Club is one of the top academic clubs in Hoa Lac with colorful culture that can not be touched.`,
-  aboutDetail05MobileIntroduction: `Hoa Lac never makes the lonely girl sad, because I understand there is also a red army in my army, ready for me while I was weakest.`,
-  aboutDetail06MobileIntroduction: `People often say, "Where to go is not important, important place where there are JS dress or not." Teambuilding as a special spiritual dish is indispensable to every JSer.`,
-  aboutDetail07MobileIntroduction: `As well as teambuilding, JS can not lack board games and talk, sharing heart. Each sentence said, each word of the heart should contain the substance.`,
-  aboutDetail08MobileIntroduction: `For every JSer, this will be the dear home, a place to sprout for passion and youthful youth.`
 };
 
 const jp = {
@@ -233,16 +224,6 @@ const jp = {
   detail201602Mobile: `アメジスト2016 - JSクラブ初のプロム・ナイトは大成功でした。`,
   detail201501Mobile: '2015年の最後の学期の終わりに、JSクラブのメンバーはマイ・チャウの谷、ホア・ビンでのチーム・トリップ - ピクニックをしました。',
   detail201502Mobile: 'クラブ時代のJSブースでK11の瞬間が足跡を残しました。',
-
-  // about
-  aboutDetail01MobileIntroduction: `2014年2月にJSクラブまたは日本ソフトウェアエンジニアクラブが設立され、熱心な日本人学生やプログラマーの知識を共有するという使命がもたらされました。`,
-  aboutDetail02MobileIntroduction: `JSerになると、プログラミングクラスに参加することができます。`,
-  aboutDetail03MobileIntroduction: `勉強に加えて、コーディングプロジェクトのような高い競争を伴うコンテストも行われます。`,
-  aboutDetail04MobileIntroduction: `JSクラブは、触れられないカラフルな文化を持つホアラックのトップ学術クラブの1つです。`,
-  aboutDetail05MobileIntroduction: `ホアラックは孤独な少女を悲しみにしません。なぜなら私の軍隊に赤軍がいることを理解しているからです。`,
-  aboutDetail06MobileIntroduction: `人々はしばしば、どこに行くべきかは重要ではなく、JS服があるかどうか重要な場所であると言います。 特別な精神的な料理としてのチームビルディングは、あらゆるユーザーにとって不可欠です。`,
-  aboutDetail07MobileIntroduction: `チーム構築だけでなく、ボードゲームや話し合い、心の共有が欠けているわけでもありません。 それぞれの文章は、心臓の各単語が物質を含むべきだと言った。`,
-  aboutDetail08MobileIntroduction: `すべてのJSerのために、これは親愛なる家、情熱と若々しい若さのために発芽する場所です。`
 };
 
 export default (state = 'en', action) => {

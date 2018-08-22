@@ -141,4 +141,19 @@
   - Hoàn thành 100% About Us của Mobile.
 
 - 6:03 PM Wednesday, August 22, 2018 (GMT+7):
+
   - Gặp bug react-router: deploy lên server lập tức bị lỗi ko load đc /about.
+
+- 10:45 PM Wednesday, August 22, 2018 (GMT+7):
+
+  - Sửa được bug router
+
+  ```
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+  });
+  ```
+
+- 1:05 AM Thursday, August 23, 2018 (GMT+7):
+  - Sửa lại About us Organization: Thêm anh Mạnh.
+  - Thêm nút scroll up xinh xinh.

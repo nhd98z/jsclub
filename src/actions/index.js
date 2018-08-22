@@ -3,10 +3,8 @@ import { SET_MOBILE, SET_SCROLL, VIETNAMESE, ENGLISH, JAPANESE } from '../consta
 export const setMobile = width => {
   let isMobile;
   if (width <= 768) {
-    console.log('mobile');
     isMobile = true;
   } else {
-    console.log('desktop');
     isMobile = false;
   }
   const action = {
