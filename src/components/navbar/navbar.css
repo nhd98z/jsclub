@@ -19,7 +19,6 @@
 }
 
 .navbar-e {
-  text-align: center;
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
@@ -42,10 +41,10 @@
 .navbar-ul {
   /* position: absolute; */
   z-index: 999;
-  margin-top: 48px;
   background: rgba(50, 50, 50, 0.8);
   width: 100%;
   list-style: none;
+  margin-top: 48px;
 }
 
 .navbar-li {
@@ -119,7 +118,7 @@
 }
 
 .menu-icon span {
-  margin-top: 4px;
+  margin-top: 3px;
   position: absolute;
   /* height: 0.1875em; */
   height: 2px;
