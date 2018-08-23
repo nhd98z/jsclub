@@ -166,3 +166,6 @@
 
 - 11:52 AM Thursday, August 23, 2018 (GMT+7):
   - Hoàn thành About Us của Desktop.
+
+- 1:17 PM Thursday, August 23, 2018 (GMT+7):
+  - Chọn ảnh đẹp hơn cho web.

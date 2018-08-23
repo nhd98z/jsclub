@@ -1,31 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-// import bg01m from '../img/background-01-mobile.png';
-// import bg01 from '../img/background-01.png';
-// import bg02m from '../img/background-02-mobile.png';
-// import bg02 from '../img/background-02.png';
-import bg03m from '../img/background-03-mobile.png';
-import bg03 from '../img/background-03.png';
-import logo from '../img/logo.png';
-import logoCut from '../img/logo-cut.png';
-import ean01 from '../img/ean-01.png';
-import ean02 from '../img/ean-02.png';
-import ean03 from '../img/ean-03.png';
-import ean04 from '../img/ean-04.png';
-import ean05 from '../img/ean-05.png';
-import ean06 from '../img/ean-06.png';
-import vn from '../img/vn.png';
-import uk from '../img/uk.png';
-import jp from '../img/jp.png';
-
 const successOne = 'color: #74b9ff';
 const successAll = 'color: green';
 const bigFont = 'font-weight: bolder; color: #fdcb6e';
 
-const mobileImages = [bg03m];
-const desktopImages = [bg03, vn, uk, jp];
-const bothImages = [logo, logoCut, ean01, ean02, ean03, ean04, ean05, ean06];
+const mobileImages = [];
+const desktopImages = [];
+const bothImages = [];
 
 class PreLoadImage extends Component {
   componentDidMount() {

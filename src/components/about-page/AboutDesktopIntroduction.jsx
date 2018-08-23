@@ -8,7 +8,7 @@ import img1 from '../../img/helloworld.png';
 import img2 from '../../img/jsgame.png';
 import img3 from '../../img/hackathon-techkid.png';
 import img4 from '../../img/ngaychiem.png';
-import img5 from '../../img/ean-05.png';
+import img5 from '../../img/banxoismile.jpg';
 import img6 from '../../img/dawn.png';
 
 class AboutDesktopIntroduction extends Component {
@@ -71,10 +71,10 @@ class AboutDesktopIntroduction extends Component {
             title="video clb"
             width={window.innerWidth * 0.48}
             height={window.innerHeight * 0.48}
-            src="https://www.youtube.com/embed/eH2WNtL5ong"
-            frameborder="0"
+            src="https://www.youtube.com/embed/Tc21v8vbTXg"
+            frameBorder="0"
             allow="autoplay; encrypted-media"
-            allowfullscreen
+            allowFullScreen
           />
           <div style={{ marginBottom: '2%' }}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
