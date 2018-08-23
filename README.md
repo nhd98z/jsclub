@@ -165,7 +165,12 @@
   - scroll cũ để > 0 : true, === 0 thì ko set lại false nữa.
 
 - 11:52 AM Thursday, August 23, 2018 (GMT+7):
+
   - Hoàn thành About Us của Desktop.
 
 - 1:17 PM Thursday, August 23, 2018 (GMT+7):
+
   - Chọn ảnh đẹp hơn cho web.
+
+- 2:23 PM Thursday, August 23, 2018 (GMT+7):
+  - Chuyển navbar menu icon unfond fold thành hamburger icon.

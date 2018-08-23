@@ -106,3 +106,61 @@
   height: 22px;
   cursor: pointer;
 }
+
+/* Menu button */
+
+.menu-icon {
+  position: relative;
+  /* width: 3em; */
+  /* height: 2.25em; */
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.menu-icon span {
+  margin-top: 4px;
+  position: absolute;
+  /* height: 0.1875em; */
+  height: 2px;
+  width: 100%;
+  /* background-color: #363636; */
+  background: #ffffff;
+  transition: all 250ms ease-in-out;
+  transform: rotate(0deg);
+  /* box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6); */
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0.09375em;
+}
+
+.menu-icon span:nth-child(2),
+.menu-icon span:nth-child(3) {
+  top: 0.9375em;
+}
+
+.menu-icon span:nth-child(4) {
+  top: 1.875em;
+}
+
+.menu-button:hover span,
+.menu-button:focus span,
+.menu-button:active span {
+  /* background: #d00251; */
+  background: #ffffff;
+}
+
+.menu-icon.is-active span:nth-child(1),
+.menu-icon.is-active span:nth-child(4) {
+  opacity: 0;
+}
+
+.menu-icon.is-active span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu-icon.is-active span:nth-child(3) {
+  top: 0.9375em;
+  transform: rotate(-45deg);
+}

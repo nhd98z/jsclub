@@ -5,6 +5,7 @@ import { bake_cookie } from 'sfcookies';
 
 import logo from '../../img/logo.png';
 import { setEnglish, setVietnamese, setJapanese } from '../../actions';
+import MenuButton from './MenuButton';
 
 class NavBarMobile extends Component {
   constructor(props) {
@@ -13,6 +14,8 @@ class NavBarMobile extends Component {
       openBar: false,
       openLanguageBar: false
     };
+    this.handleMenuClick = this.handleMenuClick.bind(this);
+    this.handleLanguageClick = this.handleLanguageClick.bind(this);
   }
 
   handleMenuClick() {
@@ -101,14 +104,13 @@ class NavBarMobile extends Component {
       ) : (
         <div />
       );
-    const menuIcon = () => (this.state.openBar ? 'menu-unfold' : 'menu-fold');
     return (
       <div>
         <div style={{ height: '48px', background: '#000000' }} />
         <div className="navbar-wrap">
           <div className="navbar navbar-mb">
             <span className="navbar-e">
-              <Icon type={menuIcon()} style={{ fontSize: '24px' }} onClick={() => this.handleMenuClick()} />
+              <MenuButton handleMenuClick={this.handleMenuClick} />
             </span>
             <span className="navbar-e">
               <a href="/">
@@ -116,7 +118,7 @@ class NavBarMobile extends Component {
               </a>
             </span>
             <span className="navbar-e">
-              <Icon type="global" style={{ fontSize: '24px' }} onClick={() => this.handleLanguageClick()} />
+              <Icon type="global" style={{ fontSize: '30px' }} onClick={this.handleLanguageClick} />
             </span>
           </div>
           {bar()}
