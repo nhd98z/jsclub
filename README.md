@@ -181,4 +181,16 @@
   - Thêm rotate cho glbal icon (mobile).
 
 - 4:22 PM Thursday, August 23, 2018 (GMT+7):
+
   - Làm lại cơ chế box-shadow của mọi button: phiên bản desktop thì phải toogle thêm btn-vmore-mb để nó reverse box-shadow.
+
+- 4:39 PM Thursday, August 23, 2018 (GMT+7):
+
+  - Câu thần chú 1 phát deploy luôn
+
+  ```
+  yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub;
+  ```
+
+- 5:40 PM Thursday, August 23, 2018 (GMT+7):
+  - Đồng bộ button cho mobile và desktop: chưa hover thì shadow, hover : box-shadow : none.

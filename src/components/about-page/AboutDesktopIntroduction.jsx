@@ -81,7 +81,7 @@ class AboutDesktopIntroduction extends Component {
               <div>{i18n.wannaKnowAboutDepartment}</div>
               <Button
                 className="btn-vmore"
-                style={{ marginLeft: '5px', background: 'rgba(50, 50, 50, 0.8)' }}
+                style={{ marginLeft: '5px', background: 'rgba(50, 50, 50, 0.8)', border: 'none' }}
                 type="primary"
                 onClick={this.handleClick}
                 size="large"

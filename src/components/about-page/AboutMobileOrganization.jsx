@@ -24,8 +24,6 @@ class AboutMobileOrganization extends Component {
   }
 
   componentDidMount() {
-    const els = document.getElementsByClassName('btn-vmore');
-    [].forEach.call(els, value => value.classList.toggle('btn-vmore-mb'));
     this.interval = setInterval(this.handleBackgroundScroll, 200);
   }
 
@@ -98,7 +96,7 @@ class AboutMobileOrganization extends Component {
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button
               className="btn-vmore"
-              style={{ marginBottom: '10%', background: 'rgba(50, 50, 50, 0.8)' }}
+              style={{ marginBottom: '10%', background: 'rgba(50, 50, 50, 0.8)', border: 'none' }}
               type="primary"
               onClick={this.handleClick}
               size="large"

@@ -5,10 +5,6 @@ import { Button } from 'antd';
 import './whoweare.css';
 
 class WhoWeAre extends Component {
-  componentDidMount() {
-    const els = document.getElementsByClassName('btn-vmore');
-    [].forEach.call(els, value => value.classList.toggle('btn-vmore-mb'));
-  }
   render() {
     const { i18n } = this.props;
     const getDetail = () => (this.props.isMobile ? i18n.whoweareShortDetail : i18n.whoweareLongDetail);

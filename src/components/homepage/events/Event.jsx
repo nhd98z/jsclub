@@ -6,15 +6,17 @@ import EventDesktop from './EventDesktop';
 
 class Event extends Component {
   render() {
-    const { i18n } = this.props; 
+    const { i18n } = this.props;
 
     const getEv = () => (this.props.isMobile ? <EventMobile /> : <EventDesktop />);
 
-    return <div>
-      <div className="whoweare ean">{i18n.eventsUpperCase}</div>
+    return (
+      <div style={{ width: '100%' }}>
+        <div className="whoweare ean">{i18n.eventsUpperCase}</div>
         {getEv()}
-      <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
-      </div>;
+        <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
+      </div>
+    );
   }
 }
 
