@@ -43,7 +43,7 @@ class AboutMobileIntroduction extends Component {
 
   handleClick() {
     const bodyRect = document.body.getBoundingClientRect(),
-      elemRect = document.getElementById('whoweare').getBoundingClientRect(),
+      elemRect = document.getElementById('whoweare-mb-intro').getBoundingClientRect(),
       offset = elemRect.top - bodyRect.top;
     window.scrollTo(0, offset - 48);
     this.props.switchPage();
@@ -65,7 +65,7 @@ class AboutMobileIntroduction extends Component {
       <div>
         {getBg()}
         <div className="abt-mb-wrap">
-          <div id="whoweare" className="whoweare abt-mb-title">
+          <div id="whoweare-mb-intro" className="whoweare abt-mb-title">
             {i18n.storyUpper}
           </div>
           {/* <div className="abt-mb-avatar-wrap">

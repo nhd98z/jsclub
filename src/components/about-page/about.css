@@ -37,3 +37,42 @@
 .abt-mb-detail-last {
   font-weight: 500;
 }
+
+/* about desktop */
+
+.abt-wrap {
+  margin: 0 20%;
+  width: 60%;
+}
+
+.abt-detail {
+  margin-top: 5%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.abt-img {
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 5%;
+}
+
+.person-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f2f2f2;
+  margin-top: 5%;
+}
+
+.abt-img-organ {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.abt-detail-organ {
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0 10%;
+}
