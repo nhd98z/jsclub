@@ -7,9 +7,9 @@ import img201801 from '../../../img/prom2018.jpg';
 import img201802 from '../../../img/teambuilding2018.png';
 import img201701 from '../../../img/codingproject2017.jpg';
 import img201702 from '../../../img/prom2017.jpg';
-import img201601 from '../../../img/codingproject2016.jpg';
+import img201601 from '../../../img/codingproject2016.png';
 import img201602 from '../../../img/prom2016.jpg';
-import img201501 from '../../../img/teambuilding2015.jpg';
+import img201501 from '../../../img/teambuilding2015.png';
 import img201502 from '../../../img/clubday2015.jpg';
 
 class HistoryMobile extends Component {

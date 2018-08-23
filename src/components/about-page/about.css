@@ -63,8 +63,7 @@
 }
 
 .abt-img-organ {
-  max-height: 300px;
-  max-width: 300px;
+  width: 40%;
 }
 
 .abt-detail-organ {

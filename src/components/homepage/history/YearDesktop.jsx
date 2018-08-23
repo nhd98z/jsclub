@@ -15,7 +15,7 @@ class YearDesktop extends Component {
 
         <div className="year">
           <div className="year-tex-r">
-            <div className="year-detail" style={{ margin: '0 10% 0 0' }}>
+            <div className="year-detail year-detail-notitle" style={{ margin: '0 10% 0 0' }}>
               {this.props.detail2}
             </div>
           </div>

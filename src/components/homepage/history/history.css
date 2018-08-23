@@ -1,30 +1,27 @@
 .year-wrap {
   margin: 5% 10% 5% 10%;
-  /* width: 80%; */
+  width: 80%;
 }
 
 .year {
   display: flex;
-  /* background: red; */
   height: 443px;
   width: 100%;
   margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .year-img-l {
-  /* background: blue; */
   height: 443px;
-  width: 65%;
 }
 
 .year-tex-r {
   height: 443px;
-  width: 35%;
-  /* background: yellow; */
 }
 
 .year-title {
-  margin-top: -2%;
+  margin-top: -1%;
   margin-left: 10%;
   height: 43px;
   font-size: 22px;
@@ -37,6 +34,11 @@
   margin-left: 10%;
   font-size: 16px;
   font-weight: 300;
+  overflow: scroll;
+}
+
+.year-detail-notitle {
+  height: 443px;
 }
 
 /* mobile */

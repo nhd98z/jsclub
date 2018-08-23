@@ -189,8 +189,17 @@
   - Câu thần chú 1 phát deploy luôn
 
   ```
-  yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub;
+  yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done;
   ```
 
 - 5:40 PM Thursday, August 23, 2018 (GMT+7):
+
   - Đồng bộ button cho mobile và desktop: chưa hover thì shadow, hover : box-shadow : none.
+
+- 10:43 PM Thursday, August 23, 2018 (GMT+7):
+
+  - Phát hiện ra front-end bị broken trên màn hình.
+
+- 11:14 PM Thursday, August 23, 2018 (GMT+7):
+  - Fix được lỗi broken trên full hd.
+  - Xoá japanese và english -> để update cuối cùng
