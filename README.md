@@ -173,4 +173,12 @@
   - Chọn ảnh đẹp hơn cho web.
 
 - 2:23 PM Thursday, August 23, 2018 (GMT+7):
+
   - Chuyển navbar menu icon unfond fold thành hamburger icon.
+
+- 3:35 PM Thursday, August 23, 2018 (GMT+7):
+
+  - Thêm rotate cho glbal icon (mobile).
+
+- 4:22 PM Thursday, August 23, 2018 (GMT+7):
+  - Làm lại cơ chế box-shadow của mọi button: phiên bản desktop thì phải toogle thêm btn-vmore-mb để nó reverse box-shadow.

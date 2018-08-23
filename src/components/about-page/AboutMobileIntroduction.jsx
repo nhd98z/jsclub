@@ -24,6 +24,8 @@ class AboutMobileIntroduction extends Component {
   }
 
   componentDidMount() {
+    const els = document.getElementsByClassName('btn-vmore');
+    [].forEach.call(els, value => value.classList.toggle('btn-vmore-mb'));
     this.interval = setInterval(this.handleBackgroundScroll, 200);
   }
 

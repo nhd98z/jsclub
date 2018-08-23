@@ -5,10 +5,15 @@ import { Button } from 'antd';
 import './whoweare.css';
 
 class WhoWeAre extends Component {
+  componentDidMount() {
+    const els = document.getElementsByClassName('btn-vmore');
+    [].forEach.call(els, value => value.classList.toggle('btn-vmore-mb'));
+  }
   render() {
     const { i18n } = this.props;
     const getDetail = () => (this.props.isMobile ? i18n.whoweareShortDetail : i18n.whoweareLongDetail);
-    return <div>
+    return (
+      <div>
         <div className="whoweare">{i18n.whoweare}</div>
         <div className="whoweare-detail">{getDetail()}</div>
         <div className="whoweare" style={{ marginTop: '-4%' }}>
@@ -16,8 +21,9 @@ class WhoWeAre extends Component {
             {i18n.viewmore}
           </Button>
         </div>
-      <hr style={{ margin: '5% 10% 0 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
-      </div>;
+        <hr style={{ margin: '5% 10% 0 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
+      </div>
+    );
   }
 }
 

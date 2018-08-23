@@ -42,14 +42,7 @@ class ScrollTop extends Component {
         }}
         onClick={this.handleClick}
       >
-        <img
-          src={upArrow}
-          alt="up arrow"
-          style={{
-            height: '22px',
-            width: '22px'
-          }}
-        />
+        <img src={upArrow} alt="up arrow" style={{ height: '22px', width: '22px' }} />
       </div>
     );
   }
