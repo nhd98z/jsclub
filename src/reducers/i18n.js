@@ -2,7 +2,7 @@ import { VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
 
 const vn = {
   //
-  webTitle: 'CLB Kĩ Sư Phần Mềm Nhật Bản - JS Club',
+  webTitle: 'CLB Kĩ Sư Nhật Bản - JS Club',
 
   // navbar
   hello: 'Xin chào',
