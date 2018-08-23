@@ -171,3 +171,13 @@
   top: 0.9375em;
   transform: rotate(-45deg);
 }
+
+/* spin icon global */
+
+#global-icon {
+  transition: all 0.5s linear;
+}
+
+#global-icon.global-active {
+  transform: rotate(180deg);
+}

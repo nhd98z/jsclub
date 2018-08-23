@@ -25,6 +25,9 @@ class NavBarMobile extends Component {
   }
 
   handleLanguageClick() {
+    // spin icon
+    document.getElementById('global-icon').classList.toggle('global-active');
+
     const openLanguageBar = !this.state.openLanguageBar;
     if (openLanguageBar) this.setState({ openBar: false });
     this.setState({ openLanguageBar });
@@ -118,7 +121,7 @@ class NavBarMobile extends Component {
               </a>
             </span>
             <span className="navbar-e">
-              <Icon type="global" style={{ fontSize: '30px' }} onClick={this.handleLanguageClick} />
+              <Icon id="global-icon" type="global" style={{ fontSize: '30px' }} onClick={this.handleLanguageClick} />
             </span>
           </div>
           {bar()}
