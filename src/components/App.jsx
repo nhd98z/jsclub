@@ -80,7 +80,7 @@ class App extends Component {
 
   render() {
     const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
-    const renderScrollTop = () => (this.props.isMobile && this.props.isScrollFlexible ? <ScrollTop /> : <div />);
+    const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
     return (
       <div>
         {preload()}

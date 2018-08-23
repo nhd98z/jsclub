@@ -36,7 +36,7 @@ class AboutDesktopOrganization extends Component {
       <div>
         <img style={{ width: '100%' }} src={background_01} alt="background_01" />
         <div className="abt-wrap">
-          <div id="whoweare-intro-desktop" className="whoweare abt-mb-title">
+          <div id="whoweare-intro-desktop" className="whoweare">
             {i18n.organizationUpper}
           </div>
 
@@ -77,7 +77,7 @@ class AboutDesktopOrganization extends Component {
               <div>{i18n.wannaKnowAboutWhoWeAre}</div>
               <Button
                 className="btn-vmore"
-                style={{ marginLeft: '5px', background: 'rgba(50, 50, 50, 0.8)', border: 'none' }}
+                style={{ marginLeft: '5px', background: '#3a5290', border: 'none' }}
                 type="primary"
                 onClick={this.handleClick}
                 size="large"

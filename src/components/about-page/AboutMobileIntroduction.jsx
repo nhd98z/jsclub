@@ -65,7 +65,7 @@ class AboutMobileIntroduction extends Component {
       <div>
         {getBg()}
         <div className="abt-mb-wrap">
-          <div id="whoweare-mb-intro" className="whoweare abt-mb-title">
+          <div id="whoweare-mb-intro" className="whoweare">
             {i18n.storyUpper}
           </div>
           {/* <div className="abt-mb-avatar-wrap">
@@ -100,7 +100,7 @@ class AboutMobileIntroduction extends Component {
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button
               className="btn-vmore"
-              style={{ marginBottom: '10%', background: 'rgba(50, 50, 50, 0.8)', border: 'none' }}
+              style={{ marginBottom: '10%', background: '#3a5290', border: 'none' }}
               type="primary"
               onClick={this.handleClick}
               size="large"
