@@ -97,6 +97,7 @@
 .global-icon-desk {
   font-size: 22px;
   cursor: pointer;
+  transition: opacity 250ms ease-in-out;
 }
 
 .flat {
@@ -104,6 +105,13 @@
   width: 22px;
   height: 22px;
   cursor: pointer;
+  /* opacity: 0; */
+  transition: opacity 250ms ease-in-out;
+}
+
+.global-icon-desk:hover,
+.flat:hover {
+  opacity: 0.5;
 }
 
 /* Menu button */
