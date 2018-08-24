@@ -2,14 +2,11 @@
   0% {
     transform: translate3d(+45vw, -26.5vw, 0);
   }
-  33% {
+  50% {
     transform: translate3d(0, 0, 0);
-  }
-  66% {
-    transform: translate3d(+45vw, -26.5vw, 0);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(+45vw, -26.5vw, 0);
   }
 }
 
@@ -17,14 +14,11 @@
   0% {
     transform: translate3d(-45vw, -26.5vw, 0);
   }
-  33% {
+  50% {
     transform: translate3d(0, 0, 0);
-  }
-  66% {
-    transform: translate3d(-45vw, -26.5vw, 0);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(-45vw, -26.5vw, 0);
   }
 }
 
@@ -169,9 +163,13 @@
 }
 
 .l-dance {
-  animation: lavaSlide 2s linear;
+  animation: lavaSlide 2s linear infinite;
 }
 
 .r-dance {
-  animation: ravaSlide 2s linear;
+  animation: ravaSlide 2s linear infinite;
+}
+
+.u-dance {
+  animation: uSlide 2s linear infinite;
 }

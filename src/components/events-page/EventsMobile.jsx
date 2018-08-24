@@ -9,17 +9,55 @@ import prom from '../../img/prom-avatar.jpg';
 import tb from '../../img/tb-avatar.jpg';
 
 class EventsDesktop extends Component {
+  clicked = false;
+
+  componentDidMount() {
+    // first time dance
+    this.handleClick();
+  }
+
   handleClick() {
     const hackathon = document.getElementsByClassName('hackathon-avt-mobile');
     const ci = document.getElementsByClassName('ci-avt-mobile');
     const cp = document.getElementsByClassName('cp-avt-mobile');
     const prom = document.getElementsByClassName('prom-avt-mobile');
     const tb = document.getElementsByClassName('tb-avt-mobile');
-    [].forEach.call(hackathon, value => value.classList.toggle('l-dance'));
-    [].forEach.call(ci, value => value.classList.toggle('r-dance'));
-    [].forEach.call(cp, value => value.classList.toggle('l-dance'));
-    [].forEach.call(prom, value => value.classList.toggle('r-dance'));
-    [].forEach.call(tb, value => value.classList.toggle('l-dance'));
+
+    const hackathonText = document.getElementsByClassName('hackathon-txt-mobile');
+    const ciText = document.getElementsByClassName('ci-txt-mobile');
+    const cpText = document.getElementsByClassName('cp-txt-mobile');
+    const promText = document.getElementsByClassName('prom-txt-mobile');
+    const tbText = document.getElementsByClassName('tb-txt-mobile');
+
+    if (!this.clicked) {
+      [].forEach.call(hackathon, value => value.classList.toggle('l-dance'));
+      [].forEach.call(ci, value => value.classList.toggle('r-dance'));
+      [].forEach.call(cp, value => value.classList.toggle('l-dance'));
+      [].forEach.call(prom, value => value.classList.toggle('r-dance'));
+      [].forEach.call(tb, value => value.classList.toggle('l-dance'));
+
+      [].forEach.call(hackathonText, value => value.classList.toggle('u-dance'));
+      [].forEach.call(ciText, value => value.classList.toggle('u-dance'));
+      [].forEach.call(cpText, value => value.classList.toggle('u-dance'));
+      [].forEach.call(promText, value => value.classList.toggle('u-dance'));
+      [].forEach.call(tbText, value => value.classList.toggle('u-dance'));
+
+      this.clicked = true;
+    } else {
+      [].forEach.call(hackathon, value => value.classList.remove('l-dance'));
+      [].forEach.call(ci, value => value.classList.remove('r-dance'));
+      [].forEach.call(cp, value => value.classList.remove('l-dance'));
+      [].forEach.call(prom, value => value.classList.remove('r-dance'));
+      [].forEach.call(tb, value => value.classList.remove('l-dance'));
+
+      [].forEach.call(hackathonText, value => value.classList.remove('u-dance'));
+      [].forEach.call(ciText, value => value.classList.remove('u-dance'));
+      [].forEach.call(cpText, value => value.classList.remove('u-dance'));
+      [].forEach.call(promText, value => value.classList.remove('u-dance'));
+      [].forEach.call(tbText, value => value.classList.remove('u-dance'));
+
+      this.clicked = false;
+    }
   }
 
   render() {
