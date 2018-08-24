@@ -206,3 +206,6 @@
 
 - 1:52 PM Friday, August 24, 2018 (GMT+7):
   - Thêm Event Page (mobile), chưa xong.
+
+- 3:15 PM Friday, August 24, 2018 (GMT+7):
+  - Tải và sử dụng font của Apple: San-Francisco
