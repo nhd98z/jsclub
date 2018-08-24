@@ -15,9 +15,7 @@ class YearDesktop extends Component {
 
         <div className="year">
           <div className="year-tex-r">
-            <div className="year-detail" style={{ margin: '0 10% 0 0' }}>
-              {this.props.detail2}
-            </div>
+            <div className="year-detail">{this.props.detail2}</div>
           </div>
           <img className="year-img-l" src={this.props.img2} alt="yeardesktop" />
         </div>

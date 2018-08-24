@@ -1,3 +1,47 @@
+@keyframes lavaSlide {
+  from {
+    transform: translate3d(+45vw, -26.5vw, 0);
+    overflow: hidden;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ravaSlide {
+  from {
+    transform: translate3d(-45vw, -26.5vw, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes uSlide {
+  from {
+    transform: translate3d(0, +26.5vw, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes dSlide {
+  from {
+    transform: translate3d(0, -26.5vw, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .h1-center-mobile {
   color: #3a5290;
   text-align: center;
@@ -15,16 +59,16 @@
 .avt-mobile {
   width: 45.57%;
   position: absolute;
+  z-index: 1;
 }
 
 .avt-txt-mobile {
   position: absolute;
-  background: red;
   width: 47.916vw;
   height: 45.57vw;
 }
 
-.avt-txt-mobile > div {
+.avt-txt-mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,11 +78,25 @@
 .hackathon-avt-mobile {
   top: 5.2%;
   left: 6.5%;
+  animation: lavaSlide 1.5s linear;
 }
 
 .hackathon-txt-mobile {
   top: 5.2%;
   left: 52.1%;
+  animation: uSlide 1.5s linear;
+}
+
+.ci-avt-mobile {
+  top: 23.3%;
+  left: 48.1%;
+  animation: ravaSlide 2s linear;
+}
+
+.ci-txt-mobile {
+  top: 23.3%;
+  left: 0%;
+  animation: uSlide 2s linear;
 }
 
 .cp-avt-mobile {
@@ -51,6 +109,16 @@
   left: 52.1%;
 }
 
+.prom-avt-mobile {
+  top: 59.6%;
+  left: 48.1%;
+}
+
+.prom-txt-mobile {
+  top: 59.6%;
+  left: 0%;
+}
+
 .tb-avt-mobile {
   top: 77.7%;
   left: 6.5%;
@@ -61,22 +129,15 @@
   left: 52.1%;
 }
 
-.ci-avt-mobile {
-  top: 23.3%;
-  left: 48.1%;
+.avt-title-mobile {
+  position: absolute;
+  /* background: blue; */
+  color: #333333;
+  width: 45.57%;
+  height: 24vw;
 }
 
-.ci-txt-mobile {
-  top: 23.3%;
-  left: 0%;
-}
-
-.prom-avt-mobile {
-  top: 59.6%;
-  left: 48.1%;
-}
-
-.prom-txt-mobile {
-  top: 59.6%;
-  left: 0%;
+.hackathon-title-mobile {
+  top: 0;
+  left: 6.5%;
 }

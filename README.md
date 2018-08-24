@@ -203,3 +203,6 @@
 - 11:14 PM Thursday, August 23, 2018 (GMT+7):
   - Fix được lỗi broken trên full hd.
   - Xoá japanese và english -> để update cuối cùng
+
+- 1:52 PM Friday, August 24, 2018 (GMT+7):
+  - Thêm Event Page (mobile), chưa xong.
