@@ -12,6 +12,9 @@ class EventsDesktop extends Component {
   clicked = false;
 
   componentDidMount() {
+    document.addEventListener('click', () => {
+      this.handleClick();
+    });
     // first time dance
     this.handleClick();
   }
@@ -99,27 +102,6 @@ class EventsDesktop extends Component {
           <div className="avt-title-mobile tb-title-mobile">
             <h3>{i18n.tb}</h3>
           </div>
-        </div>
-
-        <div
-          style={{
-            position: 'fixed',
-            zIndex: '999',
-            top: '68px',
-            right: '20px',
-            width: '50px',
-            height: '50px',
-            borderRadius: '50%',
-            background: 'rgba(231, 76, 60, 0.8)',
-            color: '#ffffff',
-            fontSize: '11px',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-          }}
-          onClick={() => this.handleClick()}
-        >
-          Dance
         </div>
       </div>
     );

@@ -188,9 +188,7 @@
 
   - Câu thần chú 1 phát deploy luôn
 
-  ```
-  yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done;
-  ```
+  `yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done;`
 
 - 5:40 PM Thursday, August 23, 2018 (GMT+7):
 
@@ -218,7 +216,12 @@
   - Change font to Open Sans.
 
 - 5:57 PM Friday, August 24, 2018 (GMT+7):
+
   - Sửa tỉ lệ giữa ảnh và text ở history: 1024, 1366, 4k.
 
 - 7:00 PM Friday, August 24, 2018 (GMT+7):
   - Thêm nhảy múa cho avatar.
+
+- 1:42 AM Saturday, August 25, 2018 (GMT+7):
+  - Rút ra kinh nghiệm margin left right của một trang không phải cố định 10%, 20% mà phải theo tỉ lệ của trang web.
+  - Học được bằng cách nhìn nav của kenh14, apple, seo-vietnam

@@ -10,7 +10,7 @@ class YearDesktop extends Component {
     };
     const marginPercent = getMarginPercent();
     const widthWrap = 100 - marginPercent * 2;
-    console.log(marginPercent, widthWrap);
+    console.log(`history margin = ${marginPercent}%`);
     const getHr = () => (!this.props.last ? <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} /> : <div />);
     return (
       <div style={{ margin: `5% ${marginPercent}%`, width: `${widthWrap}` }}>
@@ -23,7 +23,7 @@ class YearDesktop extends Component {
         </div>
 
         <div className="year">
-          <div className="year-tex-r" style={{margin: '0 5% 0 0'}}>
+          <div className="year-tex-r" style={{ margin: '0 5% 0 0' }}>
             <div className="year-detail">{this.props.detail2}</div>
           </div>
           <img className="year-img-l" src={this.props.img2} alt="yeardesktop" />
