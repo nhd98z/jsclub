@@ -1,5 +1,5 @@
 @import '~antd/dist/antd.css';
-@import '../sanfrancisco-font.css'
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=vietnamese');
 
 /* first setup */
 
@@ -19,6 +19,7 @@ body {
   border: 0 none;
   color: #000000;
   background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a,

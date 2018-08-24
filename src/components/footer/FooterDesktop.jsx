@@ -59,7 +59,7 @@ class FooterDesktop extends Component {
           </div>
         </div>
 
-        <div className="ft-mb-copyright">Copyright © 2018 JS Club. All rights reserved.</div>
+        <div className="ft-mb-copyright">Copyright © 2018 JS Club.</div>
       </footer>
     );
   }
