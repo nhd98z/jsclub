@@ -11,3 +11,72 @@
   margin-top: 10%;
   font-weight: bold;
 }
+
+.avt-mobile {
+  width: 45.57%;
+  position: absolute;
+}
+
+.avt-txt-mobile {
+  position: absolute;
+  background: red;
+  width: 47.916vw;
+  height: 45.57vw;
+}
+
+.avt-txt-mobile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hackathon-avt-mobile {
+  top: 5.2%;
+  left: 6.5%;
+}
+
+.hackathon-txt-mobile {
+  top: 5.2%;
+  left: 52.1%;
+}
+
+.cp-avt-mobile {
+  top: 41.5%;
+  left: 6.5%;
+}
+
+.cp-txt-mobile {
+  top: 41.5%;
+  left: 52.1%;
+}
+
+.tb-avt-mobile {
+  top: 77.7%;
+  left: 6.5%;
+}
+
+.tb-txt-mobile {
+  top: 77.7%;
+  left: 52.1%;
+}
+
+.ci-avt-mobile {
+  top: 23.3%;
+  left: 48.1%;
+}
+
+.ci-txt-mobile {
+  top: 23.3%;
+  left: 0%;
+}
+
+.prom-avt-mobile {
+  top: 59.6%;
+  left: 48.1%;
+}
+
+.prom-txt-mobile {
+  top: 59.6%;
+  left: 0%;
+}
