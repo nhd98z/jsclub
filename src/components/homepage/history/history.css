@@ -1,11 +1,7 @@
-.year-wrap {
-  margin: 5% 10% 5% 10%;
-  width: 80%;
-}
+
 
 .year {
   display: flex;
-  height: 443px;
   width: 100%;
   margin-bottom: 5%;
   display: flex;
@@ -13,15 +9,14 @@
 }
 
 .year-img-l {
-  height: 443px;
+  height: 300px;
 }
 
 .year-tex-r {
-  height: 443px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin: 0 1%;
+  margin: 0 0 0 5%;
 }
 
 .year-title {
@@ -32,8 +27,8 @@
 }
 
 .year-detail {
-  text-align: justify;
-  font-size: 18px;
+  /* text-align: justify; */
+  font-size: 16px;
   font-weight: 300;
   overflow: hidden;
 }

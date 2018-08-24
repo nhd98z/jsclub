@@ -201,14 +201,21 @@
   - Phát hiện ra front-end bị broken trên màn hình.
 
 - 11:14 PM Thursday, August 23, 2018 (GMT+7):
+
   - Fix được lỗi broken trên full hd.
   - Xoá japanese và english -> để update cuối cùng
 
 - 1:52 PM Friday, August 24, 2018 (GMT+7):
+
   - Thêm Event Page (mobile), chưa xong.
 
 - 3:15 PM Friday, August 24, 2018 (GMT+7):
+
   - Tải và sử dụng font của Apple: San-Francisco.
 
 - 3:34 PM Friday, August 24, 2018 (GMT+7):
+
   - Change font to Open Sans.
+
+- 5:57 PM Friday, August 24, 2018 (GMT+7):
+  - Sửa tỉ lệ giữa ảnh và text ở history: 1024, 1366, 4k.

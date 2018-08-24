@@ -45,21 +45,21 @@ const vn = {
   throughHistory: 'QUÁ TRÌNH HÌNH THÀNH',
   throughHistoryMobile: 'LỊCH SỬ',
   detail201801:
-    'Trong năm 2018, CLB JS đã tổ chức thành công sự kiện AMETHYST 2018 – Love and Passion. Sự kiện nhằm kỉ niệm sinh nhật lần thứ 5 của CLB, đồng thời tôn vinh những cá nhân có nhiều đóng góp tích cực cho câu lạc bộ trong suốt quá trình phát triển.',
+    'Trong năm 2018, CLB JS đã tổ chức thành công sự kiện AMETHYST 2018 – Love and Passion. Sự kiện nhằm kỉ niệm SN thứ 5 của CLB, tôn vinh những cá nhân có nhiều đóng góp tích cực trong suốt quá trình phát triển.',
   detail201802:
     'Năm 2018, JS đồng thời tổ chức chuyến team building tại Bản Xôi, Ba Vì. Chuyến đi có sự góp mặt đầy đủ của thành viên thế hệ thứ 6 và các anh chị thế hệ trước.',
   detail201701:
-    'Trong năm 2017, CLB JS đã tổ chức Coding Project 2017. Sau quá trình cố gắng và nỗ lực không ngừng, cộng thêm sự hỗ trợ nhiệt tình của các supporter là đàn anh trong câu lạc bộ, các team đã hoàn thành được sản phẩm của mình để "trình làng" trong đêm chung kết 21/9.',
+    'Trong năm 2017, CLB JS đã tổ chức Coding Project 2017. Sau quá trình cố gắng và nỗ lực không ngừng, các team đã hoàn thành được sản phẩm của mình để "trình làng" trong đêm chung kết 21/9.',
   detail201702:
-    'Qua hơn 4 năm thành lập, các thành viên CLB JS đã cùng nhau viết lên những câu chuyện về học thuật, tình cảm anh em vô cùng đẹp cùng nhiều giải thưởng lớn nhỏ khác nhau. Để điểm qua những thăng trầm, những niềm vui cũng như nỗi buồn trong năm qua, chúng tôi đã tổ chức Prom – Awards Sapphire 2017 với sự góp mặt của đại diện công ty phần mềm FPT Software, các thầy cô trong trường cùng đại diện các Câu lạc bộ như FU No Shy Club, FU Business Club, FU Vovinam Club...',
+    'Chúng tôi đã tổ chức Prom – Awards Sapphire 2017 với sự góp mặt của đại diện công ty phần mềm FPT Software, các thầy cô trong trường cùng đại diện các Câu lạc bộ như No Shy, Business, Vovinam...',
   detail201601:
     'Trong năm 2016, JS Club lần đầu tiên tổ chức Coding Project với đêm chung kết là buổi bảo vệ của 3 team: Tạ team với game War of Empires; Fantastic 4 với game Mr.X và HMĐQ team với ứng dụng học tiếng Nhật Dekiru Nihongo.',
   detail201602:
     'Amethyst 2016 - Đêm prom đầu tiên của JS Club đã diễn ra thành công tốt đẹp. Ngoài ý nghĩa tôn vinh những cá nhân có hoạt động xuất sắc, Amethyst 2016 còn là nơi để gắn kết các thế hệ của câu lạc bộ.',
   detail201501:
-    'Kết thúc kỳ học cuối cùng của năm 2015, các thành viên của CLB JS đã có một chuyến teambuidling - dã ngoại tại miền thung lũng Mai Châu, Hòa Bình - một dịp xả hơi sau những môn thi cuối cùng và cũng là một nơi giải tỏa những ngày căng thẳng của Chuỗi trainning dành cho các thành viên mới.',
+    'Kì Fall 2015, các thành viên của CLB JS đã có một chuyến teambuidling - dã ngoại tại miền thung lũng Mai Châu, Hòa Bình - một dịp xả hơi sau những môn thi cuối cùng.',
   detail201502:
-    'Trong chương trình của tuần lễ Định hướng dành cho tân sinh viên K11, Ngày hội các Câu lạc bộ được tổ chức là một dịp quan trọng để tất cả các câu lạc bộ ở FU biểu dương lực lượng và chia sẻ văn hóa riêng biệt của từng clb. JS Club đã tham gia Festival Clubs 2015 và bày một gian hàng Công nghệ với những game cho chính JS phát triển.',
+    'Ngày hội các CLB là một dịp quan trọng để các câu lạc bộ ở FU biểu dương lực lượng và chia sẻ văn hóa riêng biệt của từng clb. JS Club đã tham gia Festival Clubs 2015 và bày một gian hàng Công nghệ với những game cho chính JS phát triển.',
   detail201801Mobile: 'Trong năm 2018, CLB JS đã tổ chức thành công sự kiện AMETHYST 2018 – Love and Passion.',
   detail201802Mobile: 'Năm 2018, JS đồng thời tổ chức chuyến team building tại Bản Xôi, Ba Vì.',
   detail201701Mobile: 'Trong năm 2017, CLB JS đã tổ chức Coding Project 2017.',
