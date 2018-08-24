@@ -15,8 +15,6 @@ class EventsDesktop extends Component {
     document.addEventListener('click', () => {
       this.handleClick();
     });
-    // first time dance
-    this.handleClick();
   }
 
   handleClick() {
