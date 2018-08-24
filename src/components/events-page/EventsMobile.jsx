@@ -9,9 +9,24 @@ import prom from '../../img/prom-avatar.jpg';
 import tb from '../../img/tb-avatar.jpg';
 
 class EventsDesktop extends Component {
+  handleClick() {
+    const hackathon = document.getElementsByClassName('hackathon-avt-mobile');
+    const ci = document.getElementsByClassName('ci-avt-mobile');
+    const cp = document.getElementsByClassName('cp-avt-mobile');
+    const prom = document.getElementsByClassName('prom-avt-mobile');
+    const tb = document.getElementsByClassName('tb-avt-mobile');
+    [].forEach.call(hackathon, value => value.classList.toggle('l-dance'));
+    [].forEach.call(ci, value => value.classList.toggle('r-dance'));
+    [].forEach.call(cp, value => value.classList.toggle('l-dance'));
+    [].forEach.call(prom, value => value.classList.toggle('r-dance'));
+    [].forEach.call(tb, value => value.classList.toggle('l-dance'));
+  }
+
   render() {
     const { i18n } = this.props;
-    return <div>
+
+    return (
+      <div>
         <div style={{ margin: '0 10%', width: '80%' }}>
           <h1 className="h1-center-mobile">{i18n.eventsUpperCase}</h1>
           <h2 className="h2-center-mobile">{i18n.eventIntroductionMobile}</h2>
@@ -31,16 +46,53 @@ class EventsDesktop extends Component {
           <div className="avt-txt-mobile prom-txt-mobile">{i18n.promMobile}</div>
           <div className="avt-txt-mobile tb-txt-mobile">{i18n.tbMobile}</div>
 
-          <div className="avt-title-mobile hackathon-title-mobile">Title</div>
+          <div className="avt-title-mobile hackathon-title-mobile">
+            <h3>{i18n.hackathon}</h3>
+          </div>
+          <div className="avt-title-mobile ci-title-mobile">
+            <h3>{i18n.ci}</h3>
+          </div>
+          <div className="avt-title-mobile cp-title-mobile">
+            <h3>{i18n.cp}</h3>
+          </div>
+          <div className="avt-title-mobile prom-title-mobile">
+            <h3>{i18n.prom}</h3>
+          </div>
+          <div className="avt-title-mobile tb-title-mobile">
+            <h3>{i18n.tb}</h3>
+          </div>
         </div>
-      </div>;
+
+        <div
+          style={{
+            position: 'fixed',
+            zIndex: '999',
+            top: '68px',
+            right: '20px',
+            width: '50px',
+            height: '50px',
+            borderRadius: '50%',
+            background: 'rgba(231, 76, 60, 0.8)',
+            color: '#ffffff',
+            fontSize: '11px',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+          }}
+          onClick={() => this.handleClick()}
+        >
+          Dance
+        </div>
+      </div>
+    );
   }
 }
 
 function mapStateToProps(state) {
-  const { i18n } = state;
+  const { i18n, scrollFlexible } = state;
   return {
-    i18n
+    i18n,
+    isScrollFlexible: scrollFlexible
   };
 }
 

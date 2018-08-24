@@ -1,14 +1,12 @@
 @keyframes lavaSlide {
   0% {
     transform: translate3d(+45vw, -26.5vw, 0);
-    overflow: hidden;
   }
   33% {
     transform: translate3d(0, 0, 0);
   }
   66% {
     transform: translate3d(+45vw, -26.5vw, 0);
-    overflow: hidden;
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -18,14 +16,12 @@
 @keyframes ravaSlide {
   0% {
     transform: translate3d(-45vw, -26.5vw, 0);
-    overflow: hidden;
   }
   33% {
     transform: translate3d(0, 0, 0);
   }
   66% {
     transform: translate3d(-45vw, -26.5vw, 0);
-    overflow: hidden;
   }
   100% {
     transform: translate3d(0, 0, 0);
@@ -33,13 +29,14 @@
 }
 
 @keyframes uSlide {
-  from {
-    transform: translate3d(0, +26.5vw, 0);
-    visibility: visible;
+  0% {
+    transform: translate3d(0, +45vw, 0);
   }
-
-  to {
+  50% {
     transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, +45vw, 0);
   }
 }
 
@@ -52,7 +49,6 @@
 }
 
 .h2-center-mobile {
-  color: #333333;
   text-align: center;
   margin-top: 10%;
   font-weight: bold;
@@ -62,7 +58,6 @@
   width: 45.57%;
   position: absolute;
   z-index: 1;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .avt-txt-mobile {
@@ -82,25 +77,24 @@
 .hackathon-avt-mobile {
   top: 5.2%;
   left: 6.5%;
-  animation: lavaSlide 3s linear;
 }
 
 .hackathon-txt-mobile {
   top: 5.2%;
   left: 52.1%;
-  animation: uSlide 3s linear;
+  /* animation: uSlide 1s linear infinite; */
 }
 
 .ci-avt-mobile {
   top: 23.3%;
   left: 48.1%;
-  animation: ravaSlide 3s linear;
+  /* animation: ravaSlide 1s linear infinite; */
 }
 
 .ci-txt-mobile {
   top: 23.3%;
   left: 0%;
-  animation: uSlide 1.5s linear;
+  /* animation: uSlide 1s linear infinite; */
 }
 
 .cp-avt-mobile {
@@ -135,13 +129,49 @@
 
 .avt-title-mobile {
   position: absolute;
-  /* background: blue; */
-  color: #333333;
   width: 45.57%;
   height: 24vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* background: silver; */
+}
+
+.avt-title-mobile > h3 {
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-size: 4vw;
 }
 
 .hackathon-title-mobile {
   top: 0;
   left: 6.5%;
+}
+
+.ci-title-mobile {
+  top: 18.1%;
+  left: 48.1%;
+}
+
+.cp-title-mobile {
+  top: 36.3%;
+  left: 6.5%;
+}
+
+.prom-title-mobile {
+  top: 54.4%;
+  left: 48.1%;
+}
+
+.tb-title-mobile {
+  top: 72.5%;
+  left: 6.5%;
+}
+
+.l-dance {
+  animation: lavaSlide 2s linear;
+}
+
+.r-dance {
+  animation: ravaSlide 2s linear;
 }

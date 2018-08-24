@@ -219,3 +219,6 @@
 
 - 5:57 PM Friday, August 24, 2018 (GMT+7):
   - Sửa tỉ lệ giữa ảnh và text ở history: 1024, 1366, 4k.
+
+- 7:00 PM Friday, August 24, 2018 (GMT+7):
+  - Thêm nhảy múa cho avatar.

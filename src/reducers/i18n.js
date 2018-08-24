@@ -120,7 +120,12 @@ const vn = {
   ciMobile: `Đây là text giới thiệu về CI`,
   cpMobile: `Đây là text giới thiệu về CP`,
   promMobile: `Đây là text giới thiệu về Prom`,
-  tbMobile: `Đây là text giới thiệu về TB`
+  tbMobile: `Đây là text giới thiệu về TB`,
+  hackathon: `Hackathon`,
+  ci: 'Coding Inspiration',
+  cp: 'Coding Project',
+  prom: 'Prom',
+  tb: 'Team building'
 };
 
 const en = vn;
