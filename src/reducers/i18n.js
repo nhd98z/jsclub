@@ -111,7 +111,16 @@ const vn = {
   aboutDetail04DesktopOrganization: `Ban Truyền thông - những người hùng đứng sau những bài viết, ấn phẩm và media của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu và áp dụng thêm về kiến thức thiết kế, PR và marketing.`,
   aboutDetail05DesktopOrganization: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Chất riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
   aboutDetail06DesktopOrganization: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
-  wannaKnowAboutWhoWeAre: 'Quay lại Về chúng tôi?'
+  wannaKnowAboutWhoWeAre: 'Quay lại Về chúng tôi?',
+
+  // event page mobile
+
+  eventIntroductionMobile: `Đây là text giới thiệu tổng quan về trang event`,
+  hackathonMobile: `Đây là text giới thiệu về hackathon`,
+  ciMobile: `Đây là text giới thiệu về CI`,
+  cpMobile: `Đây là text giới thiệu về CP`,
+  promMobile: `Đây là text giới thiệu về Prom`,
+  tbMobile: `Đây là text giới thiệu về TB`
 };
 
 const en = vn;
