@@ -11,7 +11,6 @@ import EventPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
-import PreLoadImage from './PreLoadImage';
 import Loader from './Loader';
 
 class App extends Component {
@@ -47,8 +46,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setLanguage();
-    // REDUX : set width of device every 200ms
-    // Math.max(document.documentElement.clientWidth, window.innerWidth || 0) == width
+    // REDUX : set width of device every 50ms
     this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 50);
     window.addEventListener('scroll', this.handleScroll);
 
@@ -64,14 +62,6 @@ class App extends Component {
   }
 
   handleScroll() {
-    // if (window.scrollY === 0 && this.props.isScroll) {
-    //   // this.props.setScroll(false);
-    //   // console.log('App scroll', false);
-    // } else if (window.scrollY > 0 && !this.props.isScroll) {
-    //   this.props.setScroll(true);
-    //   // console.log('App scroll', true);
-    // }
-
     if (window.scrollY === 0) {
       if (this.props.isScrollFlexible) this.props.setScrollFlexible(false);
     } else if (window.scrollY > 0) {
@@ -81,7 +71,6 @@ class App extends Component {
   }
 
   render() {
-    // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
     const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
     const loader = () => (this.state.loaded ? <Loader /> : <div />);
     return (
