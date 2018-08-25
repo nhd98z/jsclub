@@ -231,3 +231,9 @@
 
 - 1:40 PM Saturday, August 25, 2018 (GMT+7):
   - Thay hết thẻ a truyền thống thành Link của `react-router-dom`, bây giờ web chính thức là SPA.
+
+- 5:05 PM Saturday, August 25, 2018 (GMT+7):
+  - Đã cài xong Loader.jsx nhưng cách nó hoạt động chưa đúng
+  - **Cách hoạt động đúng của Loader là: App gọi PreLoadImage, PreLoadImage load tất cả ảnh ra, trong lúc load thì render Loader.**
+  - Điều này làm cuối cùng khi mọi content đã xong.
+  - Tạm thời mình chuyển tất cả Loader sang PreLoader, trong App gọi PreLoader

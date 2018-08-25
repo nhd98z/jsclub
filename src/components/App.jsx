@@ -11,14 +11,11 @@ import EventPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
-import Loader from './Loader';
+import PreLoadImage from './PreLoadImage';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loaded: true
-    };
     this.handleScroll = this.handleScroll.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
   }
@@ -49,11 +46,6 @@ class App extends Component {
     // REDUX : set width of device every 50ms
     this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 50);
     window.addEventListener('scroll', this.handleScroll);
-
-    // loader
-    window.addEventListener('load', () => {
-      setTimeout(() => this.setState({ loaded: false }), 1500);
-    });
   }
 
   componentWillUnmount() {
@@ -72,10 +64,9 @@ class App extends Component {
 
   render() {
     const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
-    const loader = () => (this.state.loaded ? <Loader /> : <div />);
     return (
       <div>
-        {loader()}
+        <PreLoadImage />
         {renderScrollTop()}
         <Router>
           <Switch>

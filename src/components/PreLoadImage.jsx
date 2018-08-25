@@ -1,20 +1,36 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Loader from './Loader';
+
+import img1 from '../img/hackathon-avatar.jpg';
+import img2 from '../img/ci-avatar.jpg';
+import img3 from '../img/cp-avatar.png';
+import img4 from '../img/prom-avatar.jpg';
+import img5 from '../img/tb-avatar.jpg';
+
 const successOne = 'color: #74b9ff';
 const successAll = 'color: green';
-const bigFont = 'font-weight: bolder; color: #fdcb6e';
 
-const mobileImages = [];
+const mobileImages = [img1, img2, img3, img4, img5];
 const desktopImages = [];
 const bothImages = [];
 
 class PreLoadImage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    };
+  }
+
   componentDidMount() {
-    console.log('PreLoad is mounted');
-    window.addEventListener('load', function(event) {
-      console.log('%cAll images loaded!', bigFont);
-    });
+    // loader
+    window.onload = () => {
+      setTimeout(() => {
+        if (!this.state.loaded) this.setState({ loaded: true });
+      }, 1500);
+    };
   }
 
   handleImageLoaded(counter, length, type) {
@@ -64,10 +80,15 @@ class PreLoadImage extends Component {
 
     const getMobileOrDesktop = () => (this.props.isMobile ? mobile() : desktop());
 
+    const renderLoader = () => (!this.state.loaded ? <Loader /> : <div />);
+
     return (
-      <div style={{ display: 'none' }}>
-        {getMobileOrDesktop()}
-        {both()}
+      <div>
+        {renderLoader()}
+        <div style={{ display: 'none' }}>
+          {getMobileOrDesktop()}
+          {both()}
+        </div>
       </div>
     );
   }
