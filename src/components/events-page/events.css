@@ -44,7 +44,7 @@
 .h2-center-mobile {
   text-align: center;
   margin-top: 10%;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .avt-mobile {
@@ -75,19 +75,18 @@
 .hackathon-txt-mobile {
   top: 5.2%;
   left: 52.1%;
-  /* animation: uSlide 1s linear infinite; */
+  color: #1e0e3b;
 }
 
 .ci-avt-mobile {
   top: 23.3%;
   left: 48.1%;
-  /* animation: ravaSlide 1s linear infinite; */
 }
 
 .ci-txt-mobile {
   top: 23.3%;
   left: 0%;
-  /* animation: uSlide 1s linear infinite; */
+  color: #438BC1;
 }
 
 .cp-avt-mobile {
@@ -98,6 +97,7 @@
 .cp-txt-mobile {
   top: 41.5%;
   left: 52.1%;
+  color: #EEF272;
 }
 
 .prom-avt-mobile {
@@ -108,6 +108,7 @@
 .prom-txt-mobile {
   top: 59.6%;
   left: 0%;
+  color: #831D3D;
 }
 
 .tb-avt-mobile {
@@ -118,6 +119,7 @@
 .tb-txt-mobile {
   top: 77.7%;
   left: 52.1%;
+  color: #080934;
 }
 
 .avt-title-mobile {
@@ -130,8 +132,8 @@
   /* background: silver; */
 }
 
-.avt-title-mobile > h3 {
-  margin-bottom: 5%;
+.avt-title-mobile {
+  margin-bottom: 20vw;
   font-weight: bold;
   font-size: 4vw;
 }

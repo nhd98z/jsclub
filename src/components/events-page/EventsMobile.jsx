@@ -85,21 +85,11 @@ class EventsDesktop extends Component {
           <div className="avt-txt-mobile prom-txt-mobile">{i18n.promMobile}</div>
           <div className="avt-txt-mobile tb-txt-mobile">{i18n.tbMobile}</div>
 
-          <div className="avt-title-mobile hackathon-title-mobile">
-            <h3>{i18n.hackathon}</h3>
-          </div>
-          <div className="avt-title-mobile ci-title-mobile">
-            <h3>{i18n.ci}</h3>
-          </div>
-          <div className="avt-title-mobile cp-title-mobile">
-            <h3>{i18n.cp}</h3>
-          </div>
-          <div className="avt-title-mobile prom-title-mobile">
-            <h3>{i18n.prom}</h3>
-          </div>
-          <div className="avt-title-mobile tb-title-mobile">
-            <h3>{i18n.tb}</h3>
-          </div>
+          <div className="avt-title-mobile hackathon-title-mobile">{i18n.hackathon}</div>
+          <div className="avt-title-mobile ci-title-mobile">{i18n.ci}</div>
+          <div className="avt-title-mobile cp-title-mobile">{i18n.cp}</div>
+          <div className="avt-title-mobile prom-title-mobile">{i18n.prom}</div>
+          <div className="avt-title-mobile tb-title-mobile">{i18n.tb}</div>
         </div>
       </div>
     );
