@@ -29,7 +29,7 @@ class PreLoadImage extends Component {
     window.onload = () => {
       setTimeout(() => {
         if (!this.state.loaded) this.setState({ loaded: true });
-      }, 1500);
+      }, 500);
     };
   }
 
