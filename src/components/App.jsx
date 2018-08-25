@@ -18,7 +18,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      init: true
+      loaded: true
     };
     this.handleScroll = this.handleScroll.bind(this);
     this.setLanguage = this.setLanguage.bind(this);
@@ -51,10 +51,11 @@ class App extends Component {
     // Math.max(document.documentElement.clientWidth, window.innerWidth || 0) == width
     this.interval = setInterval(() => this.props.setMobile(Math.max(document.documentElement.clientWidth, window.innerWidth || 0)), 50);
     window.addEventListener('scroll', this.handleScroll);
-  }
 
-  componentWillUpdate() {
-    if (this.state.init === true) this.setState({ init: false });
+    // loader
+    window.addEventListener('load', () => {
+      setTimeout(() => this.setState({ loaded: false }), 1500);
+    });
   }
 
   componentWillUnmount() {
@@ -82,9 +83,10 @@ class App extends Component {
   render() {
     // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
     const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
+    const loader = () => (this.state.loaded ? <Loader /> : <div />);
     return (
       <div>
-        <Loader />
+        {loader()}
         {renderScrollTop()}
         <Router>
           <Switch>
