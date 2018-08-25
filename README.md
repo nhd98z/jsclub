@@ -1,4 +1,6 @@
-yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done;
+yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done; yarn start;
+
+git add .; git commit -m "ok"; git push origin master; yarn start;
 
 # LOGS
 
