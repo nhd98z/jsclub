@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Icon } from 'antd';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import logo from '../../img/logo-cut.png';
 
@@ -22,16 +23,16 @@ class FooterDesktop extends Component {
           <div className="ft-explore">
             <div>{i18n.explore}</div>
             <div className="ft-explore-content">
-              <a href="/about">{i18n.aboutUs}</a>
+              <Link to="/about">{i18n.aboutUs}</Link>
             </div>
             <div className="ft-explore-content">
-              <a href="/events">{i18n.events}</a>
+              <Link to="/events">{i18n.events}</Link>
             </div>
             <div className="ft-explore-content">
-              <a href="/partners">{i18n.partners}</a>
+              <Link to="/partners">{i18n.partners}</Link>
             </div>
             <div className="ft-explore-content">
-              <a href="/news">{i18n.news}</a>
+              <Link to="/news">{i18n.news}</Link>
             </div>
           </div>
 

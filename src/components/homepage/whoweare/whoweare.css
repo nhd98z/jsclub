@@ -27,5 +27,6 @@
 }
 
 .btn-vmore:hover {
+  background: #3a5290;
   box-shadow: none;
 }

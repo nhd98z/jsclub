@@ -220,8 +220,14 @@
   - Sửa tỉ lệ giữa ảnh và text ở history: 1024, 1366, 4k.
 
 - 7:00 PM Friday, August 24, 2018 (GMT+7):
+
   - Thêm nhảy múa cho avatar.
 
 - 1:42 AM Saturday, August 25, 2018 (GMT+7):
+
   - Rút ra kinh nghiệm margin left right của một trang không phải cố định 10%, 20% mà phải theo tỉ lệ của trang web.
-  - Học được bằng cách nhìn nav của kenh14, apple, seo-vietnam
+  - Học được bằng cách nhìn nav của kenh14, apple, seo-vietnam.
+  - **Nhưng chúng nó làm margin kiểu gì để cho việc thay đổi width thì margin đi theo mà không cần phải reload page? Mình dùng javascript set thì phải reload page margin mới đổi được!!**
+
+- 1:40 PM Saturday, August 25, 2018 (GMT+7):
+  - Thay hết thẻ a truyền thống thành Link của `react-router-dom`, bây giờ web chính thức là SPA.

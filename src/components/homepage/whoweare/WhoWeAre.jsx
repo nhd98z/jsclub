@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'antd';
+import { Link } from 'react-router-dom';
 
 import './whoweare.css';
 
@@ -13,9 +14,11 @@ class WhoWeAre extends Component {
         <div className="whoweare">{i18n.whoweare}</div>
         <div className="whoweare-detail">{getDetail()}</div>
         <div className="whoweare" style={{ marginTop: '-4%' }}>
-          <Button className="btn-vmore" type="primary" href="/about" size="large">
-            {i18n.viewmore}
-          </Button>
+          <Link to="/about">
+            <Button className="btn-vmore" type="primary" size="large">
+              {i18n.viewmore}
+            </Button>
+          </Link>
         </div>
         <hr style={{ margin: '5% 10% 0 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
       </div>

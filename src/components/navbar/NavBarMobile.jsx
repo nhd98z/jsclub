@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon } from 'antd';
 import { connect } from 'react-redux';
 import { bake_cookie } from 'sfcookies';
+import { Link } from 'react-router-dom';
 
 import logo from '../../img/logo.png';
 import { setEnglish, setVietnamese, setJapanese } from '../../actions';
@@ -67,16 +68,16 @@ class NavBarMobile extends Component {
         <div>
           <ul className="navbar-ul">
             <li className="navbar-li">
-              <a href="/about">{i18n.aboutUs}</a>
+              <Link to="/about">{i18n.aboutUs}</Link>
             </li>
             <li className="navbar-li">
-              <a href="/events">{i18n.events}</a>
+              <Link to="/events">{i18n.events}</Link>
             </li>
             <li className="navbar-li">
-              <a href="/partners">{i18n.partners}</a>
+              <Link to="/partners">{i18n.partners}</Link>
             </li>
             <li className="navbar-li navbar-li-last">
-              <a href="/news">{i18n.news}</a>
+              <Link to="/news">{i18n.news}</Link>
             </li>
           </ul>
         </div>
@@ -116,9 +117,9 @@ class NavBarMobile extends Component {
               <MenuButton handleMenuClick={this.handleMenuClick} />
             </span>
             <span className="navbar-e">
-              <a href="/">
+              <Link to="/">
                 <img src={logo} alt="logo" style={{ height: '64px' }} />
-              </a>
+              </Link>
             </span>
             <span className="navbar-e">
               <Icon id="global-icon" type="global" style={{ fontSize: '30px' }} onClick={this.handleLanguageClick} />

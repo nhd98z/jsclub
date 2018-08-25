@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Icon } from 'antd';
 import { connect } from 'react-redux';
 import { bake_cookie } from 'sfcookies';
+import { Link } from 'react-router-dom';
 
 import logo from '../../img/logo.png';
 import vn from '../../img/vn.png';
@@ -68,21 +69,21 @@ class NavBarDesktop extends Component {
         <div style={{ height: '64px', background: '#000000' }} />
         <div className="navbar-wrap">
           <div className="navbar">
-            <a className="navbar-e navbar-e-t" href="/">
+            <Link to="/" className="navbar-e navbar-e-t">
               <img src={logo} alt="logo" style={{ height: '80px' }} />
-            </a>
-            <a href="/about" className="navbar-e navbar-e-t">
+            </Link>
+            <Link to="/about" className="navbar-e navbar-e-t">
               {i18n.aboutUs}
-            </a>
-            <a href="/events" className="navbar-e navbar-e-t">
+            </Link>
+            <Link to="/events" className="navbar-e navbar-e-t">
               {i18n.events}
-            </a>
-            <a href="/partners" className="navbar-e navbar-e-t">
+            </Link>
+            <Link to="/partners" className="navbar-e navbar-e-t">
               {i18n.partners}
-            </a>
-            <a href="/news" className="navbar-e navbar-e-t">
+            </Link>
+            <Link to="/news" className="navbar-e navbar-e-t">
               {i18n.news}
-            </a>
+            </Link>
             <div className="navbar-e navbar-e-t navbar-e-global">{global()}</div>
           </div>
         </div>
