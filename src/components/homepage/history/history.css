@@ -1,4 +1,30 @@
+@media only screen and (min-width: 1024px) {
+  .year-wrap {
+    margin: 5% 5%;
+    width: 90%;
+  }
+}
 
+@media only screen and (min-width: 1366px) {
+  .year-wrap {
+    margin: 5% 10%;
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .year-wrap {
+    margin: 5% 25%;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 3048px) {
+  .year-wrap {
+    margin: 5% 35%;
+    width: 30%;
+  }
+}
 
 .year {
   display: flex;

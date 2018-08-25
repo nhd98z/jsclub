@@ -1,3 +1,5 @@
+yarn build; mv ./build ../jsclub-production/; cd ../jsclub-production/; rm -r public/; mv build public; git add .; git commit -m "ok"; git push heroku master; heroku open; cd ../jsclub; say done;
+
 # LOGS
 
 - Cách viết README.md: [Markdown syntax guide](https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
@@ -227,16 +229,28 @@
 
   - Rút ra kinh nghiệm margin left right của một trang không phải cố định 10%, 20% mà phải theo tỉ lệ của trang web.
   - Học được bằng cách nhìn nav của kenh14, apple, seo-vietnam.
-  - **Nhưng chúng nó làm margin kiểu gì để cho việc thay đổi width thì margin đi theo mà không cần phải reload page? Mình dùng javascript set thì phải reload page margin mới đổi được!!**
+  - _Nhưng chúng nó làm margin kiểu gì để cho việc thay đổi width thì margin đi theo mà không cần phải reload page? Mình dùng javascript set thì phải reload page margin mới đổi được!!_
+  - Câu trả lời: **Sử dụng media query**
 
 - 1:40 PM Saturday, August 25, 2018 (GMT+7):
+
   - Thay hết thẻ a truyền thống thành Link của `react-router-dom`, bây giờ web chính thức là SPA.
 
 - 5:05 PM Saturday, August 25, 2018 (GMT+7):
+
   - Đã cài xong Loader.jsx nhưng cách nó hoạt động chưa đúng
   - **Cách hoạt động đúng của Loader là: App gọi PreLoadImage, PreLoadImage load tất cả ảnh ra, trong lúc load thì render Loader.**
   - Điều này làm cuối cùng khi mọi content đã xong.
   - Tạm thời mình chuyển tất cả Loader sang PreLoader, trong App gọi PreLoader
 
 - 6:26 PM Saturday, August 25, 2018 (GMT+7):
+
   - Nhận ra mình đã ngu lồn làm 1 page read-only là SPA :).
+
+- 8:06 PM Saturday, August 25, 2018 (GMT+7):
+
+  - Dùng ant.design cho trang web này có lẽ là 1 sai lầm.
+  - antd: css load = 500kb, js load = 1.5mb.
+
+- 10:50 PM Saturday, August 25, 2018 (GMT+7):
+  - Thay thế margin left right từ Javascript sang CSS Media Query.
