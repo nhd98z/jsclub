@@ -237,3 +237,6 @@
   - **Cách hoạt động đúng của Loader là: App gọi PreLoadImage, PreLoadImage load tất cả ảnh ra, trong lúc load thì render Loader.**
   - Điều này làm cuối cùng khi mọi content đã xong.
   - Tạm thời mình chuyển tất cả Loader sang PreLoader, trong App gọi PreLoader
+
+- 6:26 PM Saturday, August 25, 2018 (GMT+7):
+  - Nhận ra mình đã ngu lồn làm 1 page read-only là SPA :).
