@@ -4,7 +4,6 @@ import { read_cookie } from 'sfcookies';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
-import PreLoadImage from './PreLoadImage';
 import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish, setScrollFlexible } from '../actions';
 import HomePage from './homepage/HomePage';
 import AboutPage from './about-page/About';
@@ -12,6 +11,8 @@ import EventPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
+import PreLoadImage from './PreLoadImage';
+import Loader from './Loader';
 
 class App extends Component {
   constructor(props) {
@@ -79,11 +80,11 @@ class App extends Component {
   }
 
   render() {
-    const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
+    // const preload = () => (this.state.init ? <PreLoadImage /> : <div />);
     const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
     return (
       <div>
-        {preload()}
+        <Loader />
         {renderScrollTop()}
         <Router>
           <Switch>
