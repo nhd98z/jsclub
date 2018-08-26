@@ -9,12 +9,9 @@ import img3 from '../img/cp-avatar.png';
 import img4 from '../img/prom-avatar.jpg';
 import img5 from '../img/tb-avatar.jpg';
 
-const successOne = 'color: #74b9ff';
-const successAll = 'color: green';
-
 const mobileImages = [img1, img2, img3, img4, img5];
 const desktopImages = [];
-const bothImages = [];
+const otherImages = [];
 
 class PreLoadImage extends Component {
   constructor(props) {
@@ -24,59 +21,39 @@ class PreLoadImage extends Component {
     };
   }
 
-  componentDidMount() {
-    // loader
+  componentDidMount() {    
     window.onload = () => {
       setTimeout(() => {
         if (!this.state.loaded) this.setState({ loaded: true });
+        console.log('%cAll images loaded', 'color: green');
       }, 500);
     };
   }
 
-  handleImageLoaded(counter, length, type) {
-    console.log(`%cLoaded ${type} image ${counter.value}/${length}`, successOne);
-    if (counter.value++ === length) console.log(`%cPreload ${type} images successful!`, successAll);
-  }
-
   render() {
-    const mobile = () => {
-      const array = [...mobileImages];
-      const counter = { value: 1 };
-      const length = array.length;
-      return (
-        <div>
-          {array.map((value, index) => (
-            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'mobile')} alt="alt" key={index} />
-          ))}
-        </div>
-      );
-    };
+    const mobile = () => (
+      <div>
+        {mobileImages.map((value, index) => (
+          <img src={value} alt={index} key={index} />
+        ))}
+      </div>
+    );
 
-    const desktop = () => {
-      const array = [...desktopImages];
-      const counter = { value: 1 };
-      const length = array.length;
-      return (
-        <div>
-          {array.map((value, index) => (
-            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'desktop')} alt="alt" key={index} />
-          ))}
-        </div>
-      );
-    };
+    const desktop = () => (
+      <div>
+        {desktopImages.map((value, index) => (
+          <img src={value} alt={index} key={index} />
+        ))}
+      </div>
+    );
 
-    const both = () => {
-      const array = [...bothImages];
-      const counter = { value: 1 };
-      const length = array.length;
-      return (
-        <div>
-          {array.map((value, index) => (
-            <img src={value} onLoad={this.handleImageLoaded.bind(this, counter, length, 'other')} alt="alt" key={index} />
-          ))}
-        </div>
-      );
-    };
+    const other = () => (
+      <div>
+        {otherImages.map((value, index) => (
+          <img src={value} alt={index} key={index} />
+        ))}
+      </div>
+    );
 
     const getMobileOrDesktop = () => (this.props.isMobile ? mobile() : desktop());
 
@@ -87,7 +64,7 @@ class PreLoadImage extends Component {
         {renderLoader()}
         <div style={{ display: 'none' }}>
           {getMobileOrDesktop()}
-          {both()}
+          {other()}
         </div>
       </div>
     );

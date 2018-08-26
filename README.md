@@ -255,4 +255,9 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - antd: css load = 500kb, js load = 1.5mb.
 
 - 10:50 PM Saturday, August 25, 2018 (GMT+7):
+
   - Thay thế margin left right từ Javascript sang CSS Media Query.
+
+- 1:06 PM Sunday, August 26, 2018 (GMT+7):
+  - Đọc bài [này](https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76) để hiểu cách cấu trúc một app react nhưng mình chưa hiểu lắm, có phải mình chấm thấm concept của react?
+  - Phát hiện ra web tĩnh như web này của mình nên cài bằng [GatsbyJS](https://www.gatsbyjs.org/docs/) chứ không phải bằng create react app, huhu.
