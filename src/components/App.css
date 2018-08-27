@@ -41,7 +41,10 @@ a:hover {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #ededed;
+  z-index: 999;
+  position: absolute;  
 }
 
 .loader {

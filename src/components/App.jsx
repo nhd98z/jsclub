@@ -11,7 +11,6 @@ import EventPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
-import PreLoadImage from './PreLoadImage';
 
 class App extends Component {
   constructor(props) {
@@ -66,7 +65,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <PreLoadImage />
         {/* handy */}
         {this.props.isScrollFlexible && <ScrollTop />}
         <Router>

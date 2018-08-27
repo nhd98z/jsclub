@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'antd';
 
-import ScrollHint from '../homepage/background/ScrollHint';
+import ScrollHint from './ScrollHint';
 import backgroundMobile_01 from '../../img/background-01-mobile.png';
 
 import img1 from '../../img/helloworld.png';

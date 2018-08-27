@@ -3,62 +3,39 @@ import { connect } from 'react-redux';
 
 import Loader from './Loader';
 
-import img1 from '../img/hackathon-avatar.jpg';
-import img2 from '../img/ci-avatar.jpg';
-import img3 from '../img/cp-avatar.png';
-import img4 from '../img/prom-avatar.jpg';
-import img5 from '../img/tb-avatar.jpg';
-
-const mobileImages = [img1, img2, img3, img4, img5];
-const desktopImages = [];
-const otherImages = [];
-
 class PreLoadImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       loaded: false
     };
+    this.imagesDidLoad = this.imagesDidLoad.bind(this);
   }
 
-  componentDidMount() {
-    window.onload = () => {
+  imagesDidLoad() {
+    this.timer = setTimeout(() => {
       if (!this.state.loaded) this.setState({ loaded: true });
       console.log('%cAll images loaded', 'color: green');
-    };
+    }, 1500);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   render() {
-    const mobile = (
-      <div>
-        {mobileImages.map((value, index) => (
-          <img src={value} alt={index} key={index} />
-        ))}
-      </div>
-    );
-
-    const desktop = (
-      <div>
-        {desktopImages.map((value, index) => (
-          <img src={value} alt={index} key={index} />
-        ))}
-      </div>
-    );
-
-    const other = (
-      <div>
-        {otherImages.map((value, index) => (
-          <img src={value} alt={index} key={index} />
-        ))}
-      </div>
-    );
-
+    console.log(this.props.images);
     return (
       <div>
         {!this.state.loaded && <Loader />}
         <div style={{ display: 'none' }}>
-          {this.props.isMobile ? mobile : desktop}
-          {other}
+          {
+            <div onLoad={this.imagesDidLoad}>
+              {this.props.images.map((value, index) => (
+                <img src={value} alt={index} key={index} />
+              ))}
+            </div>
+          }
         </div>
       </div>
     );

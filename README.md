@@ -268,7 +268,11 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Tư duy: khi code PreLoader: đầu tiên load ảnh background homepage, load xong cho loading icon biến mất, sau đó load ngầm những ảnh nặng ở các trang khác.
 
 - 8:07 AM Monday, August 27, 2018 (GMT+7):
+
   - Update lại code chuẩn chỉnh hơn theo React: setState by prevState, remove addEventListener, ngoại lệ : scroll
   - handy `{unreadMessages.length > 0 && <h2> You have {unreadMessages.length} unread messages. </h2> }`
   - handy `{this.props.isMobile ? <Mobile /> : <Desktop />}`
   - For performance, always remember clearInterval
+
+- 12:54 PM Monday, August 27, 2018 (GMT+7):
+  - Chuyển đổi PreLoad sang mỗi page. Load ảnh thay cho window.onload.
