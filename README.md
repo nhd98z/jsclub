@@ -275,4 +275,8 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - For performance, always remember clearInterval
 
 - 12:54 PM Monday, August 27, 2018 (GMT+7):
+
   - Chuyển đổi PreLoad sang mỗi page. Load ảnh thay cho window.onload.
+
+- 6:03 PM Monday, August 27, 2018 (GMT+7):
+  - Sử dụng shortid để generate ra uniqueId sử dụng cho Array.map().s
