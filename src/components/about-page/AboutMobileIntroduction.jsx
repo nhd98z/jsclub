@@ -23,22 +23,9 @@ class AboutMobileIntroduction extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  componentDidMount() {
-    this.interval = setInterval(this.handleBackgroundScroll, 200);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
   handleBackgroundScroll() {
-    const div = document.getElementById('scrollCenter');
-    if (div) {
-      // why this shit need to be wrapped by setTimeout, please?
-      setTimeout(() => {
-        if (div.scrollLeft > 200) this.setState({ isBackgroundScroll: true });
-      }, 0);
-    }
+    const div = document.getElementById('scrollcenter-intro');
+    if (div && div.scrollLeft > 200) this.setState({ isBackgroundScroll: true });
   }
 
   handleClick() {
@@ -54,7 +41,7 @@ class AboutMobileIntroduction extends Component {
 
     return (
       <div>
-        <div className="bg-mobile-clb" id="scrollCenter">
+        <div className="bg-mobile-clb" id="scrollcenter-intro" onScroll={this.handleBackgroundScroll}>
           <img className="bg-mobile-clb-img" src={backgroundMobile_01} alt="backgroundMobile_01" />
           {this.state.isBackgroundScroll === false && <ScrollHint />}
         </div>

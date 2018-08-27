@@ -12,14 +12,16 @@ class ScrollTop extends Component {
 
   handleClick() {
     const curScroll = window.scrollY;
-    console.log('current scroll', curScroll);
     for (let i = curScroll; i >= 0; i--) {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         window.scrollTo(0, i);
-        // console.log(i);
+        if (i === 0) this.props.setScrollFlexible(false);
       }, 0.1 * (curScroll - i));
     }
-    this.props.setScrollFlexible(false);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   render() {

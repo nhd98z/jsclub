@@ -23,11 +23,15 @@ class PreLoadImage extends Component {
 
   componentDidMount() {
     window.onload = () => {
-      setTimeout(() => {
+      this.timer = setTimeout(() => {
         this.setState(prevState => ({ loaded: !prevState.loaded }), () => console.log('window.onload', this.state));
         console.log('%cAll images loaded', 'color: green');
       }, 500);
     };
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.timer);
   }
 
   render() {
@@ -59,8 +63,7 @@ class PreLoadImage extends Component {
       <div>
         {!this.state.loaded && <Loader />}
         <div style={{ display: 'none' }}>
-          {this.props.isMobile && mobile}
-          {!this.props.isMobile && desktop}
+          {this.props.isMobile ? mobile : desktop}
           {other}
         </div>
       </div>
@@ -71,7 +74,6 @@ class PreLoadImage extends Component {
 function mapStateToProps(state) {
   const { mobile, scroll } = state;
   return {
-    // this.props.isMobile this.props.isScroll
     isMobile: mobile,
     isScroll: scroll
   };

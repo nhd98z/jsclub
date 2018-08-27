@@ -9,11 +9,10 @@ import './events.css';
 
 class Events extends Component {
   render() {
-    const responsiveRender = () => (this.props.isMobile ? <Mobile /> : <Desktop />);
     return (
       <div>
         <NavBar />
-        {responsiveRender()}
+        {this.props.isMobile ? <Mobile /> : <Desktop />}
         <Footer />
       </div>
     );
