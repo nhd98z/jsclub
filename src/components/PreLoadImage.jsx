@@ -19,28 +19,12 @@ class PreLoadImage extends Component {
     this.state = {
       loaded: false
     };
-    this.handleWindowLoad = this.handleWindowLoad.bind(this);
   }
 
   componentDidMount() {
-    this.handleWindowLoad();
-  }
-
-  componentDidUpdate() {
-    this.handleWindowLoad();
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timer);
-  }
-
-  handleWindowLoad() {
-    console.log('call handleWindowLoad');
     window.onload = () => {
-      this.timer = setTimeout(() => {
-        this.setState(prevState => ({ loaded: !prevState.loaded }), () => console.log('window.onload', this.state));
-        console.log('%cAll images loaded', 'color: green');
-      }, 500);
+      if (!this.state.loaded) this.setState({ loaded: true });
+      console.log('%cAll images loaded', 'color: green');
     };
   }
 
