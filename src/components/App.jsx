@@ -64,11 +64,11 @@ class App extends Component {
   }
 
   render() {
-    const renderScrollTop = () => (this.props.isScrollFlexible ? <ScrollTop /> : <div />);
     return (
       <div>
         <PreLoadImage />
-        {renderScrollTop()}
+        {/* handy */}
+        {this.props.isScrollFlexible && <ScrollTop />}
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />

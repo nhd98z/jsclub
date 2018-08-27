@@ -67,51 +67,47 @@ class NavBarMobile extends Component {
     const { i18n } = this.props;
     document.title = i18n.webTitle;
 
-    const bar = () =>
-      this.state.openBar ? (
-        <div>
-          <ul className="navbar-ul">
-            <li className="navbar-li">
-              <Link to="/about">{i18n.aboutUs}</Link>
-            </li>
-            <li className="navbar-li">
-              <Link to="/events">{i18n.events}</Link>
-            </li>
-            <li className="navbar-li">
-              <Link to="/partners">{i18n.partners}</Link>
-            </li>
-            <li className="navbar-li navbar-li-last">
-              <Link to="/news">{i18n.news}</Link>
-            </li>
-          </ul>
-        </div>
-      ) : (
-        <div />
-      );
-    const languageBar = () =>
-      this.state.openLanguageBar ? (
-        <div>
-          <ul className="navbar-ul">
-            <li className="navbar-li">
-              <div className="lang">
-                <div onClick={() => this.chooseLanguageClick('vn')}>Tiếng Việt</div>
-              </div>
-            </li>
-            <li className="navbar-li">
-              <div className="lang">
-                <div onClick={() => this.chooseLanguageClick('en')}>English</div>
-              </div>
-            </li>
-            <li className="navbar-li navbar-li-last">
-              <div className="lang">
-                <div onClick={() => this.chooseLanguageClick('jp')}>日本語</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      ) : (
-        <div />
-      );
+    const bar = (
+      <div>
+        <ul className="navbar-ul">
+          <li className="navbar-li">
+            <Link to="/about">{i18n.aboutUs}</Link>
+          </li>
+          <li className="navbar-li">
+            <Link to="/events">{i18n.events}</Link>
+          </li>
+          <li className="navbar-li">
+            <Link to="/partners">{i18n.partners}</Link>
+          </li>
+          <li className="navbar-li navbar-li-last">
+            <Link to="/news">{i18n.news}</Link>
+          </li>
+        </ul>
+      </div>
+    );
+
+    const languageBar = (
+      <div>
+        <ul className="navbar-ul">
+          <li className="navbar-li">
+            <div className="lang">
+              <div onClick={() => this.chooseLanguageClick('vn')}>Tiếng Việt</div>
+            </div>
+          </li>
+          <li className="navbar-li">
+            <div className="lang">
+              <div onClick={() => this.chooseLanguageClick('en')}>English</div>
+            </div>
+          </li>
+          <li className="navbar-li navbar-li-last">
+            <div className="lang">
+              <div onClick={() => this.chooseLanguageClick('jp')}>日本語</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    );
+
     return (
       <div>
         <div style={{ height: '48px', background: '#000000' }} />
@@ -129,8 +125,8 @@ class NavBarMobile extends Component {
               <Icon id="global-icon" type="global" style={{ fontSize: '30px' }} onClick={this.handleLanguageClick} />
             </span>
           </div>
-          {bar()}
-          {languageBar()}
+          {this.state.openBar && bar}
+          {this.state.openLanguageBar && languageBar}
         </div>
       </div>
     );

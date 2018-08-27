@@ -31,7 +31,7 @@ class PreLoadImage extends Component {
   }
 
   render() {
-    const mobile = () => (
+    const mobile = (
       <div>
         {mobileImages.map((value, index) => (
           <img src={value} alt={index} key={index} />
@@ -39,7 +39,7 @@ class PreLoadImage extends Component {
       </div>
     );
 
-    const desktop = () => (
+    const desktop = (
       <div>
         {desktopImages.map((value, index) => (
           <img src={value} alt={index} key={index} />
@@ -47,7 +47,7 @@ class PreLoadImage extends Component {
       </div>
     );
 
-    const other = () => (
+    const other = (
       <div>
         {otherImages.map((value, index) => (
           <img src={value} alt={index} key={index} />
@@ -55,16 +55,13 @@ class PreLoadImage extends Component {
       </div>
     );
 
-    const getMobileOrDesktop = () => (this.props.isMobile ? mobile() : desktop());
-
-    const renderLoader = () => (!this.state.loaded ? <Loader /> : <div />);
-
     return (
       <div>
-        {renderLoader()}
+        {!this.state.loaded && <Loader />}
         <div style={{ display: 'none' }}>
-          {getMobileOrDesktop()}
-          {other()}
+          {this.props.isMobile && mobile}
+          {!this.props.isMobile && desktop}
+          {other}
         </div>
       </div>
     );

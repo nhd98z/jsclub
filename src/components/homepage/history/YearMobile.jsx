@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class YearMobile extends Component {
   render() {
-    const getHr = () => (this.props.last ? <hr style={{ margin: '0% 10% 10% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} /> : <div />);
     return (
       <div className="year-mb-wrap">
         <img className="year-mb-img" src={this.props.img1} alt="img1" />
@@ -11,7 +10,7 @@ class YearMobile extends Component {
         <div>&nbsp;</div>
         <div className="year-mb-detail">{this.props.detail2}</div>
         <img className="year-mb-img" src={this.props.img2} alt="img1" />
-        {getHr()}
+        {this.props.last && <hr style={{ margin: '0% 10% 10% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />}
       </div>
     );
   }

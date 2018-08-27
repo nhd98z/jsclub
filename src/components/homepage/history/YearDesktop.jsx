@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class YearDesktop extends Component {
   render() {
-    const getHr = () => (!this.props.last ? <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} /> : <div />);
     return (
       <div className="year-wrap">
         <div className="year">
@@ -19,7 +18,7 @@ class YearDesktop extends Component {
           </div>
           <img className="year-img-l" src={this.props.img2} alt="yeardesktop" />
         </div>
-        {getHr()}
+        {!this.props.last && <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />}
       </div>
     );
   }

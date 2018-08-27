@@ -50,20 +50,15 @@ class AboutMobileOrganization extends Component {
   }
 
   render() {
-    const getHint = () => (!this.state.isBackgroundScroll ? <ScrollHint /> : <div />);
-
-    const getBg = () => (
-      <div className="bg-mobile-clb" id="scrollCenter">
-        <img className="bg-mobile-clb-img" src={backgroundMobile_01} alt="backgroundMobile_01" />
-        {getHint()}
-      </div>
-    );
-
     const { i18n } = this.props;
 
     return (
       <div>
-        {getBg()}
+        <div className="bg-mobile-clb" id="scrollCenter">
+          <img className="bg-mobile-clb-img" src={backgroundMobile_01} alt="backgroundMobile_01" />
+          {this.state.isBackgroundScroll === false && <ScrollHint />}
+        </div>
+
         <div className="abt-mb-wrap">
           <div id="whoweare-mb-organ" className="whoweare">
             {i18n.organizationUpper}
