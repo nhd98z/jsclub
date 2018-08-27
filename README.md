@@ -279,4 +279,10 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Chuyển đổi PreLoad sang mỗi page. Load ảnh thay cho window.onload.
 
 - 6:03 PM Monday, August 27, 2018 (GMT+7):
-  - Sử dụng shortid để generate ra uniqueId sử dụng cho Array.map().s
+
+  - Sử dụng shortid để generate ra uniqueId sử dụng cho Array.map().
+  - Khi nào không cần dùng shortid, có thể dùng index? Khi:
+    1. the list and items are static–they are not computed and do not change;
+    2. the items in the list have no ids;
+    3. the list is never reordered or filtered.
+  - Vậy trong trường hợp này của images preload, rõ ràng images là array luôn static, vậy nên không cần shortid.

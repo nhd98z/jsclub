@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import shortid from 'shortid';
 
 import Loader from './Loader';
 
@@ -20,18 +19,14 @@ class PreLoadImage extends Component {
 
   render() {
     let { images } = this.props;
-    images = images.map(image => ({
-      src: image,
-      id: shortid.generate()
-    }));
     return (
       <div>
         {!this.state.loaded && <Loader />}
         <div style={{ display: 'none' }}>
           {
             <div onLoad={this.imagesDidLoad}>
-              {images.map(image => (
-                <img src={image.src} alt={image.id} key={image.id} />
+              {images.map((image, index) => (
+                <img src={image} alt={index} key={index} />
               ))}
             </div>
           }
