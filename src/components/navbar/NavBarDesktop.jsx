@@ -16,16 +16,17 @@ class NavBarDesktop extends Component {
     this.state = {
       openLanguageBar: false
     };
+    this.handleLanguageClick = this.handleLanguageClick.bind(this);
+    this.chooseLanguageClick = this.chooseLanguageClick.bind(this);
   }
 
   handleLanguageClick() {
-    const openLanguageBar = !this.state.openLanguageBar;
-    this.setState({ openLanguageBar });
+    this.setState(prevState => ({ openLanguageBar: !prevState.openLanguageBar }));
   }
 
+  // Không nên viết function như này trong React, nên đưa biến language vào state
   chooseLanguageClick(language = 'en') {
-    const openLanguageBar = !this.state.openLanguageBar;
-    this.setState({ openLanguageBar });
+    this.handleLanguageClick();
     switch (language) {
       case 'en':
         this.props.setEnglish();
@@ -51,7 +52,7 @@ class NavBarDesktop extends Component {
     const global = () =>
       !this.state.openLanguageBar ? (
         <div className="global-wrap">
-          <Icon className="global-icon-desk" type="global" onClick={() => this.handleLanguageClick()} />
+          <Icon className="global-icon-desk" type="global" onClick={this.handleLanguageClick} />
         </div>
       ) : (
         <div className="global-wrap">

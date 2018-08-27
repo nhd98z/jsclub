@@ -14,9 +14,8 @@ class AboutMobile extends Component {
   }
 
   switchPage() {
-    const isIntroduction = !this.state.isIntroduction;
     console.log('switched');
-    this.setState({ isIntroduction });
+    this.setState(prevState => ({ isIntroduction: !prevState.isIntroduction }));
   }
 
   render() {

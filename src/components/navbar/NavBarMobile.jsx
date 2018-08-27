@@ -20,24 +20,28 @@ class NavBarMobile extends Component {
   }
 
   handleMenuClick() {
-    const openBar = !this.state.openBar;
-    if (openBar) this.setState({ openLanguageBar: false });
-    this.setState({ openBar });
+    this.setState(prevState => {
+      if (!prevState.openBar) return { openLanguageBar: false, openBar: true };
+      else return { openBar: false };
+    });
   }
 
   handleLanguageClick() {
     // spin icon
     document.getElementById('global-icon').classList.toggle('global-active');
 
-    const openLanguageBar = !this.state.openLanguageBar;
-    if (openLanguageBar) this.setState({ openBar: false });
-    this.setState({ openLanguageBar });
+    this.setState(prevState => {
+      if (!prevState.openLanguageBar) return { openBar: false, openLanguageBar: true };
+      else return { openLanguageBar: false };
+    });
   }
 
   chooseLanguageClick(language = 'en') {
-    const openLanguageBar = !this.state.openLanguageBar;
-    if (openLanguageBar) this.setState({ openBar: false });
-    this.setState({ openLanguageBar });
+    this.setState(prevState => {
+      if (!prevState.openLanguageBar) return { openBar: false, openLanguageBar: true };
+      else return { openLanguageBar: false };
+    });
+
     switch (language) {
       case 'en':
         this.props.setEnglish();

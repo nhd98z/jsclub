@@ -21,10 +21,11 @@ class PreLoadImage extends Component {
     };
   }
 
-  componentDidMount() {    
+  componentDidMount() {
+    console.log('React call componentDidMount', this.state);
     window.onload = () => {
       setTimeout(() => {
-        if (!this.state.loaded) this.setState({ loaded: true });
+        this.setState(prevState => ({ loaded: !prevState.loaded }), () => console.log('window.onload', this.state));
         console.log('%cAll images loaded', 'color: green');
       }, 500);
     };
