@@ -8,11 +8,11 @@ import Desktop from './AboutDesktop';
 import './about.css';
 import PreLoad from '../PreLoadImage';
 
-import background from '../../img/background-01.png';
+import exampleImage from '../../img/background-01.png';
 
 class About extends Component {
   render() {
-    const images = [background];
+    const images = [exampleImage];
     return (
       <div>
         <PreLoad images={images} />

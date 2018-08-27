@@ -13,18 +13,11 @@ class PreLoadImage extends Component {
   }
 
   imagesDidLoad() {
-    this.timer = setTimeout(() => {
-      if (!this.state.loaded) this.setState({ loaded: true });
-      console.log('%cAll images loaded', 'color: green');
-    }, 1500);
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timer);
+    if (!this.state.loaded) this.setState({ loaded: true });
+    console.log('%cAll images loaded', 'color: green');
   }
 
   render() {
-    console.log(this.props.images);
     return (
       <div>
         {!this.state.loaded && <Loader />}
