@@ -22,9 +22,9 @@ class App extends Component {
   setLanguage() {
     const language = read_cookie('language_cookie');
     switch (language) {
-      case 'vn':
+      case 'vi':
         this.props.setVietnamese();
-        console.log('read cookie: language vn successful');
+        console.log('read cookie: language vi successful');
         break;
       case 'en':
         this.props.setEnglish();

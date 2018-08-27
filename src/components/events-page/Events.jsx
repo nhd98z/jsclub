@@ -10,6 +10,10 @@ import PreLoad from '../PreLoadImage';
 import exampleImage from '../../img/background-01.png';
 
 class Events extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const images = [exampleImage];
     return (

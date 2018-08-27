@@ -33,9 +33,9 @@ class NavBarDesktop extends Component {
         bake_cookie('language_cookie', 'en');
         console.log('bake_cookie successful');
         break;
-      case 'vn':
+      case 'vi':
         this.props.setVietnamese();
-        bake_cookie('language_cookie', 'vn');
+        bake_cookie('language_cookie', 'vi');
         console.log('bake_cookie successful');
         break;
       case 'jp':

@@ -1,6 +1,6 @@
 import { VIETNAMESE, ENGLISH, JAPANESE } from '../constants';
 
-const vn = {
+const vi = {
   //
   webTitle: 'CLB Kĩ Sư Nhật Bản - JS Club',
 
@@ -128,14 +128,14 @@ const vn = {
   tb: 'Team building'
 };
 
-const en = vn;
+const en = vi;
 
-const jp = vn;
+const jp = vi;
 
 export default (state = 'en', action) => {
   switch (action.type) {
     case VIETNAMESE:
-      return vn;
+      return vi;
     case ENGLISH:
       return en;
     case JAPANESE:

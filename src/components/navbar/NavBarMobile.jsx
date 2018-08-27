@@ -48,9 +48,9 @@ class NavBarMobile extends Component {
         bake_cookie('language_cookie', 'en');
         console.log('bake_cookie successful');
         break;
-      case 'vn':
+      case 'vi':
         this.props.setVietnamese();
-        bake_cookie('language_cookie', 'vn');
+        bake_cookie('language_cookie', 'vi');
         console.log('bake_cookie successful');
         break;
       case 'jp':
@@ -91,7 +91,7 @@ class NavBarMobile extends Component {
         <ul className="navbar-ul">
           <li className="navbar-li">
             <div className="lang">
-              <div onClick={() => this.chooseLanguageClick('vn')}>Tiếng Việt</div>
+              <div onClick={() => this.chooseLanguageClick('vi')}>Tiếng Việt</div>
             </div>
           </li>
           <li className="navbar-li">
