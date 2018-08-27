@@ -22,7 +22,6 @@ class PreLoadImage extends Component {
   }
 
   componentDidMount() {
-    console.log('React call componentDidMount', this.state);
     window.onload = () => {
       setTimeout(() => {
         this.setState(prevState => ({ loaded: !prevState.loaded }), () => console.log('window.onload', this.state));

@@ -265,3 +265,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 
 - 6:35 AM Monday, August 27, 2018 (GMT+7):
   - Tư duy: khi code PreLoader: đầu tiên load ảnh background homepage, load xong cho loading icon biến mất, sau đó load ngầm những ảnh nặng ở các trang khác.
+
+- 8:07 AM Monday, August 27, 2018 (GMT+7):
+  - Update lại code chuẩn chỉnh hơn theo React: setState by prevState, remove addEventListener, ngoại lệ : scroll

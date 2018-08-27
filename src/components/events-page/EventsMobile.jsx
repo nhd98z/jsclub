@@ -9,12 +9,10 @@ import prom from '../../img/prom-avatar.jpg';
 import tb from '../../img/tb-avatar.jpg';
 
 class EventsDesktop extends Component {
-  clicked = false;
-
-  componentDidMount() {
-    document.addEventListener('click', () => {
-      this.handleClick();
-    });
+  constructor(props) {
+    super(props);
+    this.state = { clicked: false };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
@@ -30,7 +28,7 @@ class EventsDesktop extends Component {
     const promText = document.getElementsByClassName('prom-txt-mobile');
     const tbText = document.getElementsByClassName('tb-txt-mobile');
 
-    if (!this.clicked) {
+    if (!this.state.clicked) {
       [].forEach.call(hackathon, value => value.classList.toggle('l-dance'));
       [].forEach.call(ci, value => value.classList.toggle('r-dance'));
       [].forEach.call(cp, value => value.classList.toggle('l-dance'));
@@ -42,8 +40,7 @@ class EventsDesktop extends Component {
       [].forEach.call(cpText, value => value.classList.toggle('u-dance'));
       [].forEach.call(promText, value => value.classList.toggle('u-dance'));
       [].forEach.call(tbText, value => value.classList.toggle('u-dance'));
-
-      this.clicked = true;
+      this.setState({ clicked: true });
     } else {
       [].forEach.call(hackathon, value => value.classList.remove('l-dance'));
       [].forEach.call(ci, value => value.classList.remove('r-dance'));
@@ -56,8 +53,7 @@ class EventsDesktop extends Component {
       [].forEach.call(cpText, value => value.classList.remove('u-dance'));
       [].forEach.call(promText, value => value.classList.remove('u-dance'));
       [].forEach.call(tbText, value => value.classList.remove('u-dance'));
-
-      this.clicked = false;
+      this.setState({ clicked: false });
     }
   }
 
@@ -65,7 +61,7 @@ class EventsDesktop extends Component {
     const { i18n } = this.props;
 
     return (
-      <div>
+      <div onClick={this.handleClick}>
         <div style={{ margin: '0 10%', width: '80%' }}>
           <h1 className="h1-center-mobile">{i18n.eventsUpperCase}</h1>
           <h2 className="h2-center-mobile">{i18n.eventIntroductionMobile}</h2>

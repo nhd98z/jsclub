@@ -48,6 +48,7 @@ class App extends Component {
     window.addEventListener('scroll', this.handleScroll);
   }
 
+  // lifecycle
   componentWillUnmount() {
     clearInterval(this.interval);
     window.removeEventListener('scroll', this.handleScroll);
@@ -83,10 +84,9 @@ class App extends Component {
 }
 
 function mapStateToProps(state) {
-  const { scroll, mobile, scrollFlexible } = state;
+  const { scroll, scrollFlexible } = state;
   return {
     isScroll: scroll,
-    isMobile: mobile,
     isScrollFlexible: scrollFlexible
   };
 }

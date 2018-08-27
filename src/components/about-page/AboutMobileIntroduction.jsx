@@ -68,9 +68,7 @@ class AboutMobileIntroduction extends Component {
           <div id="whoweare-mb-intro" className="whoweare">
             {i18n.storyUpper}
           </div>
-          {/* <div className="abt-mb-avatar-wrap">
-          <img className="abt-mb-avatar" src={chairman} alt="chairman" />
-        </div> */}
+
           <div className="abt-mb-detail">{i18n.aboutDetail01MobileIntroduction}</div>
           <img className="abt-mb-img" src={img1} alt="img1" />
 
