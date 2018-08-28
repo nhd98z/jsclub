@@ -57,7 +57,7 @@ class NavBarDesktop extends Component {
       ) : (
         <div className="global-wrap">
           <img src={uk} className="flat" alt="uk" onClick={() => this.chooseLanguageClick('en')} />
-          <img src={vn} className="flat" alt="vn" onClick={() => this.chooseLanguageClick('vn')} />
+          <img src={vn} className="flat" alt="vn" onClick={() => this.chooseLanguageClick('vi')} />
           <img src={jp} className="flat" alt="jp" onClick={() => this.chooseLanguageClick('jp')} />
         </div>
       );
