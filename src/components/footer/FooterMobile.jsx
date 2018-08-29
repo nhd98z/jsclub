@@ -8,7 +8,8 @@ class FooterMobile extends Component {
   render() {
     const { i18n } = this.props;
 
-    return <footer>
+    return (
+      <footer>
         <div className="ft-mb-contact">
           <div>
             <img className="ft-mb-logo" src={logo} alt="logo" />
@@ -27,15 +28,16 @@ class FooterMobile extends Component {
               <Icon type="environment-o" /> {i18n.hoaLacHighTechHanoi}
             </div>
             <div>
-              <Icon type="mobile" /> +841659263711
+              <Icon type="mobile" /> +841658886392
             </div>
             <div>
-              <Icon type="mail" /> dungnhse05388@fpt.edu.vn
+              <Icon type="mail" /> jsclub.fpt@gmail.com
             </div>
           </span>
         </div>
         <div className="ft-mb-copyright">Copyright © 2018 JS Club.</div>
-      </footer>;
+      </footer>
+    );
   }
 }
 

@@ -47,11 +47,11 @@ class FooterDesktop extends Component {
             <div>{i18n.contact}</div>
             <div className="ft-explore-content">
               <Icon type="mobile" />
-              &nbsp;&nbsp;&nbsp;+841659263711
+              &nbsp;&nbsp;&nbsp;+841658886392
             </div>
             <div className="ft-explore-content">
               <Icon type="mail" />
-              &nbsp;&nbsp;&nbsp;omega1100100@gmail.com
+              &nbsp;&nbsp;&nbsp;jsclub.fpt@gmail.com
             </div>
             <div className="ft-explore-content">
               <Icon type="facebook" style={{ marginTop: '-5px', width: '14px' }} />

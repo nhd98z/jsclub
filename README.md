@@ -290,3 +290,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 - 8:56 PM Monday, August 27, 2018 (GMT+7):
   - Thay vn thành vi.
   - scroll về đầu trang mỗi khi render new page.
+
+- 8:25 AM Wednesday, August 29, 2018 (GMT+7):
+  - Thay footer phone của Công Linh, email CLB.
