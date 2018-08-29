@@ -5,7 +5,7 @@ class EventsDesktop extends Component {
   render() {
     // const { i18n } = this.props;
     return (
-      <div>
+      <div className="event-desktop-container">
         <h1>EventsDesktop</h1>
       </div>
     );
