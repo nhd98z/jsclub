@@ -1,0 +1,48 @@
+.d-inline {
+    display: inline;
+}
+
+.abt-wrap-leader {
+    width: 90%;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    width: 10vw;
+    background-color: #c9cacc;
+    height: 3px;
+}
+
+.menu-item {
+    cursor: pointer
+}
+
+.margin-left-menu {
+    margin-left: 4.5vw
+}
+
+.table-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item-margin-top {
+    margin-top: 20px;
+    align-content: center;
+    height: 100px;
+}
+
+tr img{
+    margin-top: 17px
+}
+
+td {
+    height: 30px;
+}
+
+.header th {
+    color: green
+}
