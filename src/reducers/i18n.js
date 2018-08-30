@@ -27,7 +27,7 @@ const vi = {
   viewmore: 'Xem thêm',
 
   // activities
-  activitiesUpperCase: 'ACTIVITIES',
+  activitiesUpperCase: 'HOẠT ĐỘNG',
   card1Title: 'HACKATHON 2018',
   card1Detail: 'Quán quân FPT Hackathon 2018 gọi tên VTeam ...',
   card2Title: 'ĐÊM ĐỪNG ĐỠ',
