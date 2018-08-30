@@ -64,7 +64,6 @@ class EventsDesktop extends Component {
       <div onClick={this.handleClick}>
         <div style={{ margin: '0 10%', width: '80%' }}>
           <h1 className="h1-center-mobile">{i18n.eventsUpperCase}</h1>
-          <h2 className="h2-center-mobile">{i18n.eventIntroductionMobile}</h2>
         </div>
         <div style={{ position: 'relative' }}>
           <img src={multicolor} alt="multicolor" style={{ width: '100%' }} />

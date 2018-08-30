@@ -7,7 +7,12 @@ import './events.css';
 
 class Events extends Component {
   render() {
-    return <div>{this.props.isMobile ? <Mobile /> : <Desktop />}</div>;
+    return (
+      <div>
+        {this.props.isMobile ? <Mobile /> : <Desktop />}
+        <hr style={{ margin: '5% 10% 0 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
+      </div>
+    );
   }
 }
 

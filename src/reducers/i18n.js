@@ -122,7 +122,6 @@ const vi = {
   prom: 'Prom',
   tb: 'Team building',
 
-  eventIntroductionMobile: `Đây là text giới thiệu tổng quan về trang event.`,
   hackathonMobile: `Đây là text giới thiệu về hackathon.`,
   ciMobile: `Đây là text giới thiệu về CI.`,
   cpMobile: `Đây là text giới thiệu về CP.`,
