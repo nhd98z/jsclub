@@ -86,7 +86,7 @@
 .ci-txt-mobile {
   top: 23.3%;
   left: 0%;
-  color: #438bc1;
+  color: #3867d6;
 }
 
 .cp-avt-mobile {
@@ -185,7 +185,7 @@
 }
 
 @media only screen and (min-width: 1366px) {
-  .year-wrap {
+  .event-desktop-container {
     margin: 5% 10%;
     width: 80%;
   }
@@ -217,4 +217,135 @@
     margin: 5% 35%;
     width: 30%;
   }
+}
+
+@keyframes animateLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.slideLeft {
+  position: relative;
+  animation: animateLeft 0.4s;
+}
+
+.slideRight {
+  position: relative;
+  animation: animateRight 0.4s;
+}
+
+.event-desktop-container h1 {
+  color: #3a5290;
+  text-align: center;
+  /* margin-top: 15%; */
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.event-desktop-container h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.event-desktop-container h3 {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.slide-background-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide-background-row img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.slide-avatar-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide-avatar-row img {
+  width: 25%;
+  height: 25%;
+  margin-top: -17%;
+  box-shadow: 0px 10px 15px rgba(50, 50, 50, 0.4);
+  z-index: 2;
+}
+
+.slide-paragraph {
+  width: 100%;
+  height: 180px;
+  margin-top: -5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-paragraph > p {
+  font-size: 15px;
+  width: 30%;
+  text-align: justify;
+  margin-top: 70px;
+}
+
+@keyframes iconSlideLeft {
+  from {
+    right: -30px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes iconSlideRight {
+  from {
+    left: -30px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.slide-swipe-left {
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slide-swipe-right {
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slide-swipe-left-animation {
+  animation: iconSlideLeft 1s infinite;
+}
+
+.slide-swipe-right-animation {
+  animation: iconSlideRight 1s infinite;
 }

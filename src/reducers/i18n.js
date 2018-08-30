@@ -115,17 +115,25 @@ const vi = {
 
   // event page mobile
 
+  hackathon: `Hackathon`,
+  ci: 'Coding Inspiration',
+  cp: 'Coding Project',
+  prom: 'Prom',
+  tb: 'Team building',
+
   eventIntroductionMobile: `Đây là text giới thiệu tổng quan về trang event`,
   hackathonMobile: `Đây là text giới thiệu về hackathon`,
   ciMobile: `Đây là text giới thiệu về CI`,
   cpMobile: `Đây là text giới thiệu về CP`,
   promMobile: `Đây là text giới thiệu về Prom`,
   tbMobile: `Đây là text giới thiệu về TB`,
-  hackathon: `Hackathon`,
-  ci: 'Coding Inspiration',
-  cp: 'Coding Project',
-  prom: 'Prom',
-  tb: 'Team building'
+
+  eventIntroductionDesktop: `Đây là text giới thiệu tổng quan về trang event`,
+  hackathonDesktop: `Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon.`,
+  ciDesktop: `Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI.`,
+  cpDesktop: `Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP.`,
+  promDesktop: `Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom.`,
+  tbDesktop: `Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB.`
 };
 
 const en = vi;
