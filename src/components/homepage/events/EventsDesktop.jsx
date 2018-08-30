@@ -58,7 +58,6 @@ class EventsDesktop extends Component {
     const { i18n } = this.props;
     const backgrounds = [bg01, bg02, bg03, bg04, bg05];
     const avatars = [av01, av02, av03, av04, av05];
-    const titles = [i18n.hackathon, i18n.ci, i18n.cp, i18n.prom, i18n.tb];
     const contents = [i18n.hackathonDesktop, i18n.ciDesktop, i18n.cpDesktop, i18n.promDesktop, i18n.tbDesktop];
     const backgroundColors = [
       { background: 'rgb(250, 248, 156)', color: '#1e0e3b' },
@@ -72,12 +71,11 @@ class EventsDesktop extends Component {
       <div className="event-desktop-container">
         <h1>{i18n.eventsUpperCase}</h1>
         <div id="current-slide" style={{ marginTop: '5%' }}>
-          <h2>{titles[currentIndex]}</h2>
           <div className="slide-background-row">
-            <img src={backgrounds[currentIndex]} alt={titles[currentIndex]} />
+            <img src={backgrounds[currentIndex]} alt="events background" />
           </div>
           <div className="slide-avatar-row">
-            <img src={avatars[currentIndex]} alt={titles[currentIndex]} />
+            <img src={avatars[currentIndex]} alt="events avatar" />
           </div>
           <div className="slide-paragraph" style={backgroundColors[currentIndex]}>
             <Icon type="left" className="slide-swipe-left slide-swipe-left-animation" onClick={this.onClickLeft} />
