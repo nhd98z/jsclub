@@ -306,3 +306,5 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Navbar: Chuyển event sang members.
   - Chuyển events sang hôm page.
   - Tạo thư mục mới members-page, router sang /members.
+  - Thay thế trang aboutUs chỉ có giới thiệu về clb.
+  - Chuyển aboutUs -> organization sang events-page

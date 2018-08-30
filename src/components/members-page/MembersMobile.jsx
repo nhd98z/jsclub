@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button } from 'antd';
 
-import ScrollHint from './ScrollHint';
+import ScrollHint from '../about-page/ScrollHint';
 import backgroundMobile_01 from '../../img/background-01-mobile.png';
 
 import img1 from '../../img/organ1.jpg';
@@ -12,7 +11,7 @@ import img4 from '../../img/organ4.jpg';
 import img5 from '../../img/organ5.jpg';
 import img6 from '../../img/organ6.jpg';
 
-class AboutMobileOrganization extends Component {
+class MembersMobile extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,18 +73,6 @@ class AboutMobileOrganization extends Component {
           <div className="abt-mb-detail" style={{ marginBottom: '10%' }}>
             {i18n.aboutDetail06MobileOrganization}
           </div>
-
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button
-              className="btn-vmore"
-              style={{ marginBottom: '10%', background: '#3a5290', border: 'none' }}
-              type="primary"
-              onClick={this.handleClick}
-              size="large"
-            >
-              {i18n.story}
-            </Button>
-          </div>
         </div>
       </div>
     );
@@ -102,4 +89,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   null
-)(AboutMobileOrganization);
+)(MembersMobile);

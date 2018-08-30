@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Button } from 'antd';
 
 import background_01 from '../../img/background-01.png';
 
@@ -11,7 +10,7 @@ import img4 from '../../img/organ4.jpg';
 import img5 from '../../img/organ5.jpg';
 import img6 from '../../img/organ6.jpg';
 
-class AboutDesktopOrganization extends Component {
+class MembersDesktop extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,7 +31,8 @@ class AboutDesktopOrganization extends Component {
   render() {
     const { i18n } = this.props;
 
-    return <div>
+    return (
+      <div>
         <img style={{ width: '100%' }} src={background_01} alt="background_01" />
         <div className="abt-wrap">
           <div id="whoweare-intro-desktop" className="whoweare">
@@ -66,21 +66,13 @@ class AboutDesktopOrganization extends Component {
             <div className="abt-detail-organ">{i18n.aboutDetail05DesktopOrganization}</div>
           </div>
 
-          <div className="person-wrap">
+          <div className="person-wrap" style={{ marginBottom: '5%' }}>
             <div className="abt-detail-organ">{i18n.aboutDetail06DesktopOrganization}</div>
             <img className="abt-img-organ" src={img6} alt="img6" />
           </div>
-
-          <div style={{ margin: '5% 0 2% 0' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <div>{i18n.wannaKnowAboutWhoWeAre}</div>
-              <Button className="btn-vmore" style={{ marginLeft: '5px', background: '#3a5290', border: 'none' }} type="primary" onClick={this.handleClick} size="large">
-                {i18n.story}
-              </Button>
-            </div>
-          </div>
         </div>
-      </div>;
+      </div>
+    );
   }
 }
 
@@ -94,4 +86,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   null
-)(AboutDesktopOrganization);
+)(MembersDesktop);

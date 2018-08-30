@@ -1,29 +1,83 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import AboutDesktopIntroduction from './AboutDesktopIntroduction';
-import AboutDesktopOrganization from './AboutDesktopOrganization';
+import background_01 from '../../img/background-01.png';
+
+import img1 from '../../img/helloworld.png';
+import img2 from '../../img/jsgame.png';
+import img3 from '../../img/hackathon-techkid.png';
+import img4 from '../../img/ngaychiem.png';
+import img5 from '../../img/banxoismile.jpg';
+import img6 from '../../img/dawn.png';
 
 class AboutDesktop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isIntroduction: true
+      isBackgroundScroll: false
     };
-    this.switchPage = this.switchPage.bind(this);
+    // phải bind nó
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  switchPage() {
-    console.log('switched');
-    this.setState(prevState => ({isIntroduction: !prevState.isIntroduction}));
+  handleClick() {
+    const bodyRect = document.body.getBoundingClientRect(),
+      elemRect = document.getElementById('whoweare-organ-desktop').getBoundingClientRect(),
+      offset = elemRect.top - bodyRect.top;
+    window.scrollTo(0, offset - 96);
+    this.props.switchPage();
   }
 
   render() {
-    return this.state.isIntroduction ? (
-      <AboutDesktopIntroduction switchPage={this.switchPage} />
-    ) : (
-        <AboutDesktopOrganization switchPage={this.switchPage} />
-      );
+    const { i18n } = this.props;
+
+    return (
+      <div>
+        <img style={{ width: '100%' }} src={background_01} alt="background_01" />
+        <div className="abt-wrap">
+          <div id="whoweare-organ-desktop" className="whoweare">
+            {i18n.storyUpper}
+          </div>
+
+          <div className="abt-detail">{i18n.aboutDetail01DesktopIntroduction}</div>
+          <img className="abt-img" src={img1} alt="img1" />
+
+          <div className="abt-detail">{i18n.aboutDetail02DesktopIntroduction}</div>
+          <img className="abt-img" src={img2} alt="img2" />
+
+          <div className="abt-detail">{i18n.aboutDetail03DesktopIntroduction}</div>
+          <img className="abt-img" src={img3} alt="img3" />
+
+          <div className="abt-detail">{i18n.aboutDetail04DesktopIntroduction}</div>
+          <img className="abt-img" src={img4} alt="img4" />
+
+          <div className="abt-detail">{i18n.aboutDetail05DesktopIntroduction}</div>
+          <img className="abt-img" src={img5} alt="img5" />
+
+          <div className="abt-detail">{i18n.aboutDetail06DesktopIntroduction}</div>
+          <img className="abt-img" src={img6} alt="img6" />
+
+          <div className="abt-detail">{i18n.aboutDetail07DesktopIntroduction}</div>
+          <div className="abt-detail" style={{ fontWeight: '500' }}>
+            {i18n.aboutDetail08DesktopIntroduction}
+          </div>
+          <div className="abt-detail abt-detail-last" style={{ fontWeight: 300, fontStyle: 'italic', textAlign: 'end', marginBottom: '10%' }}>
+            {'#LinhCancerNguyenwith'}
+            <span style={{ color: 'red' }}>❤</span>
+          </div>
+          <iframe
+            style={{ margin: '-5% 0 5% 10%' }}
+            title="video clb"
+            width={window.innerWidth * 0.48}
+            height={window.innerHeight * 0.48}
+            src="https://www.youtube.com/embed/Tc21v8vbTXg"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    );
   }
 }
 

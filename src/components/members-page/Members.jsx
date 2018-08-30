@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 import NavBar from '../navbar/NavBar';
 import Footer from '../footer/Footer';
 import PreLoad from '../PreLoadImage';
+import Desktop from './MembersDesktop';
+import Mobile from './MembersMobile';
+
 import exampleImage from '../../img/background-01.png';
 
 class Members extends Component {
@@ -18,7 +21,7 @@ class Members extends Component {
         <PreLoad images={images} />
 
         <NavBar />
-        <h1>Members Page</h1>
+        {this.props.isMobile ? <Mobile /> : <Desktop />}
         <Footer />
       </div>
     );
