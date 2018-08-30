@@ -303,3 +303,4 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 - 7:56 PM Thursday, August 30, 2018 (GMT+7):
 
   - Chuyển event thành activities.
+  - Navbar: Chuyển event sang members

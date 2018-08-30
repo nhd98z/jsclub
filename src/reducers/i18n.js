@@ -7,7 +7,7 @@ const vi = {
   // navbar
   hello: 'Xin chào',
   aboutUs: 'Về chúng tôi',
-  events: 'Sự kiện',
+  members: 'Thành viên',
   partners: 'Đối tác',
   news: 'Tin tức',
   // footer

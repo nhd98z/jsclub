@@ -74,7 +74,7 @@ class NavBarMobile extends Component {
             <Link to="/about">{i18n.aboutUs}</Link>
           </li>
           <li className="navbar-li">
-            <Link to="/events">{i18n.events}</Link>
+            <Link to="/members">{i18n.members}</Link>
           </li>
           <li className="navbar-li">
             <Link to="/partners">{i18n.partners}</Link>

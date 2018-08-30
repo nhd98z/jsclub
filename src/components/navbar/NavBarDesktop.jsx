@@ -76,8 +76,8 @@ class NavBarDesktop extends Component {
             <Link to="/about" className="navbar-e navbar-e-t">
               {i18n.aboutUs}
             </Link>
-            <Link to="/events" className="navbar-e navbar-e-t">
-              {i18n.events}
+            <Link to="/members" className="navbar-e navbar-e-t">
+              {i18n.members}
             </Link>
             <Link to="/partners" className="navbar-e navbar-e-t">
               {i18n.partners}

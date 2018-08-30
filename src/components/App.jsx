@@ -7,7 +7,7 @@ import './App.css';
 import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish, setScrollFlexible } from '../actions';
 import HomePage from './homepage/HomePage';
 import AboutPage from './about-page/About';
-import EventPage from './events-page/Events';
+import MembersPage from './events-page/Events';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
@@ -71,7 +71,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/about" component={AboutPage} />
-            <Route path="/events" component={EventPage} />
+            <Route path="/members" component={MembersPage} />
             <Route path="/partners" component={PartnersPage} />
             <Route path="/news" component={NewsPage} />
           </Switch>
