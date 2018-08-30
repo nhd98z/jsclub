@@ -25,17 +25,17 @@ class MembersMenu extends Component {
         <br/>
         <ul>
           <li className="menu-item" onClick={() => this.props.changeDetail(0)}> Ban chủ nghiệm </li>
-          <hr/>
+          <hr className='line-hr'/>
           <li className="menu-item" onClick={() => this.props.changeDetail(1)}> Ban chuyên môn </li>
-          <hr/>
+          <hr className='line-hr'/>
           <li className="menu-item" onClick={() => this.props.changeDetail(2)}> Ban văn hóa </li>
-          <hr/>
+          <hr className='line-hr'/>
           <li className="menu-item" onClick={() => this.props.changeDetail(3)}> Ban truyền thông </li>
-          <hr/>
+          <hr className='line-hr'/>
           <li className="menu-item" onClick={() => this.props.changeDetail(4)}> Ban đối ngoại </li>
-          <hr/>
+          <hr className='line-hr'/>
           <li className="menu-item" onClick={() => this.props.changeDetail(5)}> Tất cả thành viên </li>
-          <hr/>
+          {/* <hr className='line-hr'/> */}
         </ul>
       </div>
     );

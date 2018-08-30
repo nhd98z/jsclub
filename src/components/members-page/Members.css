@@ -10,18 +10,14 @@ li {
     list-style-type: none;
 }
 
-hr {
-    width: 10vw;
+.line-hr {
     background-color: #c9cacc;
-    height: 3px;
+    height: 2px;
+    margin-top: 5px
 }
 
 .menu-item {
     cursor: pointer
-}
-
-.margin-left-menu {
-    margin-left: 4.5vw
 }
 
 .table-container {
@@ -46,3 +42,68 @@ td {
 .header th {
     color: green
 }
+
+.margin-left-menu {
+    margin-top: 5%
+}
+
+@media only screen and (min-width: 1024px) {
+    .margin-left-menu {
+      margin-left: 5%
+    }
+
+    .line-hr {
+        width: 70%
+    }
+  }
+  
+  @media only screen and (min-width: 1366px) {
+    .margin-left-menu {
+      margin-left: 11%;
+    }
+
+    .line-hr {
+        width: 55%
+    }
+  }
+  
+  @media only screen and (min-width: 1600px) {
+    .margin-left-menu {
+      margin-left: 14%;
+    }
+
+    .line-hr {
+        width: 50%
+    }
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .margin-left-menu {
+      margin-left: 17%;
+    }
+
+    .line-hr {
+        width: 50%
+    }
+  }
+  
+  @media only screen and (min-width: 2560px) {
+    .margin-left-menu {
+      margin-left: 22%;
+    }
+
+    .line-hr {
+        width: 30%
+    }
+  }
+  
+  @media only screen and (min-width: 3048px) {
+    .margin-left-menu {
+      margin-left: 23%;
+    }
+
+    .line-hr {
+        width: 30%
+    }
+  }
+  

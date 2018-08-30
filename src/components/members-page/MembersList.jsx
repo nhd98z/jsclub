@@ -109,8 +109,8 @@ class MembersList extends Component {
       a.toggle("anticon-caret-down")
       if (prevState.sortCategory !== null && prevState.sortCategory !== category){
         var b = document.getElementById(`icon-${prevState.sortCategory}`).classList
-        b.toggle("anticon-caret-up")
-        b.toggle("anticon-caret-down")
+        b.add("anticon-caret-up")
+        b.remove("anticon-caret-down")
       }
       return {sortCategory: category}
     })
