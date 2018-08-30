@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Icon } from 'antd';
 
-import bg01 from '../../img/hackathon-slide.png';
-import bg02 from '../../img/ci-slide.png';
-import bg03 from '../../img/cp-slide.png';
-import bg04 from '../../img/prom-slide.png';
-import bg05 from '../../img/tb-slide.png';
+import bg01 from '../../../img/hackathon-slide.png';
+import bg02 from '../../../img/ci-slide.png';
+import bg03 from '../../../img/cp-slide.png';
+import bg04 from '../../../img/prom-slide.png';
+import bg05 from '../../../img/tb-slide.png';
 
-import av01 from '../../img/hackathon-avatar.jpg';
-import av02 from '../../img/ci-avatar.jpg';
-import av03 from '../../img/cp-avatar.png';
-import av04 from '../../img/prom-avatar.jpg';
-import av05 from '../../img/tb-avatar.jpg';
+import av01 from '../../../img/hackathon-avatar.jpg';
+import av02 from '../../../img/ci-avatar.jpg';
+import av03 from '../../../img/cp-avatar.png';
+import av04 from '../../../img/prom-avatar.jpg';
+import av05 from '../../../img/tb-avatar.jpg';
 
 class EventsDesktop extends Component {
   constructor(props) {
@@ -71,8 +71,7 @@ class EventsDesktop extends Component {
     return (
       <div className="event-desktop-container">
         <h1>{i18n.eventsUpperCase}</h1>
-        <h3>{i18n.eventIntroductionDesktop}</h3>
-        <div id="current-slide">
+        <div id="current-slide" style={{ marginTop: '5%' }}>
           <h2>{titles[currentIndex]}</h2>
           <div className="slide-background-row">
             <img src={backgrounds[currentIndex]} alt={titles[currentIndex]} />

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import multicolor from '../../img/multicolor.png';
-import ci from '../../img/ci-avatar.jpg';
-import hackathon from '../../img/hackathon-avatar.jpg';
-import cp from '../../img/cp-avatar.png';
-import prom from '../../img/prom-avatar.jpg';
-import tb from '../../img/tb-avatar.jpg';
+import multicolor from '../../../img/multicolor.png';
+import ci from '../../../img/ci-avatar.jpg';
+import hackathon from '../../../img/hackathon-avatar.jpg';
+import cp from '../../../img/cp-avatar.png';
+import prom from '../../../img/prom-avatar.jpg';
+import tb from '../../../img/tb-avatar.jpg';
 
 class EventsDesktop extends Component {
   constructor(props) {

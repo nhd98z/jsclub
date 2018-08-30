@@ -113,8 +113,9 @@ const vi = {
   aboutDetail06DesktopOrganization: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
   wannaKnowAboutWhoWeAre: 'Quay lại Về chúng tôi?',
 
-  // event page mobile
+  // event page
 
+  eventsUpperCase: 'SỰ KIỆN',
   hackathon: `Hackathon`,
   ci: 'Coding Inspiration',
   cp: 'Coding Project',
@@ -128,7 +129,6 @@ const vi = {
   promMobile: `Đây là text giới thiệu về Prom.`,
   tbMobile: `Đây là text giới thiệu về TB.`,
 
-  eventIntroductionDesktop: `Đây là text giới thiệu tổng quan về trang event. Đây là text giới thiệu tổng quan về trang event. Đây là text giới thiệu tổng quan về trang event.`,
   hackathonDesktop: `Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon.`,
   ciDesktop: `Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI.`,
   cpDesktop: `Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP.`,

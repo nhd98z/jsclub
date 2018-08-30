@@ -7,7 +7,7 @@ import './App.css';
 import { setMobile, setScroll, setJapanese, setVietnamese, setEnglish, setScrollFlexible } from '../actions';
 import HomePage from './homepage/HomePage';
 import AboutPage from './about-page/About';
-import MembersPage from './events-page/Events';
+import MembersPage from './members-page/Members';
 import PartnersPage from './partners-page/Partners';
 import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';

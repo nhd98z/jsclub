@@ -5,6 +5,7 @@ import Footer from '../footer/Footer';
 import BackGround from './background/BackGround';
 import WhoWeAre from './whoweare/WhoWeAre';
 import Activities from './activities/Activities';
+import Events from './events/Events';
 import History from './history/History';
 import PreLoad from '../PreLoadImage';
 
@@ -26,6 +27,7 @@ class HomePage extends Component {
         <BackGround />
         <WhoWeAre />
         <Activities />
+        <Events />
         <History />
 
         <Footer />
