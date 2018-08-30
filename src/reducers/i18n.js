@@ -26,8 +26,8 @@ const vi = {
   whoweareShortDetail: 'JS là một câu lạc bộ được thành lập với ý tưởng trở thành một cộng đồng cho sinh viên FU.',
   viewmore: 'Xem thêm',
 
-  // events
-  eventsUpperCase: 'SỰ KIỆN',
+  // activities
+  activitiesUpperCase: 'ACTIVITIES',
   card1Title: 'HACKATHON 2018',
   card1Detail: 'Quán quân FPT Hackathon 2018 gọi tên VTeam ...',
   card2Title: 'ĐÊM ĐỪNG ĐỠ',

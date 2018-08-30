@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import './event.css';
+import './activities.css';
 import ean01 from '../../../img/ean-01.png';
 import ean02 from '../../../img/ean-02.png';
 import ean03 from '../../../img/ean-03.png';
 
-class EventMobile extends Component {
+class ActivitiesMobile extends Component {
   render() {
     const { i18n } = this.props;
 
@@ -70,4 +70,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   null
-)(EventMobile);
+)(ActivitiesMobile);

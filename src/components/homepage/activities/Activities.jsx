@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import EventMobile from './EventMobile';
-import EventDesktop from './EventDesktop';
+import ActivitiesMobile from './ActivitiesMobile';
+import ActivitiesDesktop from './ActivitiesDesktop';
 
-class Event extends Component {
+class Activities extends Component {
   render() {
     const { i18n } = this.props;
 
     return (
       <div style={{ width: '100%' }}>
-        <div className="whoweare ean">{i18n.eventsUpperCase}</div>
-        {this.props.isMobile ? <EventMobile /> : <EventDesktop />}
+        <div className="whoweare ean">{i18n.activitiesUpperCase}</div>
+        {this.props.isMobile ? <ActivitiesMobile /> : <ActivitiesDesktop />}
         <hr style={{ margin: '0% 10% 5% 10%', border: '0', borderTop: '1px solid #ecf0f1' }} />
       </div>
     );
@@ -30,4 +30,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   null
-)(Event);
+)(Activities);

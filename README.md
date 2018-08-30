@@ -297,4 +297,9 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Thay footer phone của Công Linh, email CLB.
 
 - 4:13 PM Thursday, August 30, 2018 (GMT+7):
+
   - Done EventsDesktop.jsx.
+
+- 7:56 PM Thursday, August 30, 2018 (GMT+7):
+
+  - Chuyển event thành activities.
