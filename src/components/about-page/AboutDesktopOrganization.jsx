@@ -32,8 +32,7 @@ class AboutDesktopOrganization extends Component {
   render() {
     const { i18n } = this.props;
 
-    return (
-      <div>
+    return <div>
         <img style={{ width: '100%' }} src={background_01} alt="background_01" />
         <div className="abt-wrap">
           <div id="whoweare-intro-desktop" className="whoweare">
@@ -75,20 +74,13 @@ class AboutDesktopOrganization extends Component {
           <div style={{ margin: '5% 0 2% 0' }}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <div>{i18n.wannaKnowAboutWhoWeAre}</div>
-              <Button
-                className="btn-vmore"
-                style={{ marginLeft: '5px', background: '#3a5290', border: 'none' }}
-                type="primary"
-                onClick={this.handleClick}
-                size="large"
-              >
-                {i18n.organization}
+              <Button className="btn-vmore" style={{ marginLeft: '5px', background: '#3a5290', border: 'none' }} type="primary" onClick={this.handleClick} size="large">
+                {i18n.story}
               </Button>
             </div>
           </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 
