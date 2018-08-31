@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ava from '../../img/boy-1.png';
 
 import { Icon } from 'antd';
 
@@ -33,10 +32,13 @@ class MembersList extends Component {
       return (
         <tr key={value.id} className="item-margin-top">
           <td>
-            <img src={ava} width="70px" height="70px" alt="ava-member" />
-          </td>
-          <td width="100px">
-            <img src={ava} width="70px" height="70px" style={{ marginBottom: '10px' }} alt="ava-members" />
+            <img
+              src={window.location.origin + value.avatarUrl}
+              width="70px"
+              height="70px"
+              style={{ marginBottom: '10px', borderRadius: '50%' }}
+              alt="ava-members"
+            />
           </td>
           <td>{value.name}</td>
           <td>{value.gen}</td>

@@ -22,6 +22,7 @@ const diplomacy = 'Diplomacy';
 const members = [
   {
     name: 'Nguyễn Hữu Dũng',
+    avatarUrl: '/avatar-members/nguyenhuudung.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -30,6 +31,7 @@ const members = [
   },
   {
     name: 'Bùi Trung Hiếu',
+    avatarUrl: '/avatar-members/buitrunghieu.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -38,6 +40,7 @@ const members = [
   },
   {
     name: 'Nguyễn Văn Huy',
+    avatarUrl: '/avatar-members/nguyenvanhuy.jpg',
     gen: gen6,
     course: course12,
     major: ia,
@@ -46,6 +49,7 @@ const members = [
   },
   {
     name: 'Ma Công Linh',
+    avatarUrl: '/avatar-members/maconglinh.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -54,6 +58,7 @@ const members = [
   },
   {
     name: 'Trần Quang Nhật',
+    avatarUrl: '/avatar-members/tranquangnhat.jpg',
     gen: gen5,
     course: course13,
     major: se,
@@ -62,6 +67,7 @@ const members = [
   },
   {
     name: 'Bùi Thanh Tùng',
+    avatarUrl: '/avatar-members/buithanhtung.jpg',
     gen: gen5,
     course: course13,
     major: se,
@@ -70,6 +76,7 @@ const members = [
   },
   {
     name: 'Nguyễn Xuân Cường',
+    avatarUrl: '/avatar-members/nguyenxuancuong.jpg',
     gen: gen5,
     course: course12,
     major: ia,
@@ -78,6 +85,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tuấn Quang',
+    avatarUrl: '/avatar-members/nguyentuanquang.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -86,6 +94,7 @@ const members = [
   },
   {
     name: 'Tạ Đăng Khoa',
+    avatarUrl: '/avatar-members/tadangkhoa.jpg',
     gen: gen5,
     course: course13,
     major: cs,
@@ -94,6 +103,7 @@ const members = [
   },
   {
     name: 'Hồ Khánh Vũ',
+    avatarUrl: '/avatar-members/hokhanhvu.jpg',
     gen: gen5,
     course: course13,
     major: se,
@@ -102,6 +112,7 @@ const members = [
   },
   {
     name: 'Nguyễn Văn Hoàng',
+    avatarUrl: '/avatar-members/nguyenvanhoang.jpg',
     gen: gen5,
     course: course12,
     major: gd,
@@ -110,6 +121,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tiến Dũng',
+    avatarUrl: '/avatar-members/nguyentiendung.jpg',
     gen: gen6,
     course: course12,
     major: se,

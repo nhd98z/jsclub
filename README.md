@@ -308,3 +308,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Tạo thư mục mới members-page, router sang /members.
   - Thay thế trang aboutUs chỉ có giới thiệu về clb.
   - Chuyển aboutUs -> organization sang events-page
+
+- 11:45 AM Friday, August 31, 2018 (GMT+7):
+  - Dong event page desktop.
