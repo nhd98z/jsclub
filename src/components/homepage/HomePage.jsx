@@ -26,8 +26,8 @@ class HomePage extends Component {
 
         <BackGround />
         <WhoWeAre />
-        <Activities />
         <Events />
+        <Activities />
         <History />
 
         <Footer />
