@@ -328,8 +328,16 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Chưa đặt i18n cho partner page.
   - Chưa làm mobile cho members và partners.
 
-- 12:30 AM Saturday, September 1, 2018 (GMT+7):
-  - **Members Desktop:**
+- 12:30 AM Saturday, September 1, 2018 (GMT+7): **Cần làm trong tuần cuối !!!**
+
+  - Members Desktop:
     - Cần thêm màu đen xen cho các row.
     - Cần giãn các col của table hợp lý.
     - Cần có highlight của sider cái mục mình đang ở.
+  - Partners Desktop cần làm:
+
+    - Mới vào trang: animation fade-in có delay theo thứ tự logo.
+    - Hover vào logo: Hiệu ứng phóng to logo, hover ra thu nhỏ logo mượt mà.
+    - Hover logo cursor pointer, và click vào thì mở trang web của công ty trong tab mới.
+
+  - Members Mobile và Partners Mobile và cả phần News, chưa code gì.
