@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import './Members.css'
+import './Members.css';
 
 import img1 from '../../img/organ1.jpg';
 import img2 from '../../img/organ2.jpg';
@@ -40,32 +40,32 @@ class Leader extends Component {
           <div className="person-wrap">
             <img className="abt-img-organ" src={img1} alt="img1" />
             <div className="abt-detail-organ" style={{ fontWeight: '500' }}>
-              {i18n.aboutDetail01DesktopOrganization}
+              {i18n.chairman}
             </div>
           </div>
 
           <div className="person-wrap">
-            <div className="abt-detail-organ">{i18n.aboutDetail02DesktopOrganization}</div>
+            <div className="abt-detail-organ">{i18n.viceChairman}</div>
             <img className="abt-img-organ" src={img2} alt="img2" />
           </div>
 
           <div className="person-wrap">
             <img className="abt-img-organ" src={img3} alt="img3" />
-            <div className="abt-detail-organ">{i18n.aboutDetail03DesktopOrganization}</div>
+            <div className="abt-detail-organ">{i18n.leadOfExpertise}</div>
           </div>
 
           <div className="person-wrap">
-            <div className="abt-detail-organ">{i18n.aboutDetail04DesktopOrganization}</div>
+            <div className="abt-detail-organ">{i18n.leadOfMedia}</div>
             <img className="abt-img-organ" src={img4} alt="img4" />
           </div>
 
           <div className="person-wrap">
             <img className="abt-img-organ" src={img5} alt="img5" />
-            <div className="abt-detail-organ">{i18n.aboutDetail05DesktopOrganization}</div>
+            <div className="abt-detail-organ">{i18n.leadOfCulture}</div>
           </div>
 
           <div className="person-wrap" style={{ marginBottom: '5%' }}>
-            <div className="abt-detail-organ">{i18n.aboutDetail06DesktopOrganization}</div>
+            <div className="abt-detail-organ">{i18n.leadOfDiplomacy}</div>
             <img className="abt-img-organ" src={img6} alt="img6" />
           </div>
         </div>
