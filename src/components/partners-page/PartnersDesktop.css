@@ -9,18 +9,17 @@
 }
 
 img.logo {
-  width: 50%;
+  height: 50px;
   margin-top: 20%;
 }
 
 .logo-wrapper {
-  max-height: 15vh;
   display: flex;
   justify-content: center;
 }
 
 .logo-block {
-  margin-top: 25%;
+  margin-top: 12%;
 }
 
 .vertical-line {
