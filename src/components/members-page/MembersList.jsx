@@ -7,28 +7,30 @@ class MembersList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sortCategory: null
+      sortBoard: null
     };
-    this.renderCategory = this.renderCategory.bind(this);
+    this.renderBoard = this.renderBoard.bind(this);
     this.renderDetail = this.renderDetail.bind(this);
     this.renderHeader = this.renderHeader.bind(this);
     this.sortAsc = this.sortAsc.bind(this);
     this._handleClick = this._handleClick.bind(this);
   }
 
-  renderCategory(value) {
-    if (value === 'Expertise') {
-      return <td style={{ color: 'green' }}>{value}</td>;
-    } else if (value === 'Culture') {
-      return <td style={{ color: 'red' }}>{value}</td>;
-    } else if (value === 'Media') {
-      return <td style={{ color: 'blue' }}>{value}</td>;
-    } else if (value === 'Diplomacy') {
-      return <td style={{ color: 'black' }}>{value}</td>;
+  renderBoard(value) {
+    const { i18n } = this.props;
+    if (value === 'expertise') {
+      return <td style={{ color: 'red', fontWeight: 'bold' }}>{i18n[value]}</td>;
+    } else if (value === 'media') {
+      return <td style={{ color: '#3498db', fontWeight: 'bold' }}>{i18n[value]}</td>;
+    } else if (value === 'culture') {
+      return <td style={{ color: '#f1c40f', fontWeight: 'bold' }}>{i18n[value]}</td>;
+    } else if (value === 'diplomacy') {
+      return <td style={{ color: '#9b59b6', fontWeight: 'bold' }}>{i18n[value]}</td>;
     }
   }
 
   renderDetail() {
+    const { i18n } = this.props;
     return this.props.array.map((value, index) => {
       return (
         <tr key={value.id} className="item-margin-top">
@@ -44,8 +46,8 @@ class MembersList extends Component {
           <td>{value.name}</td>
           <td>{value.gen}</td>
           <td>{value.course}</td>
-          <td>{value.major}</td>
-          {this.renderCategory(value.category)}
+          <td>{i18n[value.major]}</td>
+          {this.renderBoard(value.board)}
         </tr>
       );
     });
@@ -86,9 +88,9 @@ class MembersList extends Component {
     }
   }
 
-  sortAsc(category) {
+  sortAsc(board) {
     this.props.array.sort(function(a, b) {
-      return a[category].localeCompare(b[category]);
+      return a[board].localeCompare(b[board]);
     });
   }
 
@@ -96,26 +98,27 @@ class MembersList extends Component {
     this.props.array.reverse();
   }
 
-  _handleClick(category) {
+  _handleClick(board) {
     this.setState(prevState => {
-      if (prevState.sortCategory === category) {
+      if (prevState.sortBoard === board) {
         this.sortDesc();
       } else {
-        this.sortAsc(category);
+        this.sortAsc(board);
       }
-      var a = document.getElementById(`icon-${category}`).classList;
+      var a = document.getElementById(`icon-${board}`).classList;
       a.toggle('anticon-caret-up');
       a.toggle('anticon-caret-down');
-      if (prevState.sortCategory !== null && prevState.sortCategory !== category) {
-        var b = document.getElementById(`icon-${prevState.sortCategory}`).classList;
+      if (prevState.sortBoard !== null && prevState.sortBoard !== board) {
+        var b = document.getElementById(`icon-${prevState.sortBoard}`).classList;
         b.add('anticon-caret-up');
         b.remove('anticon-caret-down');
       }
-      return { sortCategory: category };
+      return { sortBoard: board };
     });
   }
 
   render() {
+    const { i18n } = this.props;
     return (
       <div className="abt-wrap-member-list">
         {this.renderHeader()}
@@ -123,23 +126,27 @@ class MembersList extends Component {
           <thead>
             <tr className="header">
               <th>
-                Name&nbsp;
+                {i18n.name}
+                &nbsp;
                 <i style={{ fontSize: 12 }} id="icon-name" className="anticon anticon-caret-up menu-item" onClick={() => this._handleClick('name')} />
               </th>
               <th />
               <th>
-                Gen&nbsp;
+                {i18n.gen}
+                &nbsp;
                 <Icon style={{ fontSize: 12 }} id="icon-gen" type="caret-up" className="menu-item" onClick={() => this._handleClick('gen')} />
               </th>
               <th>
-                Course&nbsp;
+                {i18n.course}
+                &nbsp;
                 <Icon style={{ fontSize: 12 }} id="icon-course" type="caret-up" className="menu-item" onClick={() => this._handleClick('course')} />
               </th>
               <th>
-                Major&nbsp;
+                {i18n.major}
+                &nbsp;
                 <Icon style={{ fontSize: 12 }} id="icon-major" type="caret-up" className="menu-item" onClick={() => this._handleClick('major')} />
               </th>
-              <th>Category</th>
+              <th>{i18n.board}</th>
             </tr>
           </thead>
           <tbody>{this.renderDetail()}</tbody>

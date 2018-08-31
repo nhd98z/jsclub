@@ -8,17 +8,17 @@ const gen6 = 'Gen 6';
 const course11 = 'K11';
 const course12 = 'K12';
 const course13 = 'K13';
-const se = 'Software Engineering';
-const sb = 'Japanese Language';
-const mc = 'Multimedia Communications';
-const gd = 'Graphic Design';
-const ba = 'Business Administration';
-const ia = 'Information Assurance';
-const cs = 'Computer Science';
-const expertise = 'Expertise';
-const media = 'Media';
-const culture = 'Culture';
-const diplomacy = 'Diplomacy';
+const se = 'se';
+const sb = 'sb';
+const mc = 'mc';
+const gd = 'gd';
+const ba = 'ba';
+const ia = 'ia';
+const cs = 'cs';
+const expertise = 'expertise';
+const media = 'media';
+const culture = 'culture';
+const diplomacy = 'diplomacy';
 
 const members = [
   {
@@ -27,7 +27,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Bùi Thanh Tùng',
@@ -35,7 +35,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Bùi Thị Thu Trang',
@@ -43,7 +43,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Bùi Trung Hiếu',
@@ -51,7 +51,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Cao Thị Trang',
@@ -59,7 +59,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Đàm Sơn Tùng',
@@ -67,7 +67,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Đặng Công Thành',
@@ -75,7 +75,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Đinh Lệ Quỳnh Hương',
@@ -83,7 +83,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Đỗ Quang Hiệp',
@@ -91,7 +91,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Hoàng Huy Linh',
@@ -99,7 +99,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Hoàng Lê Tuấn Anh',
@@ -107,7 +107,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Hoàng Văn Thắng',
@@ -115,7 +115,7 @@ const members = [
     gen: gen5,
     course: course11,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Lã Vũ Nguyên Anh',
@@ -123,7 +123,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: sb,
-    category: culture
+    board: culture
   },
   {
     name: 'Lê Thành Công',
@@ -131,7 +131,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Lê Thị Minh Châu',
@@ -139,7 +139,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Lê Thiện Văn',
@@ -147,7 +147,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Ma Công Linh',
@@ -155,7 +155,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Nguyễn Đăng Kiên',
@@ -163,7 +163,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: ia,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Duy Nam',
@@ -171,7 +171,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Duy Quân',
@@ -179,7 +179,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Hồng Minh',
@@ -187,7 +187,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: ia,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Hữu Dũng',
@@ -195,7 +195,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Hữu Hoài Nam',
@@ -203,7 +203,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Khánh Huyền',
@@ -211,7 +211,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Nguyễn Khánh Nhật',
@@ -219,7 +219,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Khánh Việt',
@@ -227,7 +227,7 @@ const members = [
     gen: gen5,
     course: course11,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Mạnh Hiếu',
@@ -235,7 +235,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Minh Hiếu',
@@ -243,7 +243,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Quang Huy',
@@ -251,7 +251,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Quang Linh',
@@ -259,7 +259,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Quang Trường',
@@ -267,7 +267,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Thái Bảo',
@@ -275,7 +275,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Thị Lan Anh',
@@ -283,7 +283,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Thị Lộc',
@@ -291,7 +291,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: sb,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Thị Ngọc Khánh',
@@ -299,7 +299,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Nguyễn Thị Thùy Linh',
@@ -307,7 +307,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Nguyễn Tiến Dũng',
@@ -315,7 +315,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Tiến Mạnh',
@@ -323,7 +323,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: cs,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Tiến Mạnh',
@@ -331,7 +331,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Tuấn Khoa',
@@ -339,7 +339,7 @@ const members = [
     gen: gen5,
     course: course11,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Nguyễn Văn Huy',
@@ -347,7 +347,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: ia,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Vũ Minh',
@@ -355,7 +355,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Nguyễn Xuân Cường',
@@ -363,7 +363,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Phạm Hồng Sơn',
@@ -371,7 +371,7 @@ const members = [
     gen: gen5,
     course: course11,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Phạm Ngọc Hòa',
@@ -379,7 +379,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Phạm Quốc Đức',
@@ -387,7 +387,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Phạm Thanh Tâm',
@@ -395,7 +395,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: mc,
-    category: media
+    board: media
   },
   {
     name: 'Phạm Thị Kim Dung',
@@ -403,7 +403,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Phan Văn Đức',
@@ -411,7 +411,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Phan Xuân Vũ',
@@ -419,7 +419,7 @@ const members = [
     gen: gen5,
     course: course12,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Phùng Trí Đức',
@@ -427,7 +427,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Tạ Đăng Khoa',
@@ -435,7 +435,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: cs,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Trần Anh Quân',
@@ -443,7 +443,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: cs,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Trần Duy Quyền',
@@ -451,7 +451,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Trần Hữu Hoàng',
@@ -459,15 +459,15 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
-    name: 'Trần Văn Sơn',
+    name: 'Trần sơn',
     avatarUrl: '/avatar-members/tranvanson-min.jpg',
-    gen: gen6,
-    course: course12,
+    gen: gen5,
+    course: course11,
     major: se,
-    category: diplomacy
+    board: diplomacy
   },
   {
     name: 'Trịnh Quốc Khánh',
@@ -475,7 +475,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: ia,
-    category: media
+    board: media
   },
   {
     name: 'Trịnh Thị Hà My',
@@ -483,7 +483,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: diplomacy
+    board: diplomacy
   },
   {
     name: 'Từ Khắc Hiếu',
@@ -491,7 +491,7 @@ const members = [
     gen: gen6,
     course: course12,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Vũ Hải Lâm',
@@ -499,7 +499,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Vũ Hồng Quân',
@@ -507,7 +507,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: cs,
-    category: expertise
+    board: expertise
   },
   {
     name: 'Vũ Phương Thảo',
@@ -515,7 +515,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: culture
+    board: culture
   },
   {
     name: 'Vương Mạnh Linh',
@@ -523,7 +523,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: se,
-    category: media
+    board: media
   },
   {
     name: 'Vương Tuấn Quang',
@@ -531,7 +531,7 @@ const members = [
     gen: gen6,
     course: course13,
     major: cs,
-    category: expertise
+    board: expertise
   }
 ];
 

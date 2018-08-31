@@ -323,6 +323,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Tối ưu ảnh lần 2.
 
 - 10:11 PM Friday, August 31, 2018 (GMT+7):
-  - Chưa đặt i18n cho avatar của sự kiện ở homepage.
+  - Chưa đặt i18n cho avatar của sự kiện ở homepage => done.
   - Chưa đặt i18n cho partner page.
   - Chưa làm mobile cho members và partners.

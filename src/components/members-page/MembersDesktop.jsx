@@ -25,7 +25,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 1) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Expertise') {
+        if (ActiveMembersInJS[i].board === 'expertise') {
           array.push(ActiveMembersInJS[i]);
         }
       }
@@ -37,7 +37,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 2) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Media') {
+        if (ActiveMembersInJS[i].board === 'media') {
           array.push(ActiveMembersInJS[i]);
         }
       }
@@ -49,7 +49,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 3) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Culture') {
+        if (ActiveMembersInJS[i].board === 'culture') {
           array.push(ActiveMembersInJS[i]);
         }
       }
@@ -61,7 +61,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 4) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Diplomacy') {
+        if (ActiveMembersInJS[i].board === 'diplomacy') {
           array.push(ActiveMembersInJS[i]);
         }
       }

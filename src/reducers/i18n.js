@@ -137,7 +137,23 @@ const vi = {
   bantruyenthong: 'Ban Truyền Thông',
   banvanhoa: 'Ban Văn Hoá',
   bandoingoai: 'Ban Đối Ngoại',
-  tatcathanhvien: 'Tất Cả Thành Viên'
+  tatcathanhvien: 'Tất Cả Thành Viên',
+  name: 'Tên',
+  gen: 'Gen',
+  course: 'Khoá',
+  major: 'Chuyên ngành',
+  board: 'Ban',
+  se: 'Kỹ thuật phần mềm',
+  sb: 'Ngôn ngữ Nhật',
+  mc: 'Truyền thông đa phương tiện',
+  gd: 'Thiết kế đồ hoạ',
+  ba: 'Quản trị kinh doanh',
+  ia: 'An toàn thông tin',
+  cs: 'Khoa học máy tính',
+  expertise: 'Chuyên môn',
+  media: 'Truyền thông',
+  culture: 'Văn Hoá',
+  diplomacy: 'Đối ngoại'
 };
 
 const en = {
@@ -275,7 +291,23 @@ const en = {
   bantruyenthong: 'Media Department',
   banvanhoa: 'Culture Department',
   bandoingoai: 'Diplomacy Department',
-  tatcathanhvien: 'All Members'
+  tatcathanhvien: 'All Members',
+  name: 'Name',
+  gen: 'Gen',
+  course: 'Course',
+  major: 'Major',
+  board: 'Board',
+  se: 'Software engineering',
+  sb: 'Japanese language',
+  mc: 'Multimedia communications',
+  gd: 'Graphic design',
+  ba: 'Business administration',
+  ia: 'Information assurance',
+  cs: 'Computer science',
+  expertise: 'Expertise',
+  media: 'Media',
+  culture: 'Culture',
+  diplomacy: 'Diplomacy'
 };
 
 const jp = vi;
