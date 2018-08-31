@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import shortid from 'shortid';
 
 const gen5 = 'Gen 5';

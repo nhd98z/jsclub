@@ -36,7 +36,7 @@ class MembersList extends Component {
   renderDetail() {
     return this.props.array.map((value, index) => {
             return <tr key={value.id} className='item-margin-top'>
-                      <td><img src={ava} width='70px' height='70px' /></td>
+                      <td><img src={ava} width='70px' height='70px' alt="ava-member"/></td>
                       <td>{value.name}</td>
                       <td>{value.gen}</td>
                       <td>{value.course}</td>
