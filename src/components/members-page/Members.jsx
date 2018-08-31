@@ -7,7 +7,7 @@ import PreLoad from '../PreLoadImage';
 import Desktop from './MembersDesktop';
 import Mobile from './MembersMobile';
 
-import exampleImage from '../../img/background-01.png';
+import organ1 from '../../img/organ1.png';
 
 class Members extends Component {
   componentDidMount() {
@@ -15,7 +15,7 @@ class Members extends Component {
   }
 
   render() {
-    const images = [exampleImage];
+    const images = [organ1];
     return (
       <div>
         <PreLoad images={images} />

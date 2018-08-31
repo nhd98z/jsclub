@@ -8,7 +8,7 @@ import Desktop from './AboutDesktop';
 import './about.css';
 import PreLoad from '../PreLoadImage';
 
-import exampleImage from '../../img/background-01.png';
+import background01mobile from '../../img/background-01-mobile.png';
 
 class About extends Component {
   componentDidMount() {
@@ -16,10 +16,10 @@ class About extends Component {
   }
 
   render() {
-    const images = [exampleImage];
+    const images = [background01mobile];
     return (
       <div>
-        <PreLoad images={images} />
+        {this.props.isMobile && <PreLoad images={images} />}
 
         <NavBar />
         {this.props.isMobile ? <Mobile /> : <Desktop />}
