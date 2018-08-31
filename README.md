@@ -310,11 +310,19 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Chuyển aboutUs -> organization sang events-page
 
 - 11:45 AM Friday, August 31, 2018 (GMT+7):
+
   - Done event page desktop.
 
 - 6:41 PM Friday, August 31, 2018 (GMT+7):
+
   - Set Data thật của event page desktop.
 
 - 9:36 PM Friday, August 31, 2018 (GMT+7):
+
   - Tối ưu ảnh.
   - Tối ưu ảnh lần 2.
+
+- 10:11 PM Friday, August 31, 2018 (GMT+7):
+  - Chưa đặt i18n cho avatar của sự kiện ở homepage.
+  - Chưa đặt i18n cho partner page.
+  - Chưa làm mobile cho members và partners.
