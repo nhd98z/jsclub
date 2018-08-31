@@ -36,7 +36,11 @@ class MembersList extends Component {
   renderDetail() {
     return this.props.array.map((value, index) => {
             return <tr key={value.id} className='item-margin-top'>
+<<<<<<< HEAD
                       <td><img src={ava} width='70px' height='70px' alt="ava-member"/></td>
+=======
+                      <td width="100px"><img src={ava} width='70px' height='70px' style={{marginBottom: '10px'}}/></td>
+>>>>>>> 008eb1b0149826b0ae6409b152c053abe13fb1c8
                       <td>{value.name}</td>
                       <td>{value.gen}</td>
                       <td>{value.course}</td>
@@ -100,9 +104,6 @@ class MembersList extends Component {
       }
       else {
         this.sortAsc(category)
-        // console.log(document.getElementById(`icon-${category}`))
-        // a.toggle("anticon-caret-up")
-        // a.toggle("anticon-caret-down")
       }
       var a = document.getElementById(`icon-${category}`).classList
       a.toggle("anticon-caret-up")
@@ -117,18 +118,18 @@ class MembersList extends Component {
   }
 
   render() {
-    // console.log(this.props.array)
+    console.log(this)
     return (
       <div className='abt-wrap-member-list'>
          {this.renderHeader()}
         <table className='table-container'>
           <thead>
             <tr className='header'>
-              <th>Name&nbsp;<i id="icon-name" className="anticon anticon-caret-up menu-item" onClick={() => this._handleClick("name")}></i></th>
+              <th>Name&nbsp;<i style={{fontSize: 12}} id="icon-name" className="anticon anticon-caret-up menu-item" onClick={() => this._handleClick("name")}></i></th>
               <th></th>
-              <th>Gen&nbsp;<Icon id='icon-gen' type="caret-up" className='menu-item' onClick={() =>this._handleClick("gen")} /></th>
-              <th>Course&nbsp;<Icon id='icon-course' type="caret-up" className='menu-item' onClick={() => this._handleClick("course")} /></th>
-              <th>Major&nbsp;<Icon id='icon-major' type="caret-up" className='menu-item' onClick={() => this._handleClick("major")} /></th>
+              <th>Gen&nbsp;<Icon style={{fontSize: 12}} id='icon-gen' type="caret-up" className='menu-item' onClick={() =>this._handleClick("gen")} /></th>
+              <th>Course&nbsp;<Icon style={{fontSize: 12}} id='icon-course' type="caret-up" className='menu-item' onClick={() => this._handleClick("course")} /></th>
+              <th>Major&nbsp;<Icon style={{fontSize: 12}} id='icon-major' type="caret-up" className='menu-item' onClick={() => this._handleClick("major")} /></th>
               <th>Category</th>
             </tr>
           </thead>
