@@ -10,7 +10,7 @@ class MembersDesktop extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      menu: 5
+      menu: 0
     }
     this._changeDetail = this._changeDetail.bind(this)
   }

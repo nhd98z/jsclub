@@ -119,7 +119,7 @@ class MembersList extends Component {
   render() {
     // console.log(this.props.array)
     return (
-      <div>
+      <div className='abt-wrap-member-list'>
          {this.renderHeader()}
         <table className='table-container'>
           <thead>

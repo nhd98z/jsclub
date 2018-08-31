@@ -6,6 +6,10 @@
     width: 90%;
 }
 
+.abt-wrap-member-list {
+    width: 95%;
+}
+
 li {
     list-style-type: none;
 }
