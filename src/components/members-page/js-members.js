@@ -336,7 +336,7 @@ const members = [
   {
     name: 'Nguyễn Tuấn Khoa',
     avatarUrl: '/avatar-members/nguyentuankhoa.jpg',
-    gen: gen4,
+    gen: gen5,
     course: course11,
     major: se,
     category: culture
@@ -368,7 +368,7 @@ const members = [
   {
     name: 'Phạm Hồng Sơn',
     avatarUrl: '/avatar-members/phamhongson.jpg',
-    gen: gen4,
+    gen: gen5,
     course: course11,
     major: se,
     category: expertise
@@ -535,6 +535,6 @@ const members = [
   }
 ];
 
-console.log(members);
+members.forEach(value => (value.id = shortid.generate()));
 
 export default members;
