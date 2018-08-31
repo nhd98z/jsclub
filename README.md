@@ -329,4 +329,7 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Chưa làm mobile cho members và partners.
 
 - 12:30 AM Saturday, September 1, 2018 (GMT+7):
-  - **Cần thêm màu đan xen cho members.**
+  - **Members Desktop:**
+    - Cần thêm màu đen xen cho các row.
+    - Cần giãn các col của table hợp lý.
+    - Cần có highlight của sider cái mục mình đang ở.
