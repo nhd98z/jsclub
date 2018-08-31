@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Leader from './Leader'
 
 class MembersMobile extends Component {
   
