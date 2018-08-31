@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import { Icon } from 'antd';
 
@@ -51,37 +52,29 @@ class MembersList extends Component {
   }
 
   renderHeader() {
-    // console.log(this.props.header)
+    const { i18n } = this.props;
     if (this.props.header === 1) {
       return (
         <div id="whoweare-intro-desktop" className="whoweare">
-          Ban Chuyên Môn
+          {i18n.banchuyenmonUpper}
         </div>
       );
     } else if (this.props.header === 2) {
-      return (
-        <div id="whoweare-intro-desktop" className="whoweare">
-          Ban Văn Hóa
-        </div>
-      );
+      return <div id="whoweare-intro-desktop" className="whoweare">
+          {i18n.bantruyenthongUpper}
+        </div>;
     } else if (this.props.header === 3) {
-      return (
-        <div id="whoweare-intro-desktop" className="whoweare">
-          Ban Truyền Thông
-        </div>
-      );
+      return <div id="whoweare-intro-desktop" className="whoweare">
+          {i18n.banvanhoaUpper}
+        </div>;
     } else if (this.props.header === 4) {
-      return (
-        <div id="whoweare-intro-desktop" className="whoweare">
-          Ban Đối Ngoại
-        </div>
-      );
+      return <div id="whoweare-intro-desktop" className="whoweare">
+          {i18n.bandoingoaiUpper}
+        </div>;
     } else if (this.props.header === 5) {
-      return (
-        <div id="whoweare-intro-desktop" className="whoweare">
-          Tất Cả Thành Viên
-        </div>
-      );
+      return <div id="whoweare-intro-desktop" className="whoweare">
+          {i18n.tatcathanhvienUpper}
+        </div>;
     }
   }
 
@@ -157,4 +150,14 @@ class MembersList extends Component {
   }
 }
 
-export default MembersList;
+function mapStateToProps(state) {
+  const { i18n } = state;
+  return {
+    i18n
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null
+)(MembersList);

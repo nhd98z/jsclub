@@ -34,7 +34,7 @@ class Leader extends Component {
       <div>
         <div className="abt-wrap-leader">
           <div id="whoweare-intro-desktop" className="whoweare">
-            Ban Chủ Nhiệm
+            {i18n.banchunhiemUpper}  
           </div>
 
           <div className="person-wrap">

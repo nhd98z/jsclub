@@ -125,7 +125,19 @@ const vi = {
   leadOfExpertise: `Ban Chuyên môn mang vai trò giảng dạy hay trợ giảng cho các Chương trình Hỗ trợ học tập của Phòng Công tác sinh viên và lên nội dung cho những Workshop, Seminar và Training nội bộ tại JS.`,
   leadOfMedia: `Ban Truyền thông - những người hùng đứng sau những bài viết, ấn phẩm và media của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu và áp dụng thêm về kiến thức thiết kế, PR và marketing.`,
   leadOfCulture: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Chất riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
-  leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`
+  leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
+  banchunhiemUpper: 'BAN CHỦ NHIỆM',
+  banchuyenmonUpper: 'BAN CHUYÊN MÔN',
+  bantruyenthongUpper: 'BAN TRUYỀN THÔNG',
+  banvanhoaUpper: 'BAN VĂN HOÁ',
+  bandoingoaiUpper: 'BAN ĐỐI NGOẠI',
+  tatcathanhvienUpper: 'TẤT CẢ THÀNH VIÊN',
+  banchunhiem: 'Ban Chủ Nhiệm',
+  banchuyenmon: 'Ban Chuyên Môn',
+  bantruyenthong: 'Ban Truyền Thông',
+  banvanhoa: 'Ban Văn Hoá',
+  bandoingoai: 'Ban Đối Ngoại',
+  tatcathanhvien: 'Tất Cả Thành Viên'
 };
 
 const en = {
@@ -251,7 +263,19 @@ const en = {
   leadOfExpertise: `Ban Chuyên môn mang vai trò giảng dạy hay trợ giảng cho các Chương trình Hỗ trợ học tập của Phòng Công tác sinh viên và lên nội dung cho những Workshop, Seminar và Training nội bộ tại JS.`,
   leadOfMedia: `Ban Truyền thông - những người hùng đứng sau những bài viết, ấn phẩm và media của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu và áp dụng thêm về kiến thức thiết kế, PR và marketing.`,
   leadOfCulture: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Chất riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
-  leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`
+  leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
+  banchunhiemUpper: 'BAN CHỦ NHIỆM',
+  banchuyenmonUpper: 'BAN CHUYÊN MÔN',
+  bantruyenthongUpper: 'BAN TRUYỀN THÔNG',
+  banvanhoaUpper: 'BAN VĂN HOÁ',
+  bandoingoaiUpper: 'BAN ĐỐI NGOẠI',
+  tatcathanhvienUpper: 'TẤT CẢ THÀNH VIÊN',
+  banchunhiem: 'Ban Chủ Nhiệm',
+  banchuyenmon: 'Ban Chuyên Môn',
+  bantruyenthong: 'Ban Truyền Thông',
+  banvanhoa: 'Ban Văn Hoá',
+  bandoingoai: 'Ban Đối Ngoại',
+  tatcathanhvien: 'Tất Cả Thành Viên'
 };
 
 const jp = vi;
