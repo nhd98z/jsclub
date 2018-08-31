@@ -8,11 +8,11 @@ import bg03 from '../../../img/cp-slide.png';
 import bg04 from '../../../img/prom-slide.png';
 import bg05 from '../../../img/tb-slide.png';
 
-import av01 from '../../../img/hackathon-avatar.jpg';
-import av02 from '../../../img/ci-avatar.jpg';
+import av01 from '../../../img/hackathon-avatar.png';
+import av02 from '../../../img/ci-avatar.png';
 import av03 from '../../../img/cp-avatar.png';
-import av04 from '../../../img/prom-avatar.jpg';
-import av05 from '../../../img/tb-avatar.jpg';
+import av04 from '../../../img/prom-avatar.png';
+import av05 from '../../../img/tb-avatar.png';
 
 class EventsDesktop extends Component {
   constructor(props) {

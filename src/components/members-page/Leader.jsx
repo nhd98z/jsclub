@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Members.css';
 
-import img1 from '../../img/organ1.jpg';
-import img2 from '../../img/organ2.jpg';
-import img3 from '../../img/organ3.jpg';
-import img4 from '../../img/organ4.jpg';
-import img5 from '../../img/organ5.jpg';
-import img6 from '../../img/organ6.jpg';
+import img1 from '../../img/organ1.png';
+import img2 from '../../img/organ2.png';
+import img3 from '../../img/organ3.png';
+import img4 from '../../img/organ4.png';
+import img5 from '../../img/organ5.png';
+import img6 from '../../img/organ6.png';
 
 class Leader extends Component {
   constructor(props) {

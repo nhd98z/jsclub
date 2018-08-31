@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import { Row, Col } from 'antd';
 import PartnersText from './PartnersText';
 import './PartnersDesktop.css';
 
-import Background from '../../img/color.jpg';
+import Background from '../../img/color.png';
 import Logo1 from '../../img/TechkidBrandColor.png';
 import Logo2 from '../../img/logo_vietis.png';
 import Logo3 from '../../img/topcv-logo.png';
@@ -18,57 +18,79 @@ import Logo11 from '../../img/logo-AltPlus-300x.png';
 import Logo12 from '../../img/3s-intersoft-jsc.png';
 import Logo13 from '../../img/rikkei-logso.png';
 
-
-
 var sectionStyle = {
-    width: "100%",
-    height: "150vh",
-    backgroundRepeat  : 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundImage: `url(${Background})`
-  };
-
+  width: '100%',
+  height: '100vh',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  backgroundImage: `url(${Background})`
+};
 
 class PartnersDesktop extends React.Component {
-
   render() {
     return (
-    <div className="partners" style = {sectionStyle}>
-        <Col span={2}></Col>
+      <div className="partners" style={sectionStyle}>
+        <Col span={2} />
         <Col span={5}>
-            <PartnersText />
+          <PartnersText />
         </Col>
-        <Col span={2}></Col>
+        <Col span={2} />
         <Col span={5}>
-            <div className="logo-block">
-                <div className="vertical-line"></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo1}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo2}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo3}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo4}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo5}/></div>
+          <div className="logo-block">
+            <div className="vertical-line" />
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo1} />
             </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo2} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo3} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo4} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo5} />
+            </div>
+          </div>
         </Col>
         <Col span={5}>
-            <div className="logo-block">
-                <div className="vertical-line"></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo6}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo7}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo8}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo9}/></div>                
+          <div className="logo-block">
+            <div className="vertical-line" />
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo6} />
             </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo7} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo8} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo9} />
+            </div>
+          </div>
         </Col>
         <Col span={5}>
-            <div className="logo-block">
-                <div className="vertical-line"></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo10}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo11}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo12}/></div>
-                <div className="logo-wrapper"><img className="logo" src={Logo13}/></div>
+          <div className="logo-block">
+            <div className="vertical-line" />
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo10} />
             </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo11} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo12} />
+            </div>
+            <div className="logo-wrapper">
+              <img className="logo" src={Logo13} />
+            </div>
+          </div>
         </Col>
-        
-    </div>);
+      </div>
+    );
   }
 }
 

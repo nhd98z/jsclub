@@ -7,7 +7,7 @@ import ean01 from '../../../img/ean-01.png';
 import ean02 from '../../../img/ean-02.png';
 import ean03 from '../../../img/ean-03.png';
 import ean04 from '../../../img/ean-04.png';
-import ean05 from '../../../img/ean-05.jpg';
+import ean05 from '../../../img/ean-05.png';
 import ean06 from '../../../img/ean-06.png';
 
 class ActivitiesDesktop extends Component {

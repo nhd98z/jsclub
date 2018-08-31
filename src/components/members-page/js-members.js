@@ -23,7 +23,7 @@ const diplomacy = 'Diplomacy';
 const members = [
   {
     name: 'Bùi Anh Tú',
-    avatarUrl: '/avatar-members/buianhtu.jpg',
+    avatarUrl: '/avatar-members/buianhtu-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -31,7 +31,7 @@ const members = [
   },
   {
     name: 'Bùi Thanh Tùng',
-    avatarUrl: '/avatar-members/buithanhtung.jpg',
+    avatarUrl: '/avatar-members/buithanhtung-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -39,7 +39,7 @@ const members = [
   },
   {
     name: 'Bùi Thị Thu Trang',
-    avatarUrl: '/avatar-members/buithithutrang.jpg',
+    avatarUrl: '/avatar-members/buithithutrang-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -47,7 +47,7 @@ const members = [
   },
   {
     name: 'Bùi Trung Hiếu',
-    avatarUrl: '/avatar-members/buitrunghieu.jpg',
+    avatarUrl: '/avatar-members/buitrunghieu-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -55,7 +55,7 @@ const members = [
   },
   {
     name: 'Cao Thị Trang',
-    avatarUrl: '/avatar-members/caothitrang.jpg',
+    avatarUrl: '/avatar-members/caothitrang-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -63,7 +63,7 @@ const members = [
   },
   {
     name: 'Đàm Sơn Tùng',
-    avatarUrl: '/avatar-members/damsontung.jpg',
+    avatarUrl: '/avatar-members/damsontung-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -71,7 +71,7 @@ const members = [
   },
   {
     name: 'Đặng Công Thành',
-    avatarUrl: '/avatar-members/dangcongthanh.jpg',
+    avatarUrl: '/avatar-members/dangcongthanh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -79,7 +79,7 @@ const members = [
   },
   {
     name: 'Đinh Lệ Quỳnh Hương',
-    avatarUrl: '/avatar-members/dinhlequynhhuong.jpg',
+    avatarUrl: '/avatar-members/dinhlequynhhuong-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -87,7 +87,7 @@ const members = [
   },
   {
     name: 'Đỗ Quang Hiệp',
-    avatarUrl: '/avatar-members/doquanghiep.jpg',
+    avatarUrl: '/avatar-members/doquanghiep-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -95,7 +95,7 @@ const members = [
   },
   {
     name: 'Hoàng Huy Linh',
-    avatarUrl: '/avatar-members/hoanghuylinh.jpg',
+    avatarUrl: '/avatar-members/hoanghuylinh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -103,7 +103,7 @@ const members = [
   },
   {
     name: 'Hoàng Lê Tuấn Anh',
-    avatarUrl: '/avatar-members/hoangletuananh.jpg',
+    avatarUrl: '/avatar-members/hoangletuananh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -111,7 +111,7 @@ const members = [
   },
   {
     name: 'Hoàng Văn Thắng',
-    avatarUrl: '/avatar-members/hoangvanthang.jpg',
+    avatarUrl: '/avatar-members/hoangvanthang-min.jpg',
     gen: gen5,
     course: course11,
     major: se,
@@ -119,7 +119,7 @@ const members = [
   },
   {
     name: 'Lã Vũ Nguyên Anh',
-    avatarUrl: '/avatar-members/lavunguyenanh.jpg',
+    avatarUrl: '/avatar-members/lavunguyenanh-min.jpg',
     gen: gen6,
     course: course13,
     major: sb,
@@ -127,7 +127,7 @@ const members = [
   },
   {
     name: 'Lê Thành Công',
-    avatarUrl: '/avatar-members/lethanhcong.jpg',
+    avatarUrl: '/avatar-members/lethanhcong-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -135,7 +135,7 @@ const members = [
   },
   {
     name: 'Lê Thị Minh Châu',
-    avatarUrl: '/avatar-members/lethiminhchau.jpg',
+    avatarUrl: '/avatar-members/lethiminhchau-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -143,7 +143,7 @@ const members = [
   },
   {
     name: 'Lê Thiện Văn',
-    avatarUrl: '/avatar-members/lethienvan.jpg',
+    avatarUrl: '/avatar-members/lethienvan-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -151,7 +151,7 @@ const members = [
   },
   {
     name: 'Ma Công Linh',
-    avatarUrl: '/avatar-members/maconglinh.jpg',
+    avatarUrl: '/avatar-members/maconglinh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -159,7 +159,7 @@ const members = [
   },
   {
     name: 'Nguyễn Đăng Kiên',
-    avatarUrl: '/avatar-members/nguyendangkien.jpg',
+    avatarUrl: '/avatar-members/nguyendangkien-min.jpg',
     gen: gen6,
     course: course13,
     major: ia,
@@ -167,7 +167,7 @@ const members = [
   },
   {
     name: 'Nguyễn Duy Nam',
-    avatarUrl: '/avatar-members/nguyenduynam.jpg',
+    avatarUrl: '/avatar-members/nguyenduynam-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -175,7 +175,7 @@ const members = [
   },
   {
     name: 'Nguyễn Duy Quân',
-    avatarUrl: '/avatar-members/nguyenduyquan.jpg',
+    avatarUrl: '/avatar-members/nguyenduyquan-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -183,7 +183,7 @@ const members = [
   },
   {
     name: 'Nguyễn Hồng Minh',
-    avatarUrl: '/avatar-members/nguyenhongminh.jpg',
+    avatarUrl: '/avatar-members/nguyenhongminh-min.jpg',
     gen: gen6,
     course: course12,
     major: ia,
@@ -191,7 +191,7 @@ const members = [
   },
   {
     name: 'Nguyễn Hữu Dũng',
-    avatarUrl: '/avatar-members/nguyenhuudung.jpg',
+    avatarUrl: '/avatar-members/nguyenhuudung-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -199,7 +199,7 @@ const members = [
   },
   {
     name: 'Nguyễn Hữu Hoài Nam',
-    avatarUrl: '/avatar-members/nguyenhuuhoainam.jpg',
+    avatarUrl: '/avatar-members/nguyenhuuhoainam-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -207,7 +207,7 @@ const members = [
   },
   {
     name: 'Nguyễn Khánh Huyền',
-    avatarUrl: '/avatar-members/nguyenkhanhhuyen.jpg',
+    avatarUrl: '/avatar-members/nguyenkhanhhuyen-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -215,7 +215,7 @@ const members = [
   },
   {
     name: 'Nguyễn Khánh Nhật',
-    avatarUrl: '/avatar-members/nguyenkhanhnhat.jpg',
+    avatarUrl: '/avatar-members/nguyenkhanhnhat-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -223,7 +223,7 @@ const members = [
   },
   {
     name: 'Nguyễn Khánh Việt',
-    avatarUrl: '/avatar-members/nguyenkhanhviet.jpg',
+    avatarUrl: '/avatar-members/nguyenkhanhviet-min.jpg',
     gen: gen5,
     course: course11,
     major: se,
@@ -231,7 +231,7 @@ const members = [
   },
   {
     name: 'Nguyễn Mạnh Hiếu',
-    avatarUrl: '/avatar-members/nguyenmanhhieu.jpg',
+    avatarUrl: '/avatar-members/nguyenmanhhieu-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -239,7 +239,7 @@ const members = [
   },
   {
     name: 'Nguyễn Minh Hiếu',
-    avatarUrl: '/avatar-members/nguyenminhhieu.jpg',
+    avatarUrl: '/avatar-members/nguyenminhhieu-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -247,7 +247,7 @@ const members = [
   },
   {
     name: 'Nguyễn Quang Huy',
-    avatarUrl: '/avatar-members/nguyenquanghuy.jpg',
+    avatarUrl: '/avatar-members/nguyenquanghuy-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -255,7 +255,7 @@ const members = [
   },
   {
     name: 'Nguyễn Quang Linh',
-    avatarUrl: '/avatar-members/nguyenquanglinh.jpg',
+    avatarUrl: '/avatar-members/nguyenquanglinh-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -263,7 +263,7 @@ const members = [
   },
   {
     name: 'Nguyễn Quang Trường',
-    avatarUrl: '/avatar-members/nguyenquangtruong.jpg',
+    avatarUrl: '/avatar-members/nguyenquangtruong-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -271,7 +271,7 @@ const members = [
   },
   {
     name: 'Nguyễn Thái Bảo',
-    avatarUrl: '/avatar-members/nguyenthaibao.jpg',
+    avatarUrl: '/avatar-members/nguyenthaibao-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -279,7 +279,7 @@ const members = [
   },
   {
     name: 'Nguyễn Thị Lan Anh',
-    avatarUrl: '/avatar-members/nguyenthilananh.jpg',
+    avatarUrl: '/avatar-members/nguyenthilananh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -287,7 +287,7 @@ const members = [
   },
   {
     name: 'Nguyễn Thị Lộc',
-    avatarUrl: '/avatar-members/nguyenthiloc.jpg',
+    avatarUrl: '/avatar-members/nguyenthiloc-min.jpg',
     gen: gen6,
     course: course13,
     major: sb,
@@ -295,7 +295,7 @@ const members = [
   },
   {
     name: 'Nguyễn Thị Ngọc Khánh',
-    avatarUrl: '/avatar-members/nguyenthingockhanh.jpg',
+    avatarUrl: '/avatar-members/nguyenthingockhanh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -303,7 +303,7 @@ const members = [
   },
   {
     name: 'Nguyễn Thị Thùy Linh',
-    avatarUrl: '/avatar-members/nguyenthithuylinh.jpg',
+    avatarUrl: '/avatar-members/nguyenthithuylinh-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -311,7 +311,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tiến Dũng',
-    avatarUrl: '/avatar-members/nguyentiendung.jpg',
+    avatarUrl: '/avatar-members/nguyentiendung-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -319,7 +319,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tiến Mạnh',
-    avatarUrl: '/avatar-members/nguyentienmanh1.jpg',
+    avatarUrl: '/avatar-members/nguyentienmanh1-min.jpg',
     gen: gen6,
     course: course13,
     major: cs,
@@ -327,7 +327,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tiến Mạnh',
-    avatarUrl: '/avatar-members/nguyentienmanh2.jpg',
+    avatarUrl: '/avatar-members/nguyentienmanh2-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -335,7 +335,7 @@ const members = [
   },
   {
     name: 'Nguyễn Tuấn Khoa',
-    avatarUrl: '/avatar-members/nguyentuankhoa.jpg',
+    avatarUrl: '/avatar-members/nguyentuankhoa-min.jpg',
     gen: gen5,
     course: course11,
     major: se,
@@ -343,7 +343,7 @@ const members = [
   },
   {
     name: 'Nguyễn Văn Huy',
-    avatarUrl: '/avatar-members/nguyenvanhuy.jpg',
+    avatarUrl: '/avatar-members/nguyenvanhuy-min.jpg',
     gen: gen6,
     course: course13,
     major: ia,
@@ -351,7 +351,7 @@ const members = [
   },
   {
     name: 'Nguyễn Vũ Minh',
-    avatarUrl: '/avatar-members/nguyenvuminh.jpg',
+    avatarUrl: '/avatar-members/nguyenvuminh-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -359,7 +359,7 @@ const members = [
   },
   {
     name: 'Nguyễn Xuân Cường',
-    avatarUrl: '/avatar-members/nguyenxuancuong.jpg',
+    avatarUrl: '/avatar-members/nguyenxuancuong-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -367,7 +367,7 @@ const members = [
   },
   {
     name: 'Phạm Hồng Sơn',
-    avatarUrl: '/avatar-members/phamhongson.jpg',
+    avatarUrl: '/avatar-members/phamhongson-min.jpg',
     gen: gen5,
     course: course11,
     major: se,
@@ -375,7 +375,7 @@ const members = [
   },
   {
     name: 'Phạm Ngọc Hòa',
-    avatarUrl: '/avatar-members/phamngochoa.jpg',
+    avatarUrl: '/avatar-members/phamngochoa-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -383,7 +383,7 @@ const members = [
   },
   {
     name: 'Phạm Quốc Đức',
-    avatarUrl: '/avatar-members/phamquocduc.jpg',
+    avatarUrl: '/avatar-members/phamquocduc-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -391,7 +391,7 @@ const members = [
   },
   {
     name: 'Phạm Thanh Tâm',
-    avatarUrl: '/avatar-members/phamthanhtam.jpg',
+    avatarUrl: '/avatar-members/phamthanhtam-min.jpg',
     gen: gen6,
     course: course13,
     major: mc,
@@ -399,7 +399,7 @@ const members = [
   },
   {
     name: 'Phạm Thị Kim Dung',
-    avatarUrl: '/avatar-members/phamthikimdung.jpg',
+    avatarUrl: '/avatar-members/phamthikimdung-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -407,7 +407,7 @@ const members = [
   },
   {
     name: 'Phan Văn Đức',
-    avatarUrl: '/avatar-members/phanvanduc.jpg',
+    avatarUrl: '/avatar-members/phanvanduc-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -415,7 +415,7 @@ const members = [
   },
   {
     name: 'Phan Xuân Vũ',
-    avatarUrl: '/avatar-members/phanxuanvu.jpg',
+    avatarUrl: '/avatar-members/phanxuanvu-min.jpg',
     gen: gen5,
     course: course12,
     major: se,
@@ -423,7 +423,7 @@ const members = [
   },
   {
     name: 'Phùng Trí Đức',
-    avatarUrl: '/avatar-members/phungtriduc.jpg',
+    avatarUrl: '/avatar-members/phungtriduc-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -431,7 +431,7 @@ const members = [
   },
   {
     name: 'Tạ Đăng Khoa',
-    avatarUrl: '/avatar-members/tadangkhoa.jpg',
+    avatarUrl: '/avatar-members/tadangkhoa-min.jpg',
     gen: gen6,
     course: course13,
     major: cs,
@@ -439,7 +439,7 @@ const members = [
   },
   {
     name: 'Trần Anh Quân',
-    avatarUrl: '/avatar-members/trananhquan.jpg',
+    avatarUrl: '/avatar-members/trananhquan-min.jpg',
     gen: gen6,
     course: course13,
     major: cs,
@@ -447,7 +447,7 @@ const members = [
   },
   {
     name: 'Trần Duy Quyền',
-    avatarUrl: '/avatar-members/tranduyquyen.jpg',
+    avatarUrl: '/avatar-members/tranduyquyen-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -455,7 +455,7 @@ const members = [
   },
   {
     name: 'Trần Hữu Hoàng',
-    avatarUrl: '/avatar-members/tranhuuhoang.jpg',
+    avatarUrl: '/avatar-members/tranhuuhoang-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -463,7 +463,7 @@ const members = [
   },
   {
     name: 'Trần Văn Sơn',
-    avatarUrl: '/avatar-members/tranvanson.jpg',
+    avatarUrl: '/avatar-members/tranvanson-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -471,7 +471,7 @@ const members = [
   },
   {
     name: 'Trịnh Quốc Khánh',
-    avatarUrl: '/avatar-members/trinhquockhanh.jpg',
+    avatarUrl: '/avatar-members/trinhquockhanh-min.jpg',
     gen: gen6,
     course: course13,
     major: ia,
@@ -479,7 +479,7 @@ const members = [
   },
   {
     name: 'Trịnh Thị Hà My',
-    avatarUrl: '/avatar-members/trinhthihamy.jpg',
+    avatarUrl: '/avatar-members/trinhthihamy-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -487,7 +487,7 @@ const members = [
   },
   {
     name: 'Từ Khắc Hiếu',
-    avatarUrl: '/avatar-members/tukhachieu.jpg',
+    avatarUrl: '/avatar-members/tukhachieu-min.jpg',
     gen: gen6,
     course: course12,
     major: se,
@@ -495,7 +495,7 @@ const members = [
   },
   {
     name: 'Vũ Hải Lâm',
-    avatarUrl: '/avatar-members/vuhailam.jpg',
+    avatarUrl: '/avatar-members/vuhailam-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -503,7 +503,7 @@ const members = [
   },
   {
     name: 'Vũ Hồng Quân',
-    avatarUrl: '/avatar-members/vuhongquan.jpg',
+    avatarUrl: '/avatar-members/vuhongquan-min.jpg',
     gen: gen6,
     course: course13,
     major: cs,
@@ -511,7 +511,7 @@ const members = [
   },
   {
     name: 'Vũ Phương Thảo',
-    avatarUrl: '/avatar-members/vuphuongthao.jpg',
+    avatarUrl: '/avatar-members/vuphuongthao-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -519,7 +519,7 @@ const members = [
   },
   {
     name: 'Vương Mạnh Linh',
-    avatarUrl: '/avatar-members/vuongmanhlinh.jpg',
+    avatarUrl: '/avatar-members/vuongmanhlinh-min.jpg',
     gen: gen6,
     course: course13,
     major: se,
@@ -527,7 +527,7 @@ const members = [
   },
   {
     name: 'Vương Tuấn Quang',
-    avatarUrl: '/avatar-members/vuongtuanquang.jpg',
+    avatarUrl: '/avatar-members/vuongtuanquang-min.jpg',
     gen: gen6,
     course: course13,
     major: cs,

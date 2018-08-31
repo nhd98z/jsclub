@@ -314,3 +314,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 
 - 6:41 PM Friday, August 31, 2018 (GMT+7):
   - Set Data thật của event page desktop.
+
+- 9:36 PM Friday, August 31, 2018 (GMT+7):
+  - Tối ưu ảnh.

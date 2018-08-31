@@ -7,7 +7,7 @@ import img1 from '../../img/helloworld.png';
 import img2 from '../../img/jsgame.png';
 import img3 from '../../img/hackathon-techkid.png';
 import img4 from '../../img/ngaychiem.png';
-import img5 from '../../img/banxoismile.jpg';
+import img5 from '../../img/banxoismile.png';
 import img6 from '../../img/dawn.png';
 
 class AboutDesktop extends Component {
