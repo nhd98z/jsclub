@@ -258,24 +258,24 @@ const en = {
 
   // members page
 
-  chairman: `Từ Khắc Hiếu, sinh viên khoá 12 ngành SE hiện đang là Chủ nhiệm CLB. Anh là người ôn hòa, biết lắng nghe mọi người, có tinh thần trách nhiệm cao. Đặc biệt Chủ nhiệm là người có khả năng xử lí các tình huống chỉ trong “một nốt nhạc”.`,
-  viceChairman: `Phó Chủ nhiệm: Nguyễn Tiến Mạnh. Tuy bề ngoài nhìn có vẻ lạnh lùng, nhưng anh lại là người anh trai ấm áp, luôn quan tâm, lo lắng động viên thành viên của CLB.`,
-  leadOfExpertise: `Ban Chuyên môn mang vai trò giảng dạy hay trợ giảng cho các Chương trình Hỗ trợ học tập của Phòng Công tác sinh viên và lên nội dung cho những Workshop, Seminar và Training nội bộ tại JS.`,
-  leadOfMedia: `Ban Truyền thông - những người hùng đứng sau những bài viết, ấn phẩm và media của JS. Không cần biết tiếng Nhật, cũng không đòi hỏi bạn phải có kỹ năng lập trình siêu phàm, tại đây, bạn sẽ được tìm hiểu và áp dụng thêm về kiến thức thiết kế, PR và marketing.`,
-  leadOfCulture: `Tại JS Club, thành viên Văn Hóa cần là những người làm nên Chất riêng của CLB. Họ là những người chăm lo cho những buổi teambuilding của CLB, hay những bữa tiệc liên hoan nho nhỏ khi hoàn thành project, và cả những lần đi phượt xa sau những học kỳ dài dài tưởng chừng như vô tận.`,
+  chairman: `Từ Khắc Hiếu, a K12 SE major student, is the current chairman of the club. He is mild-tempered, sympathetic and responsible. Moreover, he is a person who can deal with struggles in just a split second.`,
+  viceChairman: `Vice-chairman: Nguyễn Tiến Mạnh. Despite his indifferent appearance, he is a caring, warm-hearted, supportive brother who always gives motivation to other members of the club.`,
+  leadOfExpertise: `Expertise Department takes responsibility for teaching or supporting Study-assistance Programs of Student Residence Office and plans on Workshops, Seminars and internal trainings at JS.`,
+  leadOfMedia: `Media Department - the heroes behind posts, publications and media of JS. You need not have to know Japanese or excel at programming; working here, you will have a chance to explore and apply knowledge on designing, PR and marketing.`,
+  leadOfCulture: `At JS Club, members of Culture Department are those who make the club distinctive. They are the ones taking care of team building trips from behind, making plan for small parties after projects and some relaxing faraway trips after a long long semester.`,
   leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
-  banchunhiemUpper: 'BAN CHỦ NHIỆM',
-  banchuyenmonUpper: 'BAN CHUYÊN MÔN',
-  bantruyenthongUpper: 'BAN TRUYỀN THÔNG',
-  banvanhoaUpper: 'BAN VĂN HOÁ',
-  bandoingoaiUpper: 'BAN ĐỐI NGOẠI',
-  tatcathanhvienUpper: 'TẤT CẢ THÀNH VIÊN',
-  banchunhiem: 'Ban Chủ Nhiệm',
-  banchuyenmon: 'Ban Chuyên Môn',
-  bantruyenthong: 'Ban Truyền Thông',
-  banvanhoa: 'Ban Văn Hoá',
-  bandoingoai: 'Ban Đối Ngoại',
-  tatcathanhvien: 'Tất Cả Thành Viên'
+  banchunhiemUpper: 'BOARD OF DIRECTORS',
+  banchuyenmonUpper: 'EXPERTISE DEPARTMENT',
+  bantruyenthongUpper: 'MEDIA DEPARTMENT',
+  banvanhoaUpper: 'CULTURE DEPARTMENT',
+  bandoingoaiUpper: 'DIPLOMACY DEPARTMENT',
+  tatcathanhvienUpper: 'ALL MEMBERS',
+  banchunhiem: 'Board of Directors',
+  banchuyenmon: 'Expertise Department',
+  bantruyenthong: 'Media Department',
+  banvanhoa: 'Culture Department',
+  bandoingoai: 'Diplomacy Department',
+  tatcathanhvien: 'All Members'
 };
 
 const jp = vi;
