@@ -317,3 +317,4 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 
 - 9:36 PM Friday, August 31, 2018 (GMT+7):
   - Tối ưu ảnh.
+  - Tối ưu ảnh lần 2.
