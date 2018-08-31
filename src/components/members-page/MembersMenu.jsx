@@ -21,7 +21,6 @@ class MembersMenu extends Component {
 
   render() {
     const { i18n } = this.props;
-    console.log(this.props.i18n);
     return (
       <div className="margin-left-menu">
         <br />

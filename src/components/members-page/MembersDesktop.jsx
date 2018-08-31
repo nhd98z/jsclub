@@ -16,7 +16,6 @@ class MembersDesktop extends Component {
   }
 
   renderDetail() {
-    // console.log(ActiveMembersInJS)
     if (this.state.menu === 0) {
       return (
         <Col span={18}>
@@ -38,7 +37,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 2) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Culture') {
+        if (ActiveMembersInJS[i].category === 'Media') {
           array.push(ActiveMembersInJS[i]);
         }
       }
@@ -50,7 +49,7 @@ class MembersDesktop extends Component {
     } else if (this.state.menu === 3) {
       let array = [];
       for (let i = 0; i < ActiveMembersInJS.length; i++) {
-        if (ActiveMembersInJS[i].category === 'Media') {
+        if (ActiveMembersInJS[i].category === 'Culture') {
           array.push(ActiveMembersInJS[i]);
         }
       }

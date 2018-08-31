@@ -310,4 +310,7 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Chuyển aboutUs -> organization sang events-page
 
 - 11:45 AM Friday, August 31, 2018 (GMT+7):
-  - Dong event page desktop.
+  - Done event page desktop.
+
+- 6:41 PM Friday, August 31, 2018 (GMT+7):
+  - Set Data thật của event page desktop.

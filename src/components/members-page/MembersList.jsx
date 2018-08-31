@@ -60,35 +60,35 @@ class MembersList extends Component {
         </div>
       );
     } else if (this.props.header === 2) {
-      return <div id="whoweare-intro-desktop" className="whoweare">
+      return (
+        <div id="whoweare-intro-desktop" className="whoweare">
           {i18n.bantruyenthongUpper}
-        </div>;
+        </div>
+      );
     } else if (this.props.header === 3) {
-      return <div id="whoweare-intro-desktop" className="whoweare">
+      return (
+        <div id="whoweare-intro-desktop" className="whoweare">
           {i18n.banvanhoaUpper}
-        </div>;
+        </div>
+      );
     } else if (this.props.header === 4) {
-      return <div id="whoweare-intro-desktop" className="whoweare">
+      return (
+        <div id="whoweare-intro-desktop" className="whoweare">
           {i18n.bandoingoaiUpper}
-        </div>;
+        </div>
+      );
     } else if (this.props.header === 5) {
-      return <div id="whoweare-intro-desktop" className="whoweare">
+      return (
+        <div id="whoweare-intro-desktop" className="whoweare">
           {i18n.tatcathanhvienUpper}
-        </div>;
+        </div>
+      );
     }
   }
 
   sortAsc(category) {
     this.props.array.sort(function(a, b) {
-      var stringA = a[category];
-      var stringB = b[category];
-      if (stringA < stringB) {
-        return -1;
-      }
-      if (stringA > stringB) {
-        return 1;
-      }
-      return 0;
+      return a[category].localeCompare(b[category]);
     });
   }
 
@@ -116,7 +116,6 @@ class MembersList extends Component {
   }
 
   render() {
-    console.log(this);
     return (
       <div className="abt-wrap-member-list">
         {this.renderHeader()}
