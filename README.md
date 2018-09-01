@@ -341,3 +341,9 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
     - Hover logo cursor pointer, và click vào thì mở trang web của công ty trong tab mới.
 
   - Members Mobile và Partners Mobile và cả phần News, chưa code gì.
+
+- 12:00 AM Sunday, September 2, 2018 (GMT+7):
+  - Sử dụng [gzip compression](https://github.com/expressjs/compression) để nén tài nguyên gửi qua http, giảm được thời gian load web.
+  - Sử dụng setInterval để tránh heroku server sleep.
+  - Thêm async vào <script></script> cuối file public/index.html (google recommend).
+  - Google recommend không nên dùng inline style, mà dùng file external css.
