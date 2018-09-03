@@ -32,21 +32,22 @@ class MembersList extends Component {
   renderDetail() {
     const { i18n } = this.props;
     return this.props.array.map((value, index) => {
+      console.log(value)
       return (
         <tr key={value.id} className="item-margin-top">
-          <td>
+          <td width="10%">
             <img
               src={window.location.origin + value.avatarUrl}
               width="70px"
               height="70px"
-              style={{ marginBottom: '10px', borderRadius: '50%' }}
+              style={{ marginBottom: '10px', borderRadius: '50%'}}
               alt="ava-members"
             />
           </td>
-          <td>{value.name}</td>
-          <td>{value.gen}</td>
-          <td>{value.course}</td>
-          <td>{i18n[value.major]}</td>
+          <td width="30%" >{value.name}</td>
+          <td width="10%" >{value.gen}</td>
+          <td width="10%" >{value.course}</td>
+          <td width="20%">{i18n[value.major]}</td>
           {this.renderBoard(value.board)}
         </tr>
       );

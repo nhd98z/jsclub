@@ -57,7 +57,8 @@ td {
     }
 
     .line-hr {
-        width: 70%
+        width: 70%;
+        margin-left: 5%
     }
   }
   
@@ -67,7 +68,8 @@ td {
     }
 
     .line-hr {
-        width: 55%
+        width: 50%;
+        margin-left: 3%
     }
   }
   
@@ -77,7 +79,8 @@ td {
     }
 
     .line-hr {
-        width: 50%
+        width: 50%;
+        margin-left: 5%
     }
   }
   
@@ -87,7 +90,8 @@ td {
     }
 
     .line-hr {
-        width: 50%
+        width: 33%;
+        margin-left: 2%
     }
   }
   
@@ -97,7 +101,8 @@ td {
     }
 
     .line-hr {
-        width: 30%
+        width: 30%;
+        margin-left: 1%
     }
   }
   
@@ -107,7 +112,8 @@ td {
     }
 
     .line-hr {
-        width: 30%
+        width: 25%;
+        margin-left: 1%
     }
   }
   
