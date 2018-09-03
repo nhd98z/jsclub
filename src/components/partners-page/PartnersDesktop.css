@@ -8,6 +8,42 @@
   line-height: 1.08;
 }
 
+.partners-text div,
+.logo {
+  opacity: 0;
+  animation: partnerFadeIn 0.5s linear;
+  animation-fill-mode: forwards;
+}
+
+.logo-wrapper {
+  transition: transform .2s; /* Animation */
+}
+
+.logo-wrapper:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.partners-text div:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.partners-text div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.partners-text div:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.partners-text div:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.partners-text div:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
 img.logo {
   height: 50px;
   margin-top: 20%;
@@ -28,4 +64,67 @@ img.logo {
   height: 75vh;
   width: 1px;
   float: left;
+}
+
+@keyframes partnerFadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 200px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+#logo1 {
+  animation-delay: 1.5s;
+}
+
+#logo2 {
+  animation-delay: 1.75s;
+}
+
+#logo3 {
+  animation-delay: 2s;
+}
+
+#logo4 {
+  animation-delay: 2.25s;
+}
+
+#logo5 {
+  animation-delay: 2.5s;
+}
+
+#logo6 {
+  animation-delay: 2.75s;
+}
+
+#logo7 {
+  animation-delay: 3s;
+}
+
+#logo8 {
+  animation-delay: 3.25s;
+}
+
+#logo9 {
+  animation-delay: 3.5s;
+}
+
+#logo10 {
+  animation-delay: 3.75s;
+}
+
+#logo11 {
+  animation-delay: 4s;
+}
+
+#logo12 {
+  animation-delay: 4.25s;
+}
+
+#logo13 {
+  animation-delay: 4.5s;
 }

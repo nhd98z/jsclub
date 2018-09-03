@@ -39,36 +39,19 @@ class PartnersDesktop extends React.Component {
           <div className="logo-block">
             <div className="vertical-line" />
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo1} />
+              <img id="logo1" alt="partner-desktop" className="logo" src={Logo1} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo2} />
+              <img id="logo2" alt="partner-desktop" className="logo" src={Logo2} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo3} />
+              <img id="logo3" alt="partner-desktop" className="logo" src={Logo3} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo4} />
+              <img id="logo4" alt="partner-desktop" className="logo" src={Logo4} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo5} />
-            </div>
-          </div>
-        </Col>
-        <Col span={5}>
-          <div className="logo-block">
-            <div className="vertical-line" />
-            <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo6} />
-            </div>
-            <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo7} />
-            </div>
-            <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo8} />
-            </div>
-            <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo9} />
+              <img id="logo5" alt="partner-desktop" className="logo" src={Logo5} />
             </div>
           </div>
         </Col>
@@ -76,16 +59,33 @@ class PartnersDesktop extends React.Component {
           <div className="logo-block">
             <div className="vertical-line" />
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo10} />
+              <img id="logo6" alt="partner-desktop" className="logo" src={Logo6} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo11} />
+              <img id="logo7" alt="partner-desktop" className="logo" src={Logo7} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo12} />
+              <img id="logo8" alt="partner-desktop" className="logo" src={Logo8} />
             </div>
             <div className="logo-wrapper">
-              <img alt="partner-desktop" className="logo" src={Logo13} />
+              <img id="logo9" alt="partner-desktop" className="logo" src={Logo9} />
+            </div>
+          </div>
+        </Col>
+        <Col span={5}>
+          <div className="logo-block">
+            <div className="vertical-line" />
+            <div className="logo-wrapper">
+              <img id="logo10" alt="partner-desktop" className="logo" src={Logo10} />
+            </div>
+            <div className="logo-wrapper">
+              <img id="logo11" alt="partner-desktop" className="logo" src={Logo11} />
+            </div>
+            <div className="logo-wrapper">
+              <img id="logo12" alt="partner-desktop" className="logo" src={Logo12} />
+            </div>
+            <div className="logo-wrapper">
+              <img id="logo13" alt="partner-desktop" className="logo" src={Logo13} />
             </div>
           </div>
         </Col>

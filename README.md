@@ -336,8 +336,8 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
     - Cần có highlight của sider cái mục mình đang ở.
   - Partners Desktop cần làm:
 
-    - Mới vào trang: animation fade-in có delay theo thứ tự logo.
-    - Hover vào logo: Hiệu ứng phóng to logo, hover ra thu nhỏ logo mượt mà.
+    - Mới vào trang: animation fade-in có delay theo thứ tự logo => DONE
+    - Hover vào logo: Hiệu ứng phóng to logo, hover ra thu nhỏ logo mượt mà => DONE
     - Hover logo cursor pointer, và click vào thì mở trang web của công ty trong tab mới.
 
   - Members Mobile và Partners Mobile và cả phần News, chưa code gì.
