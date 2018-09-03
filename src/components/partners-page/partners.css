@@ -144,6 +144,7 @@ img.logo {
   opacity: 0;
   animation: partnerFadeIn 0.5s linear;
   animation-fill-mode: forwards;
+  padding: 5% 0;
 }
 
 .partners-mobile-title div:nth-child(1) {
@@ -152,18 +153,6 @@ img.logo {
 
 .partners-mobile-title div:nth-child(2) {
   animation-delay: 0.5s;
-}
-
-.partners-mobile-title div:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-.partners-mobile-title div:nth-child(4) {
-  animation-delay: 1s;
-}
-
-.partners-mobile-title div:nth-child(5) {
-  animation-delay: 1.25s;
 }
 
 .partners-row {

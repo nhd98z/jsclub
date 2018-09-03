@@ -40,11 +40,8 @@ class PartnersMobile extends React.Component {
     return (
       <div className="partners-mobile" style={sectionStyle}>
         <div className="partners-mobile-title">
-          <div>SOME</div>
-          <div>OF</div>
           <div>OUR</div>
           <div>SPONSORS</div>
-          <div>& PARTNERS</div>
         </div>
         <div className="partners-row">
           <a target="_blank" href={link1} className="logo-wrapper">
