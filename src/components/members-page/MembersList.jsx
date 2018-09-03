@@ -32,27 +32,38 @@ class MembersList extends Component {
   renderDetail() {
     const { i18n } = this.props;
     return this.props.array.map((value, index) => {
-      console.log(value)
-      return (
-        <tr key={value.id} className="item-margin-top">
-          <td width="10%">
-            <img
-              src={window.location.origin + value.avatarUrl}
-              width="70px"
-              height="70px"
-              style={{ marginBottom: '10px', borderRadius: '50%'}}
-              alt="ava-members"
-            />
-          </td>
-          <td width="30%" >{value.name}</td>
-          <td width="10%" >{value.gen}</td>
-          <td width="10%" >{value.course}</td>
-          <td width="20%">{i18n[value.major]}</td>
-          {this.renderBoard(value.board)}
-        </tr>
-      );
+      if (this.props.isMobile){
+        return (
+          <tr key={value.id} className="item-margin-top">
+            <td width="30%" >{value.name}</td>
+            <td width="20%" >{value.course}</td>
+            <td width="35%">{i18n[value.major]}</td>
+            {this.renderBoard(value.board)}
+          </tr>
+        );
+      }
+      else 
+        return (
+          <tr key={value.id} className="item-margin-top">
+            <td width="10%">
+              <img
+                src={window.location.origin + value.avatarUrl}
+                width="70px"
+                height="70px"
+                style={{ marginBottom: '10px', borderRadius: '50%'}}
+                alt="ava-members"
+              />
+            </td>
+            <td width="30%" >{value.name}</td>
+            <td width="10%" >{value.gen}</td>
+            <td width="10%" >{value.course}</td>
+            <td width="20%">{i18n[value.major]}</td>
+            {this.renderBoard(value.board)}
+          </tr>
+        );
     });
   }
+
 
   renderHeader() {
     const { i18n } = this.props;
@@ -120,6 +131,36 @@ class MembersList extends Component {
 
   render() {
     const { i18n } = this.props;
+    if (this.props.isMobile){
+      return (
+        <div className="abt-wrap-member-list">
+        {this.renderHeader()}
+        <table className="table-container">
+          <thead>
+            <tr className="header" width="100%">
+              <th>
+                {i18n.name}
+                &nbsp;
+                <i style={{ fontSize: 12 }} id="icon-name" className="anticon anticon-caret-up menu-item" onClick={() => this._handleClick('name')} />
+              </th>
+              <th>
+                {i18n.course}
+                &nbsp;
+                <Icon style={{ fontSize: 12 }} id="icon-course" type="caret-up" className="menu-item" onClick={() => this._handleClick('course')} />
+              </th>
+              <th>
+                {i18n.major}
+                &nbsp;
+                <Icon style={{ fontSize: 12 }} id="icon-major" type="caret-up" className="menu-item" onClick={() => this._handleClick('major')} />
+              </th>
+              <th>{i18n.board}</th>
+            </tr>
+          </thead>
+          <tbody>{this.renderDetail()}</tbody>
+        </table>
+      </div>
+      )
+    }
     return (
       <div className="abt-wrap-member-list">
         {this.renderHeader()}
@@ -159,8 +200,10 @@ class MembersList extends Component {
 
 function mapStateToProps(state) {
   const { i18n } = state;
+  const { mobile } = state;
   return {
-    i18n
+    i18n,
+    isMobile: mobile
   };
 }
 

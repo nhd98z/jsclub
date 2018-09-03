@@ -1,3 +1,5 @@
+/* desktop css here */
+
 .d-inline {
     display: inline;
 }
@@ -58,7 +60,7 @@ td {
 
     .line-hr {
         width: 70%;
-        margin-left: 5%
+        margin-left: 0%
     }
   }
   
@@ -69,7 +71,7 @@ td {
 
     .line-hr {
         width: 50%;
-        margin-left: 3%
+        margin-left: 0%
     }
   }
   
@@ -80,7 +82,7 @@ td {
 
     .line-hr {
         width: 50%;
-        margin-left: 5%
+        margin-left: 0%
     }
   }
   
@@ -91,7 +93,7 @@ td {
 
     .line-hr {
         width: 33%;
-        margin-left: 2%
+        margin-left: 0%
     }
   }
   
@@ -102,7 +104,7 @@ td {
 
     .line-hr {
         width: 30%;
-        margin-left: 1%
+        margin-left: 0%
     }
   }
   
@@ -113,7 +115,15 @@ td {
 
     .line-hr {
         width: 25%;
-        margin-left: 1%
+        margin-left: 0%
     }
   }
   
+
+
+
+  /* mobile css start here */
+.button-color {
+    background-color: #3a5290;
+    color: white
+}

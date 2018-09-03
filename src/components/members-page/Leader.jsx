@@ -17,6 +17,7 @@ class Leader extends Component {
     };
     // phải bind nó
     this.handleClick = this.handleClick.bind(this);
+    this.renderPlatform = this.renderPlatform.bind(this);
   }
 
   handleClick() {
@@ -27,11 +28,58 @@ class Leader extends Component {
     this.props.switchPage();
   }
 
-  render() {
+  renderPlatform() {
     const { i18n } = this.props;
+    if (this.props.isMobile){
+      return (
+        <div>
+          {/* header */}
+          <div id="whoweare-intro-desktop" className="whoweare">
+            {i18n.banchunhiemUpper}  
+          </div>
+          {/* end */}
 
-    return (
-      <div>
+          <div>
+ 
+              <img className="abt-img-organ" src={img1} alt="img1"/>
+     
+              <div className="abt-detail-organ" style={{ fontWeight: '500' }}>
+                {i18n.chairman}
+              </div>
+      
+           
+          </div>
+{/*
+          <div className="person-wrap">
+            <div className="abt-detail-organ">{i18n.viceChairman}</div>
+            <img className="abt-img-organ" src={img2} alt="img2" />
+          </div>
+
+          <div className="person-wrap">
+            <img className="abt-img-organ" src={img3} alt="img3" />
+            <div className="abt-detail-organ">{i18n.leadOfExpertise}</div>
+          </div>
+
+          <div className="person-wrap">
+            <div className="abt-detail-organ">{i18n.leadOfMedia}</div>
+            <img className="abt-img-organ" src={img4} alt="img4" />
+          </div>
+
+          <div className="person-wrap">
+            <img className="abt-img-organ" src={img5} alt="img5" />
+            <div className="abt-detail-organ">{i18n.leadOfCulture}</div>
+          </div>
+
+          <div className="person-wrap" style={{ marginBottom: '5%' }}>
+            <div className="abt-detail-organ">{i18n.leadOfDiplomacy}</div>
+            <img className="abt-img-organ" src={img6} alt="img6" />
+          </div>
+*/}
+ </div>
+      )
+    }
+    else {
+      return (
         <div className="abt-wrap-leader">
           <div id="whoweare-intro-desktop" className="whoweare">
             {i18n.banchunhiemUpper}  
@@ -69,15 +117,24 @@ class Leader extends Component {
             <img className="abt-img-organ" src={img6} alt="img6" />
           </div>
         </div>
+      )
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        {this.renderPlatform()}
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  const { i18n } = state;
+  const { i18n, mobile } = state;
   return {
-    i18n
+    i18n,
+    isMobile: mobile
   };
 }
 
