@@ -331,14 +331,16 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
 - 12:30 AM Saturday, September 1, 2018 (GMT+7): **Cần làm trong tuần cuối !!!**
 
   - Members Desktop:
+
     - Cần thêm màu đen xen cho các row.
     - Cần giãn các col của table hợp lý.
     - Cần có highlight của sider cái mục mình đang ở.
-  - Partners Desktop cần làm:
+
+  - Partners Desktop cần làm: => DONE
 
     - Mới vào trang: animation fade-in có delay theo thứ tự logo => DONE
     - Hover vào logo: Hiệu ứng phóng to logo, hover ra thu nhỏ logo mượt mà => DONE
-    - Hover logo cursor pointer, và click vào thì mở trang web của công ty trong tab mới.
+    - Hover logo cursor pointer, và click vào thì mở trang web của công ty trong tab mới. => DONE
 
   - Members Mobile và Partners Mobile và cả phần News, chưa code gì.
 

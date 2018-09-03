@@ -18,6 +18,20 @@ import Logo11 from '../../img/logo-AltPlus-300x.png';
 import Logo12 from '../../img/3s-intersoft-jsc.png';
 import Logo13 from '../../img/rikkei-logso.png';
 
+const link1 = 'https://techkids.vn/';
+const link2 = 'https://vietis.com.vn/';
+const link3 = 'https://www.topcv.vn/';
+const link4 = 'http://newwave.vn/';
+const link5 = 'https://dongphuccavoi.wordpress.com/';
+const link6 = 'https://www.facebook.com/icpdp.hn/';
+const link7 = 'http://daihoc.fpt.edu.vn/';
+const link8 = 'https://www.fpt-software.com/';
+const link9 = 'https://sotatek.com/';
+const link10 = '/partners';
+const link11 = 'https://altplus.com.vn/';
+const link12 = 'https://www.3si.vn/en/';
+const link13 = '/partners';
+
 var sectionStyle = {
   width: '100%',
   height: '100vh',
@@ -38,55 +52,55 @@ class PartnersDesktop extends React.Component {
         <Col span={5}>
           <div className="logo-block">
             <div className="vertical-line" />
-            <div className="logo-wrapper">
+            <a target="_blank" href={link1} className="logo-wrapper">
               <img id="logo1" alt="partner-desktop" className="logo" src={Logo1} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link2} className="logo-wrapper">
               <img id="logo2" alt="partner-desktop" className="logo" src={Logo2} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link3} className="logo-wrapper">
               <img id="logo3" alt="partner-desktop" className="logo" src={Logo3} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link4} className="logo-wrapper">
               <img id="logo4" alt="partner-desktop" className="logo" src={Logo4} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link5} className="logo-wrapper">
               <img id="logo5" alt="partner-desktop" className="logo" src={Logo5} />
-            </div>
+            </a>
           </div>
         </Col>
         <Col span={5}>
           <div className="logo-block">
             <div className="vertical-line" />
-            <div className="logo-wrapper">
+            <a target="_blank" href={link6} className="logo-wrapper">
               <img id="logo6" alt="partner-desktop" className="logo" src={Logo6} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link7} className="logo-wrapper">
               <img id="logo7" alt="partner-desktop" className="logo" src={Logo7} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link8} className="logo-wrapper">
               <img id="logo8" alt="partner-desktop" className="logo" src={Logo8} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link9} className="logo-wrapper">
               <img id="logo9" alt="partner-desktop" className="logo" src={Logo9} />
-            </div>
+            </a>
           </div>
         </Col>
         <Col span={5}>
           <div className="logo-block">
             <div className="vertical-line" />
-            <div className="logo-wrapper">
+            <a target="_blank" href={link10} className="logo-wrapper">
               <img id="logo10" alt="partner-desktop" className="logo" src={Logo10} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link11} className="logo-wrapper">
               <img id="logo11" alt="partner-desktop" className="logo" src={Logo11} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link12} className="logo-wrapper">
               <img id="logo12" alt="partner-desktop" className="logo" src={Logo12} />
-            </div>
-            <div className="logo-wrapper">
+            </a>
+            <a target="_blank" href={link13} className="logo-wrapper">
               <img id="logo13" alt="partner-desktop" className="logo" src={Logo13} />
-            </div>
+            </a>
           </div>
         </Col>
       </div>
