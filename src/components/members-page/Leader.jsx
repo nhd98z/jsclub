@@ -40,41 +40,65 @@ class Leader extends Component {
           {/* end */}
 
           <div>
- 
-              <img className="abt-img-organ" src={img1} alt="img1"/>
-     
-              <div className="abt-detail-organ" style={{ fontWeight: '500' }}>
+              <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img1} alt="img1"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
                 {i18n.chairman}
               </div>
-      
-           
           </div>
-{/*
-          <div className="person-wrap">
-            <div className="abt-detail-organ">{i18n.viceChairman}</div>
-            <img className="abt-img-organ" src={img2} alt="img2" />
-          </div>
+          <br/>
 
-          <div className="person-wrap">
-            <img className="abt-img-organ" src={img3} alt="img3" />
-            <div className="abt-detail-organ">{i18n.leadOfExpertise}</div>
+          <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img2} alt="img2"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
+                {i18n.viceChairman}
+              </div>
           </div>
+          <br/>
 
-          <div className="person-wrap">
-            <div className="abt-detail-organ">{i18n.leadOfMedia}</div>
-            <img className="abt-img-organ" src={img4} alt="img4" />
+          <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img3} alt="img3"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
+                {i18n.leadOfExpertise}
+              </div>
           </div>
+          <br/>
 
-          <div className="person-wrap">
-            <img className="abt-img-organ" src={img5} alt="img5" />
-            <div className="abt-detail-organ">{i18n.leadOfCulture}</div>
+          <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img4} alt="img4"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
+                {i18n.leadOfMedia}
+              </div>
           </div>
+          <br/>
 
-          <div className="person-wrap" style={{ marginBottom: '5%' }}>
-            <div className="abt-detail-organ">{i18n.leadOfDiplomacy}</div>
-            <img className="abt-img-organ" src={img6} alt="img6" />
+          <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img5} alt="img5"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
+                {i18n.leadOfCulture}
+              </div>
           </div>
-*/}
+          <br/>
+
+          <div>
+            <div style={{display: "flex", justifyContent: "center"}}>
+                <img width="80%" height="80%" src={img6} alt="img6"/>
+              </div>
+              <div width="100%" className="abt-detail-organ" style={{ fontWeight: '500', backgroundColor: '#f2f2f2' }}>
+                {i18n.leadOfDiplomacy}
+              </div>
+          </div>
+          <br/>
+
  </div>
       )
     }

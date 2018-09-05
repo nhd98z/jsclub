@@ -35,9 +35,17 @@ class MembersList extends Component {
       if (this.props.isMobile){
         return (
           <tr key={value.id} className="item-margin-top">
-            <td width="30%" >{value.name}</td>
+            <td width="20%">
+              <img
+                src={window.location.origin + value.avatarUrl}
+                width="70px"
+                height="70px"
+                style={{ marginBottom: '10px', borderRadius: '50%'}}
+                alt="ava-members"
+              />
+            </td>
+            <td width="35%" >{value.name}</td>
             <td width="20%" >{value.course}</td>
-            <td width="35%">{i18n[value.major]}</td>
             {this.renderBoard(value.board)}
           </tr>
         );
@@ -138,6 +146,7 @@ class MembersList extends Component {
         <table className="table-container">
           <thead>
             <tr className="header" width="100%">
+            <th></th>
               <th>
                 {i18n.name}
                 &nbsp;
@@ -147,11 +156,6 @@ class MembersList extends Component {
                 {i18n.course}
                 &nbsp;
                 <Icon style={{ fontSize: 12 }} id="icon-course" type="caret-up" className="menu-item" onClick={() => this._handleClick('course')} />
-              </th>
-              <th>
-                {i18n.major}
-                &nbsp;
-                <Icon style={{ fontSize: 12 }} id="icon-major" type="caret-up" className="menu-item" onClick={() => this._handleClick('major')} />
               </th>
               <th>{i18n.board}</th>
             </tr>

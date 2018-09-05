@@ -87,7 +87,7 @@ class MembersDesktop extends Component {
     return (
       <Row>
         <Col style={{ marginTop: '2%' }} span={6}>
-          <MembersMenu changeDetail={this._changeDetail} />
+          <MembersMenu changeDetail={this._changeDetail}/>
         </Col>
         {this.renderDetail()}
       </Row>

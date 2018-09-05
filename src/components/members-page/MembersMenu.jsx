@@ -22,7 +22,7 @@ class MembersMenu extends Component {
   render() {
     const { i18n } = this.props;
     return (
-      <div className="margin-left-menu">
+      <div className="margin-left-menu stick">
         <br />
         <ul>
           <li className="menu-item" onClick={() => this.props.changeDetail(0)}>

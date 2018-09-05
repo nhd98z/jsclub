@@ -55,71 +55,74 @@ td {
 
 @media only screen and (min-width: 1024px) {
     .margin-left-menu {
-      margin-left: 5%
+      margin-left: 1%
     }
 
     .line-hr {
-        width: 70%;
+        width: 100%;
         margin-left: 0%
     }
   }
   
   @media only screen and (min-width: 1366px) {
     .margin-left-menu {
-      margin-left: 11%;
+      margin-left: 3%;
     }
 
     .line-hr {
-        width: 50%;
+        width: 100%;
         margin-left: 0%
     }
   }
   
   @media only screen and (min-width: 1600px) {
     .margin-left-menu {
-      margin-left: 14%;
+      margin-left: 4%;
     }
 
     .line-hr {
-        width: 50%;
+        width: 100%;
         margin-left: 0%
     }
   }
   
   @media only screen and (min-width: 1920px) {
     .margin-left-menu {
-      margin-left: 17%;
+      margin-left: 4%;
     }
 
     .line-hr {
-        width: 33%;
+        width: 110%;
         margin-left: 0%
     }
   }
   
   @media only screen and (min-width: 2560px) {
     .margin-left-menu {
-      margin-left: 22%;
+      margin-left: 5%;
     }
 
     .line-hr {
-        width: 30%;
+        width: 110%;
         margin-left: 0%
     }
   }
   
   @media only screen and (min-width: 3048px) {
     .margin-left-menu {
-      margin-left: 23%;
+      margin-left: 5%;
     }
 
     .line-hr {
-        width: 25%;
+        width: 110%;
         margin-left: 0%
     }
   }
   
-
+.stick {
+    top: 0px;
+    position: fixed;
+}
 
 
   /* mobile css start here */
