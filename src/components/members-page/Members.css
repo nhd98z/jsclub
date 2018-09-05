@@ -124,6 +124,19 @@ td {
     position: fixed;
 }
 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.menu-active {
+    transition: all .2s ease-in-out;
+    font-size: 23px;
+    font-weight: bold
+}
+
+.menu-active:hover {
+    transform: scale(1.4,1.4);
+}
 
   /* mobile css start here */
 .button-color {
