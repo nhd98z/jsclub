@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col } from 'antd';
 import PartnersText from './PartnersText';
-import './PartnersDesktop.css';
 
 import Background from '../../img/color.png';
 import Logo1 from '../../img/TechkidBrandColor.png';

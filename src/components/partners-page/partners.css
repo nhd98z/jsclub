@@ -16,7 +16,7 @@
 }
 
 .logo-wrapper {
-  transition: transform .2s; /* Animation */
+  transition: transform 0.2s; /* Animation */
 }
 
 .logo-wrapper:hover {
@@ -127,4 +127,39 @@ img.logo {
 
 #logo13 {
   animation-delay: 4.5s;
+}
+
+/* mobile */
+
+.partners-mobile-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.08;
+}
+
+.partners-mobile-title div {
+  opacity: 0;
+  animation: partnerFadeIn 0.5s linear;
+  animation-fill-mode: forwards;
+  padding: 5% 0;
+}
+
+.partners-mobile-title div:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.partners-mobile-title div:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.partners-row img {
+  height: 50px;
 }

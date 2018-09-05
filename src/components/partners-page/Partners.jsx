@@ -7,6 +7,8 @@ import PreLoad from '../PreLoadImage';
 import Desktop from './PartnersDesktop';
 import Mobile from './PartnersMobile';
 
+import './partners.css';
+
 import exampleImage from '../../img/background-01.png';
 
 class Partners extends Component {
