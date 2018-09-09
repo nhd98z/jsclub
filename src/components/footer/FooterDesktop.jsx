@@ -26,14 +26,14 @@ class FooterDesktop extends Component {
               <Link to="/about">{i18n.aboutUs}</Link>
             </div>
             <div className="ft-explore-content">
-              <Link to="/events">{i18n.events}</Link>
+              <Link to="/members">{i18n.members}</Link>
             </div>
             <div className="ft-explore-content">
               <Link to="/partners">{i18n.partners}</Link>
             </div>
-            <div className="ft-explore-content">
+            {/* <div className="ft-explore-content">
               <Link to="/news">{i18n.news}</Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="ft-explore">

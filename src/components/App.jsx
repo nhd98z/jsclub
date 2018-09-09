@@ -9,7 +9,7 @@ import HomePage from './homepage/HomePage';
 import AboutPage from './about-page/About';
 import MembersPage from './members-page/Members';
 import PartnersPage from './partners-page/Partners';
-import NewsPage from './news-page/News';
+// import NewsPage from './news-page/News';
 import ScrollTop from './ScrollTop';
 
 class App extends Component {
@@ -73,7 +73,7 @@ class App extends Component {
             <Route path="/about" component={AboutPage} />
             <Route path="/members" component={MembersPage} />
             <Route path="/partners" component={PartnersPage} />
-            <Route path="/news" component={NewsPage} />
+            {/* <Route path="/news" component={NewsPage} /> */}
           </Switch>
         </Router>
       </div>

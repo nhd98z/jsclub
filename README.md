@@ -349,3 +349,6 @@ git add .; git commit -m "ok"; git push origin master; yarn start;
   - Sử dụng setInterval để tránh heroku server sleep.
   - Thêm async vào <script></script> cuối file public/index.html (google recommend).
   - Google recommend không nên dùng inline style, mà dùng file external css.
+
+- 6:29 AM Monday, September 10, 2018 (GMT+7):
+  - Update 日本語。

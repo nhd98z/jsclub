@@ -82,9 +82,9 @@ class NavBarDesktop extends Component {
             <Link to="/partners" className="navbar-e navbar-e-t">
               {i18n.partners}
             </Link>
-            <Link to="/news" className="navbar-e navbar-e-t">
+            {/* <Link to="/news" className="navbar-e navbar-e-t">
               {i18n.news}
-            </Link>
+            </Link> */}
             <div className="navbar-e navbar-e-t navbar-e-global">{global()}</div>
           </div>
         </div>

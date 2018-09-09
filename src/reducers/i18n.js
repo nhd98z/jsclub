@@ -310,7 +310,156 @@ const en = {
   diplomacy: 'Diplomacy'
 };
 
-const jp = vi;
+const jp = {
+  //
+  webTitle: '日本のエンジニア - JS Club',
+
+  // navbar
+  hello: 'こんにちは',
+  aboutUs: '私たちに関しては',
+  members: 'メンバー',
+  partners: 'パートナー',
+  news: 'ニュース',
+  // footer
+  explore: '探検する',
+  visit: '訪問する',
+  fptUniversity: 'FPT大学',
+  km29ThangLong: 'Km 29、Thang Long Avenue',
+  hoaLacHighTechHanoi: 'ホアラックハイテクパーク、ハノイ',
+  contact: '接触',
+  // home page
+
+  // who we are
+  whoweare: '私たちは誰ですか',
+  whoweareLongDetail: 'JSは、日本語とプログラミングに熱心なFU学生のためのコミュニティであることを目指して設立されたクラブです。',
+  whoweareShortDetail: 'JSはFU学生のためのコミュニティであることを目指して設立されたクラブです。',
+  viewmore: 'もっと見る',
+
+  // activities
+  activitiesUpperCase: 'アクティビティ',
+  card1Title: 'HACKATHON 2018',
+  card1Detail: 'VTeamはFPT Hackathon 2018チャンピオンになりました...',
+  card2Title: 'ĐÊM ĐỪNG ĐỠ',
+  card2Detail: 'JSクラブの家族は一緒に素晴らしい一日を過ごしました...',
+  card3Title: 'CODE BATTLE 2018',
+  card3Detail: 'チームが証明したように我々は非常に喜んで誇りに思っています...',
+  card4Title: 'AMETHYST 2018',
+  card4Detail: '2018年3月9日、JSクラブは組織化に成功しました...',
+  card5Title: 'チームビルディング2017',
+  card5Detail: '私たちのすばらしいチームビルディング旅行を振り返りましょう...',
+  card6Title: 'ジェン6募集',
+  card6Detail: '我々は挑戦の最後の段階に近づいています...',
+
+  // through history
+  throughHistory: '歴史',
+  throughHistoryMobile: '歴史',
+  detail201801:
+    '2018年、JSクラブはAMETHYST - 愛と情熱をうまくまとめました。 このイベントは、創立5周年を記念して、JSの発展に大きく貢献した個人を称えるために開催されたものです。',
+  detail201802:
+    'JSは2018年に、Ban Xoi、Ba Viでチームビルディング旅行を企画しました。 第6世代のすべてのメンバーと前世代の高齢者は、この旅に完全に参加しました。',
+  detail201701: 'JSは2017年にコーディングプロジェクト2017を成功裏に開催しました。苦労して努力を続けてきたチームは、9月21日に最終結果を発表しました。',
+  detail201702: 'Prom - Awardsサファイア2017は、FPT Softwareの代表、教師、他のクラブの代表者（No Shy、Business、Vovinam、...）',
+  detail201601:
+    '2016年には、コーディング・プロジェクトが3人のファイナリストで初めて開催されました。 ゲーム「Mr.X」のファンタスティック4、日本語学習アプリケーション「デキル日本語」のHMQQチーム',
+  detail201602:
+    'アメジスト2016 - JSクラブの初日は、大盛況で開催されました。 優秀な人を称えることは別として、アメジスト2016はすべての世代のメンバーをつなぐチャンスでした。',
+  detail201501:
+    '2015年秋、JSメンバーはマイチャイ渓谷、ホアビンへのチームビルディング旅行を行いました。最終テストの後にリラックスする絶好の機会です。',
+  detail201502:
+    'クラブデーは、FUのクラブが力を発揮し、ユニークなスタイルを示すために重要なイベントです。 JSクラブはフェスティバルクラブ2015に参加し、自分で開発した技術やゲームのブースを持っていました。',
+  detail201801Mobile: '2018年、JSクラブはAMETHYST 2018 - 愛と情熱をうまくまとめました。',
+  detail201802Mobile: 'JSは2018年に、Ban Xoi、Ba Viでチームビルディング旅行を企画しました。',
+  detail201701Mobile: '2017年、JSはコーディングプロジェクト2017を成功裏に組織しました。',
+  detail201702Mobile: 'また、Prom - Awards Sapphire 2017も開催しました。',
+  detail201601Mobile: '2016年に初めてコーディングプロジェクトが開催されました。',
+  detail201602Mobile: 'アメジスト2016 - JSクラブの初日は、大盛況で開催されました。',
+  detail201501Mobile: '2015年秋の学期、JSメンバーはマイチャイ渓谷のホアビンへのチームビルディング旅行を行いました。',
+  detail201502Mobile: 'JSクラブのクラブデーでのK11学生の瞬間。',
+
+  // about
+
+  storyUpper: `私たちに関しては`,
+  story: '私たちに関しては',
+
+  // about mobile
+  aboutDetail01MobileIntroduction: `JSクラブまたは日本語ソフトウェアエンジニアクラブは、2014年2月に創設され、日本語とプログラミングに熱心なFU学生の知識共有コミュニティを目指しています。`,
+  aboutDetail02MobileIntroduction: `JSerになることは、すべてのレベルのプログラミングと日本語コースに参加する機会です。`,
+  aboutDetail03MobileIntroduction: `学習とは別に、コーディングプロジェクトなどの高い競争力を持つコンテストも企画されています。`,
+  aboutDetail04MobileIntroduction: `JSクラブは、ホアラックの最高の学術クラブの1つで、独特の文化を持ち、どこにも見つからないことがあります。`,
+  aboutDetail05MobileIntroduction: `遠くのホアラックは、赤ちゃんが一番必要なときに無条件に立っている赤いシャツを持つ軍隊であることを彼らが知っているので、私たちの女の子を悲しみや孤独にさせたことはありません。`,
+  aboutDetail06MobileIntroduction: `「重要なことはどこに行くのではなく、JSの色が出現するかどうか」ということです。 チームビルディングは、JSersに代わる特別な心の栄養に似ています。`,
+  aboutDetail07MobileIntroduction: `チームの構築と同様に、JSはボードゲームで一晩集めたり、お互いを信じたりすることもできません。 私たちがお互いに語る言葉はとても誠実になります。`,
+  aboutDetail08MobileIntroduction: `各JSerのために、これは彼らの情熱と若者の熱意のための居心地の良い家になります。`,
+
+  // about desktop
+
+  aboutDetail01DesktopIntroduction: `JSクラブは、2014年2月に設立されました。JSは、FPT大学のSofware Engineeringを専門としています。 当初、JSは日本の工学系学生を結ぶ場所として創設されました。 後で、クラブの目的は、日本語とプログラミングに熱心なFU学生のための知識共有コミュニティです。`,
+  aboutDetail02DesktopIntroduction: `JSクラブの会員になると、クラブのシニアメンバーが講義した全レベルのプログラミングと日本語コースに参加するためのチケットを手に入れました。 これらの人々は彼らの専攻だけでなく、熱狂的で愛情のある人でもあります。 経験豊富なメンバーが集めた刺激的で適切なカリキュラムは、学習中に蓄積され、効果的な学習に多くの手助けをします。`,
+  aboutDetail03DesktopIntroduction: `学習とは別に、Coding Projectのような競争力の高いコンテストも企画され、創造的なアイデアから独自のテクノロジー製品を創造することができます。 そして、私たちのプロジェクトは、私たちのために巨大な愛を持っている、涼しくて献身的で熟達したサポーターの助けを借りているという事実を確信しています。`,
+  aboutDetail04DesktopIntroduction: `JSクラブは、ホアラックで最高の学術クラブの1つとして知られています。 他のソーシャルクラブのイベントほど大音量ではないが、私たちはどこにもない独特の文化で組織されている。 JSの注目すべき2つのイベントは、毎年交互に開催されるCoding InspirationとFPTU Hackathon Openです。`,
+  aboutDetail05DesktopIntroduction: `遠いホアラックは、私が私の側で知っているので、私が最も必要なときに無条件に私のそばに立っている赤いシャツを持つ軍隊であることを知っているので、私を悲しみや孤独にしたことはありません。 JSの女の子として、私はいつも私たちの男の子のロマンスと甘さを誇りに思っています。 それらの王子は、女の子の特別な日に私たちを放棄することはありません。 彼らは派手ではなく、いつも暖かく心地良いものです。 私たちは、JSの女の子も、私たちの男の子のための特別な一日を持っています。`,
+  aboutDetail06DesktopIntroduction: `多くの活動をしている厳しい学期の終わりに、チームメンバーのイベントでJSメンバーが一緒になる時期です。 私はたくさんのことを聞いているという話があります。「重要なのはどこに行くのではなく、JSの色が出現するかどうかです。」 チームビルディングは、JSersに代わる特別な心の栄養に似ています。 私たちが一緒になって、私たちが行ってきたこと、前にあること、一緒に立ち、前進することを約束することについてお互いに納得する時です。`,
+  aboutDetail07DesktopIntroduction: `チームのように、JSは一晩の集まりなしではできません。 彼らは私たちがボードゲームと一緒につながり、お互いを信じるチャンスです。 私にとって、その夜は意味があり、時間はゆっくりと静かに通り過ぎます。 私たちがお互いに語る言葉はとても誠実になります。 それは自己の悲しみ、幸福、またはJSをいかにして強く発達させるのかという不思議になる可能性があります。`,
+  aboutDetail08DesktopIntroduction: `クラブ以上に、私のJSは愛の空のようです！ 私はこの居心地の良い家の一部として私をここに連れて来る運命に感謝しています。 ありがとうJS、私の家族、私の友人、私の情熱を養い、発火させる私の場所、私の夢と私のダイナミックな若さに色鮮やかな光をもたらす動機。`,
+
+  // event
+
+  eventsUpperCase: 'イベント',
+  hackathon: `Hackathon`,
+  ci: 'Coding Inspiration',
+  cp: 'Coding Project',
+  prom: 'Prom',
+  tb: 'Team building',
+
+  hackathonMobile: `Đây là text giới thiệu về hackathon.`,
+  ciMobile: `Đây là text giới thiệu về CI.`,
+  cpMobile: `Đây là text giới thiệu về CP.`,
+  promMobile: `Đây là text giới thiệu về Prom.`,
+  tbMobile: `Đây là text giới thiệu về TB.`,
+
+  hackathonDesktop: `Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon. Đây là text giới thiệu về hackathon.`,
+  ciDesktop: `Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI. Đây là text giới thiệu về CI.`,
+  cpDesktop: `Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP. Đây là text giới thiệu về CP.`,
+  promDesktop: `Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom. Đây là text giới thiệu về Prom.`,
+  tbDesktop: `Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB. Đây là text giới thiệu về TB.`,
+
+  // members page
+
+  chairman: `Từ Khắc Hiếu、K12 SEの主要な学生は、現在のクラブ会長です。 彼は温和な気持ちで、同情的で責任があります。 さらに、彼はちょうど1秒で闘争に対処できる人物です。`,
+  viceChairman: `副議長：Nguyễn Tiến Mạnh。 彼の無関係な外観にもかかわらず、彼は気遣う、暖かい、支持的な兄であり、常にクラブの他のメンバーに動機づけを与える。`,
+  leadOfExpertise: `専門家課は、学生寮の研究支援プログラムの指導や支援、JSのワークショップ、セミナー、社内研修の計画を担当します。`,
+  leadOfMedia: `メディア部門 - JSの記事、出版物、メディアの背後にあるヒーロー。 あなたは日本語を知る必要はなく、プログラミングにも優れています。 ここで働くと、デザイン、PR、マーケティングに関する知識を探求し、適用するチャンスがあります。`,
+  leadOfCulture: `JSクラブでは、文化部のメンバーは、クラブを目立たせる人です。 彼らはチームビルディングの後ろから世話をして、プロジェクトの後で小規模なパーティーの計画を立て、長期間の長期学期の後に遠く離れた遠く離れた旅行をしている人たちです。`,
+  leadOfDiplomacy: `Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại. Ban Đối Ngoại.`,
+  banchunhiemUpper: '取締役会',
+  banchuyenmonUpper: '専門部署',
+  bantruyenthongUpper: 'メディア課',
+  banvanhoaUpper: 'カルチャー学科',
+  bandoingoaiUpper: '外交部',
+  tatcathanhvienUpper: '全員',
+  banchunhiem: '取締役会',
+  banchuyenmon: '専門部署',
+  bantruyenthong: 'メディア課',
+  banvanhoa: 'カルチャー学科',
+  bandoingoai: '外交部',
+  tatcathanhvien: '全員',
+  name: '名',
+  gen: '世代',
+  course: 'コース',
+  major: 'メジャー',
+  board: 'ボード',
+  se: 'ソフトウェア工学',
+  sb: '日本語',
+  mc: 'マルチメディア通信',
+  gd: 'グラフィックデザイン',
+  ba: '経営管理',
+  ia: '情報保証',
+  cs: 'コンピュータサイエンス',
+  expertise: '専門知識',
+  media: 'メディア',
+  culture: '文化',
+  diplomacy: '外交'
+};
 
 export default (state = 'en', action) => {
   switch (action.type) {
