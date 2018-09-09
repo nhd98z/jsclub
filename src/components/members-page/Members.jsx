@@ -10,7 +10,7 @@ import Mobile from './MembersMobile';
 import organ1 from '../../img/organ1.png';
 
 class Members extends Component {
-  componentDidMount() {
+  componentDidMount(){
     window.scrollTo(0, 0);
   }
 
@@ -22,6 +22,9 @@ class Members extends Component {
 
         <NavBar />
         {this.props.isMobile ? <Mobile /> : <Desktop />}
+        {/* dung */}
+        <div style={{ marginBottom: '2%' }} />
+        {/* dung */}
         <Footer />
       </div>
     );
